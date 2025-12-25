@@ -12,7 +12,7 @@ from ontology import (
 )
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://cereuslydiluted.github.io"}})
 
 # Allow up to 50 MB uploads
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
