@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
 import os
+import time
 
 from extract_text import extract_pdf_layout
 from render_pages import render_pdf_pages
@@ -28,60 +29,55 @@ def extract():
     if request.method == "OPTIONS":
         return '', 204
 
+    start_time = time.time()
+    print("Received request")
+
     if "file" not in request.files:
         return jsonify({"error": "No file uploaded"}), 400
 
-    # Save uploaded PDF
     pdf_file = request.files["file"]
     filename = secure_filename(pdf_file.filename)
     filepath = os.path.join(UPLOAD_FOLDER, filename)
     pdf_file.save(filepath)
+    print(f"Saved file: {filename} — {time.time() - start_time:.2f}s")
 
-    # 1. Extract text + coordinates
     pages = extract_pdf_layout(filepath)
+    print(f"Extracted layout — {time.time() - start_time:.2f}s")
 
-    # 2. Render page images
     image_paths = render_pdf_pages(filepath, output_folder=STATIC_PAGE_FOLDER)
+    print(f"Rendered pages — {time.time() - start_time:.2f}s")
 
-    # 3. Annotate terms using ontology
     for page_index, page in enumerate(pages):
+        print(f"Annotating page {page_index} — {time.time() - start_time:.2f}s")
         words = page["words"]
         word_texts = [w["text"] for w in words]
 
-        # Generate n-grams (3-word, 2-word, 1-word)
         ngrams = generate_ngrams(word_texts, max_n=3)
-
         used_indices = set()
 
         for start, end, phrase in ngrams:
-            # Skip if these words were already matched by a larger phrase
             if any(i in used_indices for i in range(start, end)):
                 continue
-
-            # Skip if phrase is not a scientific candidate
             if not is_candidate_phrase(phrase):
                 continue
 
-            # Lookup in OLS4
+            print(f"Looking up: {phrase}")
             definition = lookup_term_ols4(phrase)
             if not definition:
                 continue
 
-            # Mark indices as used
             for i in range(start, end):
                 used_indices.add(i)
 
-            # Attach definition to the FIRST word in the phrase
             words[start]["definition"] = definition["definition"]
             words[start]["term"] = phrase
 
-            # Mark the rest of the words as part of the phrase
             for i in range(start + 1, end):
                 words[i]["skip"] = True
 
-        # Attach image URL for this page
         page["image_url"] = "/" + image_paths[page_index]
 
+    print(f"Finished all processing — {time.time() - start_time:.2f}s")
     return jsonify({"pages": pages})
 
 
