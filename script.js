@@ -1,45 +1,32 @@
-console.log("script.js loaded");
+console.log("script.js updated");
 
-// ------------------------------
-// Backend URL
-// ------------------------------
+// Set your backend URL here once Cloud Run is deployed
 const BACKEND_URL = "https://comprehendase-252233072700.us-east4.run.app";
 
-// ------------------------------
-// Helpers: Logging + Progress Bar
-// ------------------------------
-function log(message) {
-    const box = document.getElementById("logBox");
-    box.textContent += "\n" + message;
-    box.scrollTop = box.scrollHeight;
-}
+// Enable the button when a file is selected
+document.getElementById("pdf-input").addEventListener("change", () => {
+    const fileInput = document.getElementById("pdf-input");
+    const button = document.getElementById("process-btn");
 
-function setProgress(percent) {
-    document.getElementById("progressBar").style.width = percent + "%";
-}
+    button.disabled = fileInput.files.length === 0;
+});
 
-// ------------------------------
-// Upload Form Handler
-// ------------------------------
-document.getElementById("uploadForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
+// Handle the "Reconstruct layout" button click
+document.getElementById("process-btn").addEventListener("click", async () => {
+    const fileInput = document.getElementById("pdf-input");
+    const logBox = document.getElementById("log");
+    const viewer = document.getElementById("page-viewer");
+    const output = document.getElementById("output");
 
-    const fileInput = document.getElementById("pdfFile");
     if (!fileInput.files.length) {
         alert("Please upload a PDF first.");
         return;
     }
 
+    logBox.textContent = "Uploading PDF and processing…";
+
     const formData = new FormData();
     formData.append("file", fileInput.files[0]);
-
-    // Reset UI
-    document.getElementById("output").innerHTML = "";
-    document.getElementById("logBox").textContent = "Starting…";
-    setProgress(5);
-
-    log("Uploading PDF…");
-    setProgress(15);
 
     try {
         const response = await fetch(`${BACKEND_URL}/extract`, {
@@ -47,96 +34,70 @@ document.getElementById("uploadForm").addEventListener("submit", async (e) => {
             body: formData
         });
 
-        log("Processing on server…");
-        setProgress(40);
-
         const data = await response.json();
 
         if (data.error) {
-            log("Error: " + data.error);
-            setProgress(0);
+            logBox.textContent = "Error: " + data.error;
             return;
         }
 
-        log("Rendering pages…");
-        setProgress(70);
+        logBox.textContent = "Rendering pages…";
 
-        renderPages(data.pages);
+        // Clear old content
+        viewer.innerHTML = "";
+        output.innerHTML = "";
 
-        log("Done.");
-        setProgress(100);
+        renderPages(data.pages, viewer);
+
+        logBox.textContent = "Done.";
 
     } catch (err) {
-        log("Error contacting backend.");
+        logBox.textContent = "Error contacting backend.";
         console.error(err);
-        setProgress(0);
     }
 });
 
-// ------------------------------
-// Render Pages + Overlays
-// ------------------------------
-function renderPages(pages) {
-    const output = document.getElementById("output");
-    output.innerHTML = "";
-
+// Render pages + overlay text
+function renderPages(pages, viewer) {
     pages.forEach((page) => {
-        const wrapper = document.createElement("div");
-        wrapper.className = "page-wrapper";
+        const pageWrapper = document.createElement("div");
+        pageWrapper.className = "page-wrapper";
 
         // Page image
         const img = document.createElement("img");
-        img.className = "page-image";
         img.src = page.image_url;
+        img.className = "page-image";
 
         // Overlay container
         const overlay = document.createElement("div");
         overlay.className = "text-overlay";
 
-        wrapper.appendChild(img);
-        wrapper.appendChild(overlay);
-        output.appendChild(wrapper);
-
-        // When image loads, sync overlay + place words
         img.onload = () => {
-            syncOverlaySize(img, overlay);
-            placeWords(page.words, overlay);
-            log("Rendered page");
+            const scaleX = img.clientWidth / page.width;
+            const scaleY = img.clientHeight / page.height;
+
+            page.words.forEach((word) => {
+                if (word.skip) return;
+
+                const span = document.createElement("span");
+                span.className = "word";
+                span.textContent = word.term || word.text;
+
+                if (word.definition) {
+                    span.classList.add("has-definition");
+                    span.title = word.definition;
+                }
+
+                span.style.left = (word.x * scaleX) + "px";
+                span.style.top = (word.y * scaleY) + "px";
+                span.style.fontSize = (word.height * scaleY) + "px";
+
+                overlay.appendChild(span);
+            });
         };
-    });
-}
 
-// ------------------------------
-// Sync overlay height to image
-// ------------------------------
-function syncOverlaySize(img, overlay) {
-    overlay.style.width = img.clientWidth + "px";
-    overlay.style.height = img.clientHeight + "px";
-}
-
-// ------------------------------
-// Place words on overlay
-// ------------------------------
-function placeWords(words, overlay) {
-    words.forEach((w) => {
-        if (w.skip) return;
-
-        const span = document.createElement("span");
-        span.className = "word";
-
-        if (w.definition) {
-            span.classList.add("has-definition");
-            span.title = `${w.term}: ${w.definition}`;
-        }
-
-        span.textContent = w.term || w.text;
-
-        // Positioning
-        span.style.left = w.x + "px";
-        span.style.top = w.y + "px";
-        span.style.width = w.width + "px";
-        span.style.height = w.height + "px";
-
-        overlay.appendChild(span);
+        pageWrapper.appendChild(img);
+        pageWrapper.appendChild(overlay);
+        viewer.appendChild(pageWrapper);
     });
 }
