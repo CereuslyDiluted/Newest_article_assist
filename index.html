@@ -18,10 +18,14 @@
     <!-- Controls -->
 <section class="controls">
   <div class="control-group upload-box">
-    <label><strong>Upload PDF:</strong></label>
+    <label for="pdf-input"><strong>Upload PDF:</strong></label>
+    <input type="file" id="pdf-input" class="upload" accept="application/pdf" />
+  </div>
 
-    <!-- This is your styled teal button -->
-    <button class="upload" id="upload-btn">Choose PDF</button>
+  <button id="process-btn" class="reconstruct" disabled>
+    Reconstruct layout
+  </button>
+</section>
 
     <!-- Hidden real file input -->
     <input type="file" id="pdf-input" accept="application/pdf" hidden>
