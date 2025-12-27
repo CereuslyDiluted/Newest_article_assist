@@ -99,7 +99,7 @@ header {
 .logo-img {
   max-width: 350px;
   height: auto;
-  display: block;
+  display: inline;
   margin: 0 auto;
 }
 
