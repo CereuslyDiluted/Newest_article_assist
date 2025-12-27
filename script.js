@@ -3,6 +3,11 @@ console.log("script.js updated");
 // Set your backend URL here once Cloud Run is deployed
 const BACKEND_URL = "https://comprehendase-252233072700.us-east4.run.app";
 
+// Make the styled upload button open the file picker
+document.getElementById("upload-btn").addEventListener("click", () => {
+    document.getElementById("pdf-input").click();
+});
+
 // Enable the button when a file is selected
 document.getElementById("pdf-input").addEventListener("change", () => {
     const fileInput = document.getElementById("pdf-input");
@@ -10,6 +15,7 @@ document.getElementById("pdf-input").addEventListener("change", () => {
 
     button.disabled = fileInput.files.length === 0;
 });
+
 
 // Handle the "Reconstruct layout" button click
 document.getElementById("process-btn").addEventListener("click", async () => {
