@@ -16,13 +16,16 @@
     </header>
 
     <!-- Controls -->
-    <section class="controls">
-      <div class="control-group">
-        <label for="pdf-input"><strong>Upload PDF:</strong></label>
-        <input type="file" id="pdf-input" accept="application/pdf" />
-      </div>
-      <button id="process-btn" disabled>Reconstruct layout</button>
-    </section>
+  <section class="controls">
+  <div class="control-group upload-box">
+    <label for="pdf-input"><strong>Upload PDF:</strong></label>
+    <input type="file" id="pdf-input" class="upload" accept="application/pdf" />
+  </div>
+
+  <button class="reconstruct" id="process-btn" disabled>
+    Reconstruct layout
+  </button>
+</section>
 
 
     <!-- Status / log -->
