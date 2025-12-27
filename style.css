@@ -124,6 +124,15 @@ button.upload:hover {
   background-color: var(--accent-teal-hover);
 }
 
+input[type="file"].upload::file-selector-button {
+  background-color: var(--accent-teal);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 button.reconstruct {
   background-color: var(--accent-teal);
   color: var(--text-dark);
