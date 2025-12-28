@@ -108,7 +108,7 @@ header {
   border: none;
   background-color: transparent;
   padding: 0;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 /* Buttons */
@@ -117,7 +117,7 @@ button.upload {
   font-weight: 600;
   color: #002f62;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0;
   border-radius: 6px;
 }
 
@@ -130,7 +130,7 @@ input[type="file"].upload::file-selector-button {
   font-weight: 600;
   color: #002f62;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0;
   border-radius: 6px;
   cursor: pointer;
 }
