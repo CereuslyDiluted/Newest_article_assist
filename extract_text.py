@@ -36,12 +36,6 @@ def extract_pdf_layout(pdf_path):
                         "width": float(x1 - x0),
                         "height": float(y1 - y0),
 
-                        # NEW metadata
-                        "font": span.get("font", None),
-                        "font_size": span.get("size", None),
-                        "bold": is_bold,
-                        "italic": is_italic,
-
                         # Keep block/line info for consistency
                         "block": block.get("number", None),
                         "line": line.get("number", None),
