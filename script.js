@@ -92,6 +92,7 @@ function renderPages(pages, viewer) {
         if (word.definition) {
             span.classList.add("has-definition");
             span.title = word.definition;
+            span.style.backgroundColor = "rgba(255,255,255,0.2)";
             span.style.color = "#F76C5E";
         }
 
