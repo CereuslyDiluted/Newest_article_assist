@@ -4218,5 +4218,10 @@
     "label": "day 7 of adulthood",
     "definition": "7th day after eclosion.",
     "iri": "http://purl.obolibrary.org/obo/FBdv_00007082"
+  },
+  "among the": {
+    "label": "Stand Among Friends",
+    "definition": "Nonprofit in United States established in 1997",
+    "iri": "https://ror.org/00r80b982"
   }
 }
