@@ -260,5 +260,19 @@
     "label": "Class",
     "definition": "",
     "iri": "http://www.w3.org/2000/01/rdf-schema#Class"
+  },
+  "mollicutes. m. bovis": null,
+  "m. bovis is": null,
+  "m. bovis": null,
+  "bovis is an": null,
+  "is an important": null,
+  "an important patho-": null,
+  "an important": null,
+  "important patho- gen": null,
+  "important patho-": null,
+  "important": {
+    "label": "Important",
+    "definition": "Of great significance, value, or consequence.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C115916"
   }
 }
