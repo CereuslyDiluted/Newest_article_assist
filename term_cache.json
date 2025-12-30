@@ -8398,5 +8398,10 @@
     "label": "recorded",
     "definition": "A categorical choice indicating that a datum is available for retrieval.",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0001851"
+  },
+  "number of cfu": {
+    "label": "CFU reduction assay",
+    "definition": "CFU reduction assay is an assay that measures the reduction of the colony forming units of infected pathogens in vaccine-vaccinated animals compared to nonvaccinated animals.",
+    "iri": "http://purl.obolibrary.org/obo/VO_0000242"
   }
 }
