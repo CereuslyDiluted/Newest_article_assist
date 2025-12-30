@@ -53,15 +53,15 @@ for i in range(len(words)):
         merged_words.append(current)
 
 # Replace original words with merged version
-    words = merged_words
+        words = merged_words
 
         
-    pages_output.append({
-        "page_number": page_index + 1,
-        "width": page.rect.width,
-        "height": page.rect.height,
-        "words": words
+        pages_output.append({
+            "page_number": page_index + 1,
+            "width": page.rect.width,
+            "height": page.rect.height,
+            "words": words
         })
 
-    doc.close()
-    return pages_output
+doc.close()
+return pages_output
