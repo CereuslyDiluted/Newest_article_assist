@@ -868,5 +868,10 @@
     "label": "associated with",
     "definition": "A structural quality inhering in a bearer by virtue of the bearer's being in close proximity and physically interacting with another entity.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001668"
+  },
+  "can": {
+    "label": "can",
+    "definition": "carbonic anhydrase",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000944832"
   }
 }
