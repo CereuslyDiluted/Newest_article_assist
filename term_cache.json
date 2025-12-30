@@ -16088,5 +16088,10 @@
     "label": "manure",
     "definition": "An environmental material consisting of organic matter from plants and/or animals that is used in agriculture as fertilizer.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03501300"
+  },
+  "a study to": {
+    "label": "Prior to Study",
+    "definition": "The time period before the study.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C175039"
   }
 }
