@@ -5858,5 +5858,10 @@
     "label": "MFIS - Have Been Forgetful",
     "definition": "Modified Fatigue Impact Scale (MFIS) Because of my fatigue during the past 4 weeks I have been forgetful.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C113971"
+  },
+  "with recent": {
+    "label": "recent",
+    "definition": "A quality of a process which occurs near to or not long before the present.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001484"
   }
 }
