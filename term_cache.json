@@ -1798,5 +1798,10 @@
     "label": "Were Molecular Abnormalities Detected Question",
     "definition": "A question about whether molecular abnormalities were detected.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C160766"
+  },
+  "bacterial genera were": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
