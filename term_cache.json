@@ -1088,5 +1088,10 @@
     "label": "food cycle",
     "definition": "A food web in which the outputs of a trophic interaction are consumed by organisms acting in a lower trophic level relative to the initial interaction.",
     "iri": "http://purl.obolibrary.org/obo/ECOCORE_00000002"
+  },
+  "taking": {
+    "label": "taking",
+    "definition": "Taking material is the exporting of material from a location or site. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003576"
   }
 }
