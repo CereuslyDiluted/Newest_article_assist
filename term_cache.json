@@ -8273,5 +8273,10 @@
     "label": "water",
     "definition": "An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_15377"
+  },
+  "and gently swirled": {
+    "label": "Gently",
+    "definition": "In a manner that is soft and mild, having little impact.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64653"
   }
 }
