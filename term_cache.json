@@ -8098,5 +8098,10 @@
     "label": "deviation",
     "definition": "A deviation is a quantification facet that quantifies the absolute or relative difference of an observed value from another value. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002204"
+  },
+  "the components necessary": {
+    "label": "First Visit with All Necessary Components to Determine",
+    "definition": "An indication of the first visit during which all components needed to determine something were present.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159707"
   }
 }
