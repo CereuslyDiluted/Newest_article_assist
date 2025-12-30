@@ -4523,5 +4523,10 @@
     "label": "The Cancer Treatment Center",
     "definition": "Healthcare in United States established in 1986",
     "iri": "https://ror.org/05waabg59"
+  },
+  "were signi\ufb01cant on": {
+    "label": "Were Genomics Performed on Obtained Tissue Question",
+    "definition": "A question whether genomics were performed on obtained tissue.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C182171"
   }
 }
