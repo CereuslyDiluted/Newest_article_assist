@@ -5103,5 +5103,10 @@
     "label": "Office of Economic Impact and Diversity",
     "definition": "Government in United States established in 1979",
     "iri": "https://ror.org/05hsv7e61"
+  },
+  "following rarefaction (data": {
+    "label": "Rarefaction",
+    "definition": "The calculation of species richness for a number of individual samples, based on plots of the number of species as a function of the number of samples (rarefaction curves).",
+    "iri": "http://edamontology.org/operation_3797"
   }
 }
