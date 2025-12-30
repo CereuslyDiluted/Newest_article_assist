@@ -7643,5 +7643,10 @@
     "label": "sampling weight in grams",
     "definition": "the weight of a specific collected specimen, in grams",
     "iri": "http://purl.obolibrary.org/obo/HSO_0000357"
+  },
+  "utilized": {
+    "label": "inferred MHC restriction based on type of effector T cell utilized in T cell assay",
+    "definition": "An inferred MHC restriction determined by a positive outcome in a T cell assay using specific T cell subsets as effector cells or by a negative outcome when a spceific subset is blocked by antibodies.",
+    "iri": "http://purl.obolibrary.org/obo/MRO_0001730"
   }
 }
