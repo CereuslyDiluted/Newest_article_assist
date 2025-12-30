@@ -2148,5 +2148,10 @@
     "label": "bsf",
     "definition": "The protein-coding gene bsf (bicoid stability factor) located on the chromosome 2L mapped at 36F5-36F5.",
     "iri": "http://identifiers.org/ncbigene/35100"
+  },
+  "vermicompost": {
+    "label": "vermicompost",
+    "definition": "A compost that is the product of the decomposition process using various species of worms, usually red wigglers, white worms, and other earthworms, to create a mixture of decomposing vegetable or food waste, bedding materials, and vermicast.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00002042"
   }
 }
