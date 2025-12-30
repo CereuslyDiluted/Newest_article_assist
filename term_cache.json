@@ -2236,5 +2236,22 @@
     "label": "Data",
     "definition": "Subclass of File representing structured or unstructured datasets, often used for analysis, storage, or transfer of information.",
     "iri": "https://w3id.org/evorao/Data"
+  },
+  "for m. bovis": null,
+  "strain xby01 were": null,
+  "xby01 were deposited": null,
+  "xby01 were": null,
+  "were deposited under": null,
+  "were deposited": null,
+  "deposited under genbank": null,
+  "deposited under": null,
+  "deposited": null,
+  "under genbank accession": null,
+  "under genbank": null,
+  "genbank accession no.": null,
+  "genbank accession": {
+    "label": "GenBank accession",
+    "definition": "Accession number of an entry from the GenBank sequence database.",
+    "iri": "http://edamontology.org/data_2292"
   }
 }
