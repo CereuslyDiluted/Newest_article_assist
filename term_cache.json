@@ -1358,5 +1358,10 @@
     "label": "goal",
     "definition": "A <cognitive representation> of an end state towards which one is striving.",
     "iri": "http://humanbehaviourchange.org/ontology/BCIO_006049"
+  },
+  "to investigate": {
+    "label": "to investigate",
+    "definition": "to investigate is the capability to uncover facts.",
+    "iri": "http://semanticscience.org/resource/SIO_000408"
   }
 }
