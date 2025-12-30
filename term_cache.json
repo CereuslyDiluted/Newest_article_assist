@@ -16283,5 +16283,10 @@
     "label": "Sequence database filter types",
     "definition": "Filter types which are used to filter a sequence database.",
     "iri": "http://purl.obolibrary.org/obo/MS_1001511"
+  },
+  "and host susceptibilities.": {
+    "label": "normal pathogen protein and host protein colocalization within host",
+    "definition": "A pathogen host interaction phenotype, in which the colocalization of a pathogen protein and a host protein within a host cell is normal (i.e. indistinguishable from wild type).",
+    "iri": "http://purl.obolibrary.org/obo/PHIPO_0000270"
   }
 }
