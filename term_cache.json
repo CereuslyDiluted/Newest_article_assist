@@ -2333,5 +2333,10 @@
     "label": "Physical",
     "definition": "Having substance or material existence; concerned with material things; of or pertaining to the body as distinguished from the mind or spirit.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25618"
+  },
+  "extraction": {
+    "label": "extraction",
+    "definition": "A material separation in which a desired component of an input material is separated from the remainder",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0302884"
   }
 }
