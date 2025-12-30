@@ -168,5 +168,10 @@
     "label": "Respiratory",
     "definition": "Pertaining to respiration.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25656"
+  },
+  "farm": {
+    "label": "farm",
+    "definition": "An area of land which is used for the cultivation of crops or grazing of livestock, including any agricultural constructions therein.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00000078"
   }
 }
