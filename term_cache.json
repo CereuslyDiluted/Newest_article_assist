@@ -7173,5 +7173,10 @@
     "label": "novel",
     "definition": "An attribute of a genomic feature that represents a feature not previously found in a given genome, e.g. an extrachromosomal replicon or aneusomic third copy of a chromosome.",
     "iri": "http://purl.obolibrary.org/obo/GENO_0000685"
+  },
+  "that has potential": {
+    "label": "has developmental potential involving",
+    "definition": "x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction).",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002384"
   }
 }
