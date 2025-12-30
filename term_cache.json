@@ -2308,5 +2308,10 @@
     "label": "accumulation of xenobiotics",
     "definition": "Accumulation of xenobiotics is a subtype of accumulation of substances in a biological object: A process that keeps xenobiotics in an organism, tissue, organelle, or cell.",
     "iri": "http://purl.obolibrary.org/obo/TXPO_0000169"
+  },
+  "microbes within harvested": {
+    "label": "harvested crop",
+    "definition": "A crop that has been harvested after an harvesting process.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00002049"
   }
 }
