@@ -16418,5 +16418,10 @@
     "label": "Diet and Nutrition Research",
     "definition": "Epidemiology studies looking at the role of dietary patterns, foods, and nutrients or other dietary components in cancer incidence and prevention.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C16011"
+  },
+  "expression of antimicrobial": {
+    "label": "antimicrobial gene expression variant",
+    "definition": "Animals exhibit variations in the expression of one or more known, endogenous, antimicrobial genes, compared to controls.",
+    "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0002534"
   }
 }
