@@ -65,5 +65,20 @@
     "label": "authors",
     "definition": "The list of authors.",
     "iri": "https://w3id.org/evorao/authors"
+  },
+  "was determined alphabetically.": null,
+  "was determined": null,
+  "determined alphabetically. abstract": null,
+  "determined alphabetically.": null,
+  "determined": null,
+  "alphabetically. abstract we": null,
+  "alphabetically. abstract": null,
+  "alphabetically.": null,
+  "abstract we report": null,
+  "abstract we": null,
+  "abstract": {
+    "label": "abstract",
+    "definition": "",
+    "iri": "http://purl.org/dc/terms/abstract"
   }
 }
