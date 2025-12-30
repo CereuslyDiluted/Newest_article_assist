@@ -998,5 +998,10 @@
     "label": "keywords",
     "definition": "List of terms used to tag and categorize this Item.",
     "iri": "https://w3id.org/evorao/keywords"
+  },
+  "waste management": {
+    "label": "waste management",
+    "definition": "A planned process that involves all aspects of dealing with the waste produced in experiments.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0002845"
   }
 }
