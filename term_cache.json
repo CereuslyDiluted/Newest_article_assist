@@ -7998,5 +7998,10 @@
     "label": "Further",
     "definition": "To or at a greater distance in time or space.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25519"
+  },
+  "not done": {
+    "label": "Not Done",
+    "definition": "Indicates a task, process or examination that has either not been initiated or not been completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49484"
   }
 }
