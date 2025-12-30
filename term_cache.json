@@ -1765,5 +1765,26 @@
     "label": "Long",
     "definition": "A variable that is stored as a signed 64-bit (8-byte) integer.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C48311"
+  },
+  "reads. first, we": null,
+  "reads. first,": null,
+  "reads.": null,
+  "first, we": null,
+  "we used abyss": null,
+  "used abyss to": null,
+  "used abyss": null,
+  "abyss to perform": null,
+  "abyss to": null,
+  "abyss": null,
+  "to perform genome": null,
+  "to perform": null,
+  "perform genome assembly": null,
+  "perform genome": null,
+  "perform": null,
+  "genome assembly with": null,
+  "genome assembly": {
+    "label": "genome assembly",
+    "definition": "The result of reconstruction of the genome achieved by aligning and merging smaller fragments.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0003086"
   }
 }
