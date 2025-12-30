@@ -5648,5 +5648,10 @@
     "label": "material to be added",
     "definition": "a material that is added to another one in a material combination process",
     "iri": "http://purl.obolibrary.org/obo/OBI_1110108"
+  },
+  "the list of": {
+    "label": "list",
+    "definition": "A list is an ordered collection of items. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/common#AFC_0000160"
   }
 }
