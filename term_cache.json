@@ -1878,5 +1878,10 @@
     "label": "environmentally induced seizures",
     "definition": "seizure activity response due to changes in ambient habitat including room temperature, lighting, sounds, touching, and/ or moving cage",
     "iri": "http://purl.obolibrary.org/obo/MP_0009358"
+  },
+  "and economically viable": {
+    "label": "Culturally and Economically Diverse Group",
+    "definition": "Groups of individuals that exhibit differing characteristic behavior in customs, attitudes, practices, and behaviors, or are predisposed to certain health histories due to differences in ethnicity, race, religion, national origin, or economic standing (DCCPS)",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C18725"
   }
 }
