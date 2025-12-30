@@ -8188,5 +8188,10 @@
     "label": "Daylight-Savings Time",
     "definition": "A seasonal time adjustment in which clocks are set one hour ahead of local standard time.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C112506"
+  },
+  "three substrate samples": {
+    "label": "Three",
+    "definition": "A natural number greater than 2 and less than 4 and the quantity that it denotes: the sum of two and one.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C66834"
   }
 }
