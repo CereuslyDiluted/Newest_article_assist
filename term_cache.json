@@ -16003,5 +16003,10 @@
     "label": "hay for animal feed",
     "definition": "SIREN DB annotation:\n* divided into pieces FOODON:03430152\n* not heat-treated FOODON:03440003\n* whole plant or most parts used FOODON:03420150\n* water removal process FOODON:03460138\n* preservation by dehydration or drying FOODON:03470116\n* non-food animal as food consumer FOODON:03510013\n* food animal as consumer FOODON:03510015",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03301763"
+  },
+  "farm animals.": {
+    "label": "environmental pets or farm animals information",
+    "definition": "An information content entity about presence of pets or farm animals in the environment of subject, if yes the animals should be specified; can include multiple animals present.",
+    "iri": "http://purl.obolibrary.org/obo/EUPATH_0000602"
   }
 }
