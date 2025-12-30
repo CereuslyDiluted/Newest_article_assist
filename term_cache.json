@@ -5763,5 +5763,10 @@
     "label": "X",
     "definition": "The 24th letter of the English alphabet.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C189218"
+  },
+  "inoculated with mrsa,": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
