@@ -249,5 +249,16 @@
     "label": "family",
     "definition": "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption.",
     "iri": "http://purl.obolibrary.org/obo/PCO_0000020"
+  },
+  "mycoplasmataceae in": null,
+  "in the class": null,
+  "the class mollicutes.": null,
+  "the class": null,
+  "class mollicutes. m.": null,
+  "class mollicutes.": null,
+  "class": {
+    "label": "Class",
+    "definition": "",
+    "iri": "http://www.w3.org/2000/01/rdf-schema#Class"
   }
 }
