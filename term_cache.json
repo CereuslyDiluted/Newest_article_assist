@@ -1053,5 +1053,10 @@
     "label": "ITS",
     "definition": "Insulinoma tumor suppressor gene locus",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000282551"
+  },
+  "ingredient": {
+    "label": "ingredient",
+    "definition": "A processed material which is referenced in an ingredient specification.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00004272"
   }
 }
