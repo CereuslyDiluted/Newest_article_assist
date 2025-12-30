@@ -1878,5 +1878,10 @@
     "label": "increased",
     "definition": "The observed feature is increased compared to that in the wild type (faster, stronger, higher, larger, etc.).",
     "iri": "http://purl.obolibrary.org/obo/APO_0000004"
+  },
+  "occur": {
+    "label": "Occur",
+    "definition": "Come to pass.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C54069"
   }
 }
