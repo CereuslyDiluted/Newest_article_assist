@@ -6578,5 +6578,10 @@
     "label": "Combination",
     "definition": "A collection of things that have been assembled together to form a new whole.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C61517"
+  },
+  "of which can": {
+    "label": "can",
+    "definition": "carbonic anhydrase",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000944832"
   }
 }
