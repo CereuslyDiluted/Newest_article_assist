@@ -4963,5 +4963,10 @@
     "label": "Diversity",
     "definition": "Variety; quality, state, fact, or instance of being different.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
+  },
+  "index. data compiled": {
+    "label": "Data index",
+    "definition": "An index of data of biological relevance.",
+    "iri": "http://edamontology.org/data_0955"
   }
 }
