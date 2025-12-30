@@ -6788,5 +6788,10 @@
     "label": "Stayed the Same",
     "definition": "A subjective response indicating that something is unchanged.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C125460"
+  },
+  "among treatments": {
+    "label": "number of treatments",
+    "definition": "Number of treatments tested during an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00000323"
   }
 }
