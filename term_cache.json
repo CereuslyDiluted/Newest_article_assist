@@ -2418,5 +2418,10 @@
     "label": "gram negative",
     "definition": "A gram stain phenotype where a cell or cells do not retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
     "iri": "http://purl.obolibrary.org/obo/OMP_0000189"
+  },
+  "bacterial species, such": {
+    "label": "Label as Such",
+    "definition": "An instruction for product to be labeled as explicitly directed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64662"
   }
 }
