@@ -4123,5 +4123,10 @@
     "label": "Were Genomics Performed on Obtained Tissue Question",
     "definition": "A question whether genomics were performed on obtained tissue.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C182171"
+  },
+  "both days of": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
   }
 }
