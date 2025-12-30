@@ -787,5 +787,12 @@
     "label": "visible",
     "definition": "A post-embryonic, macroscopic, anatomical phenotype.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000354"
+  },
+  "colonies appeared (4).": null,
+  "colonies appeared": null,
+  "colonies": {
+    "label": "colonies",
+    "definition": "",
+    "iri": "http://snomed.info/id/258736000"
   }
 }
