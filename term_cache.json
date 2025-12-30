@@ -16993,5 +16993,10 @@
     "label": "Centre for Ecological Research",
     "definition": "Facility in Hungary established in 2012",
     "iri": "https://ror.org/04bhfmv97"
+  },
+  "and evolutionary analyses": {
+    "label": "Biometry and Evolutionary Biology Laboratory",
+    "definition": "Facility in France established in 1995",
+    "iri": "https://ror.org/03skt0t88"
   }
 }
