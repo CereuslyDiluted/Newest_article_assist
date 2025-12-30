@@ -1218,5 +1218,10 @@
     "label": "In Vivo",
     "definition": "Located or occurring in the body.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C15744"
+  },
+  "level": {
+    "label": "Level",
+    "definition": "A position on a scale measuring intensity, quality, or amount.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25554"
   }
 }
