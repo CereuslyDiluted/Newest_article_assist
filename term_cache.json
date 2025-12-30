@@ -2178,5 +2178,10 @@
     "label": "voiding of nitrogenous wastes",
     "definition": "During the first day after feeding, deamination of amino acids produces excess nitrogen which is voided in the form of low molecular weight nitrogenous metabolites.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002046"
+  },
+  "is bene\ufb01cial to": {
+    "label": "is equivalent to",
+    "definition": "Property is a note about a proposed logical expression in order to describe the term as defined class. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002794"
   }
 }
