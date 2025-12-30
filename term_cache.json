@@ -16413,5 +16413,10 @@
     "label": "Immunology",
     "definition": "The study of the immune system and its reaction to pathogens, as well as its malfunctions (autoimmune diseases, allergies, rejection of organ transplants).",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C18011"
+  },
+  "diversi\ufb01cation and diet-dependent": {
+    "label": "Diet and Nutrition Research",
+    "definition": "Epidemiology studies looking at the role of dietary patterns, foods, and nutrients or other dietary components in cancer incidence and prevention.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C16011"
   }
 }
