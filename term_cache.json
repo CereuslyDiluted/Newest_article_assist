@@ -5348,5 +5348,10 @@
     "label": "chicken manure",
     "definition": "Poultry manure made of chicken feces.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03501252"
+  },
+  "after 15 days": {
+    "label": "15 days after blood meal",
+    "definition": "Fifteen days after blood meal.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0000739"
   }
 }
