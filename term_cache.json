@@ -16808,5 +16808,10 @@
     "label": "Affected",
     "definition": "To be influenced by or changed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64917"
+  },
+  "matrix:": {
+    "label": "matrix",
+    "definition": "Those components of a sample that are not measured by an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0002743"
   }
 }
