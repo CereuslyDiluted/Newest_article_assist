@@ -3063,5 +3063,10 @@
     "label": "Complicated",
     "definition": "Difficult to analyze or understand.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C86059"
+  },
+  "those results. for": {
+    "label": "Results for Development Institute",
+    "definition": "Nonprofit in United States established in 2007",
+    "iri": "https://ror.org/05fjfdm02"
   }
 }
