@@ -16078,5 +16078,10 @@
     "label": "State of The Art",
     "definition": "Company in United States",
     "iri": "https://ror.org/001rzdq81"
+  },
+  "review. food res": {
+    "label": "RES complex",
+    "definition": "A protein complex that is required for efficient splicing, and prevents leakage of unspliced pre-mRNAs from the nucleus (named for pre-mRNA REtention and Splicing). In Saccharomyces, the complex consists of Ist3p, Bud13p, and Pml1p.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0070274"
   }
 }
