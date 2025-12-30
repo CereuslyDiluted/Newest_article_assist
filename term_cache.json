@@ -16363,5 +16363,10 @@
     "label": "Prediction and recognition",
     "definition": "Predict, recognise, detect or identify some properties of a biomolecule.",
     "iri": "http://edamontology.org/operation_2423"
+  },
+  "toxin mediated disease.": {
+    "label": "toxin-mediated infectious botulism",
+    "definition": "Aform of botulism (see this term), a rare acquired neuromuscular junction disease, characterized by descending flaccid paralysis caused by botulinum neurotoxins (BoNTs), produced in vivo leading to toxin-mediated infection. Infectious botulism includes wound botulism and intestinal toxemia botulism (infant botulism and adult intestinal botulism).",
+    "iri": "http://purl.obolibrary.org/obo/MONDO_0016468"
   }
 }
