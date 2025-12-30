@@ -749,5 +749,17 @@
     "label": "agar",
     "definition": "A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_2509"
+  },
+  "difco); the cultures": null,
+  "difco); the": null,
+  "cultures were incubated": null,
+  "were incubated at": null,
+  "were incubated": null,
+  "incubated at 37\u00b0c": null,
+  "incubated at": null,
+  "incubated": {
+    "label": "Incubated",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C15685"
   }
 }
