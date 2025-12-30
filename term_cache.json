@@ -888,5 +888,10 @@
     "label": "containing",
     "definition": "Containing is the state of keeping an object in the inside of a cavity. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003623"
+  },
+  "glass": {
+    "label": "glass",
+    "definition": "Glass is an amorphous (non-crystalline) solid which is often transparent.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01000480"
   }
 }
