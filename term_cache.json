@@ -2438,5 +2438,10 @@
     "label": "larva",
     "definition": "Organism during the period between hatching and prepupa formation.",
     "iri": "http://purl.obolibrary.org/obo/FBbt_00001727"
+  },
+  "standard deviation": {
+    "label": "standard deviation",
+    "definition": "The standard deviation is a measure of the amount of variation or dispersion of a set of values. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002192"
   }
 }
