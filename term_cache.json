@@ -1242,5 +1242,13 @@
     "label": "number",
     "definition": "Number types can have min / max limits for validation.  Regular expressions would be used mostly for data entry transformation and display.",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0001919"
+  },
+  "15,425,194, the read": null,
+  "the read length": null,
+  "read length was": null,
+  "read length": {
+    "label": "read length",
+    "definition": "A datum of the number of base pairs per read.",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0000076"
   }
 }
