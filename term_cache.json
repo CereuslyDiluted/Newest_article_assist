@@ -6813,5 +6813,10 @@
     "label": "Full",
     "definition": "Containing as much or as many as is possible or normal.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25517"
+  },
+  "staphylococcal burden within": {
+    "label": "Burden",
+    "definition": "The quantity of something that is borne or carried by an individual or population.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85883"
   }
 }
