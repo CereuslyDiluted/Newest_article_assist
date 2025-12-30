@@ -794,5 +794,19 @@
     "label": "colonies",
     "definition": "",
     "iri": "http://snomed.info/id/258736000"
+  },
+  "appeared (4). the": null,
+  "appeared (4).": null,
+  "appeared": null,
+  "(4). the cultures": null,
+  "cultures were puri\ufb01ed": null,
+  "were puri\ufb01ed twice": null,
+  "were puri\ufb01ed": null,
+  "puri\ufb01ed twice by": null,
+  "puri\ufb01ed twice": null,
+  "puri\ufb01ed": {
+    "label": "purified",
+    "definition": "Molecule has undergone one or more purification steps to isolate it from the cellular environment.",
+    "iri": "http://purl.obolibrary.org/obo/MI_0350"
   }
 }
