@@ -2803,5 +2803,24 @@
     "label": "type",
     "definition": "",
     "iri": "http://purl.org/dc/terms/type"
+  },
+  "strain pg45 (atcc": null,
+  "pg45 (atcc 25523).": null,
+  "pg45 (atcc": null,
+  "(atcc 25523). infect": null,
+  "(atcc 25523).": null,
+  "(atcc": null,
+  "2012. comparative geno-plasticity": null,
+  "comparative geno-plasticity analysis": null,
+  "comparative geno-plasticity": null,
+  "geno-plasticity analysis of": null,
+  "geno-plasticity analysis": null,
+  "geno-plasticity": null,
+  "analysis of mycoplasma": null,
+  "analysis of": null,
+  "analysis": {
+    "label": "analysis",
+    "definition": "A result that is produced from the detailed examination of data to come to some conclusion.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0003108"
   }
 }
