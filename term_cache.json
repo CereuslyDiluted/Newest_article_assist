@@ -953,5 +953,10 @@
     "label": "viable",
     "definition": "A viability quality inhering in a bearer or a population by virtue of the bearer's ability to survive or the long term survival ability of a given population. [PATO]",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000719"
+  },
+  "method": {
+    "label": "method",
+    "definition": "The protocol for an assay.",
+    "iri": "http://purl.obolibrary.org/obo/ExO_0000090"
   }
 }
