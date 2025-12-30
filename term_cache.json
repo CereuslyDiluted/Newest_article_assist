@@ -1963,5 +1963,10 @@
     "label": "Microbial Contamination",
     "definition": "The undesirable presence of microorganisms or microbes such as bacteria and fungi (yeasts and molds).",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C92081"
+  },
+  "waste management f": {
+    "label": "waste management",
+    "definition": "A planned process that involves all aspects of dealing with the waste produced in experiments.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0002845"
   }
 }
