@@ -1313,5 +1313,10 @@
     "label": "Infections",
     "definition": "Invasion of the host organism by microorganisms or their toxins or by parasites that can cause pathological conditions or diseases.",
     "iri": "http://id.nlm.nih.gov/mesh/D007239"
+  },
+  "heat": {
+    "label": "heat",
+    "definition": "Mutation induced by exposure to a temperature that is higher than 25 degrees Celsius.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000468"
   }
 }
