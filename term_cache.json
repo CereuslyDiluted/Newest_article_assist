@@ -5588,5 +5588,10 @@
     "label": "Some",
     "definition": "At least a small amount or number of, but not a large amount of, or often.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65099"
+  },
+  "activity is present": {
+    "label": "Ulceration is Present",
+    "definition": "A result that ulceration is present",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160707"
   }
 }
