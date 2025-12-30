@@ -3083,5 +3083,10 @@
     "label": "Clinical Trials and Surveys Corporation",
     "definition": "Other in United States established in 1989",
     "iri": "https://ror.org/02yp59539"
+  },
+  "were signi\ufb01cant": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
   }
 }
