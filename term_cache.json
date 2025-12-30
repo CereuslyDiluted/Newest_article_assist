@@ -1718,5 +1718,10 @@
     "label": "Both",
     "definition": "One and the other; relating to or being two in conjunction.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
+  },
+  "and sequenced to": {
+    "label": "Sequenced Acquisition",
+    "definition": "Image acquisition that is performed by acquiring single or multi detector data while rotating the source about the gantry while the table is not moving; additional slices may be acquired by incrementing the table position and again rotating the source about the gantry while the table is not moving. (from DICOM)",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C203520"
   }
 }
