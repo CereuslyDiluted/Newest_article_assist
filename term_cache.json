@@ -2498,5 +2498,10 @@
     "label": "Disturbance",
     "definition": "A departure or divergence from that which is considered normal.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C75521"
+  },
+  "sterile water": {
+    "label": "sterile water",
+    "definition": "Sterile water is water which does not contain lliving organisms.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_00005791"
   }
 }
