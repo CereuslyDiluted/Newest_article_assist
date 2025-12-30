@@ -5168,5 +5168,10 @@
     "label": "abnormal motor capabilities/coordination/movement",
     "definition": "altered ability to coordinate voluntary movement or repetitive, compulsive movements",
     "iri": "http://purl.obolibrary.org/obo/MP_0002066"
+  },
+  "of bsfl were": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
   }
 }
