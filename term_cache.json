@@ -7883,5 +7883,10 @@
     "label": "per/per pronouns",
     "definition": "A pronoun set composed of per, pers, and perself.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_011539"
+  },
+  "treatment. the": {
+    "label": "The Cancer Treatment Center",
+    "definition": "Healthcare in United States established in 1986",
+    "iri": "https://ror.org/05waabg59"
   }
 }
