@@ -1808,5 +1808,10 @@
     "label": "sterile",
     "definition": "A fertility quality inhering in a bearer by virtue of the bearer's being incapable of initiating, sustaining, or supporting reproduction.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000956"
+  },
+  "intestinal": {
+    "label": "Intestinal",
+    "definition": "Of, or related to, or referring to the intestines.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25266"
   }
 }
