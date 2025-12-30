@@ -1883,5 +1883,10 @@
     "label": "Culturally and Economically Diverse Group",
     "definition": "Groups of individuals that exhibit differing characteristic behavior in customs, attitudes, practices, and behaviors, or are predisposed to certain health histories due to differences in ethnicity, race, religion, national origin, or economic standing (DCCPS)",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C18725"
+  },
+  "method for biological": {
+    "label": "biological measurement method",
+    "definition": "The determination of the relative strength of a substance (e.g., a drug or hormone or toxicant) by comparing its effect on a test organism with that of a standard preparation. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0001116"
   }
 }
