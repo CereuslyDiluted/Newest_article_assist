@@ -6858,5 +6858,10 @@
     "label": "answer to question",
     "definition": "An information content entity that is the answer to a specific question",
     "iri": "http://purl.obolibrary.org/obo/OPMI_0000022"
+  },
+  "beyond having documented": {
+    "label": "Beyond",
+    "definition": "Past a place or outside an area.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C151408"
   }
 }
