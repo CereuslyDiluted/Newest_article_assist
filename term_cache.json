@@ -8293,5 +8293,10 @@
     "label": "Orbital margin",
     "definition": "The mostly sharp edge of the orbital opening that is the peripheral border of the base of the pyramidal orbit.",
     "iri": "http://purl.obolibrary.org/obo/UBERON_0035849"
+  },
+  "shaker. the triplicate": {
+    "label": "shaker",
+    "definition": "Animals rotate back and forth around their longitudinal axes.",
+    "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0000780"
   }
 }
