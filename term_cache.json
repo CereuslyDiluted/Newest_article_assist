@@ -3793,5 +3793,10 @@
     "label": "reduced",
     "definition": "Qualifier that describes a phenotype that has reduced penetrance or expressivity when compared to wild-type.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000343"
+  },
+  "number of": {
+    "label": "number of averages",
+    "definition": "The number of averages is the number of individual values taken for calculating a mean value. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001672"
   }
 }
