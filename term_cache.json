@@ -893,5 +893,10 @@
     "label": "glass",
     "definition": "Glass is an amorphous (non-crystalline) solid which is often transparent.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_01000480"
+  },
+  "taken": {
+    "label": "Taken",
+    "definition": "Having been accepted for some purpose; ingested as a medication.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25701"
   }
 }
