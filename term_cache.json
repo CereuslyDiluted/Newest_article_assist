@@ -15908,5 +15908,10 @@
     "label": "Supplemental Data File",
     "definition": "An electronic file containing additional content related to a data submission.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C175247"
+  },
+  "1, xlsx \ufb01le,": {
+    "label": "xlsx",
+    "definition": "MS Excel spreadsheet format consisting of a set of XML documents stored in a ZIP-compressed file.",
+    "iri": "http://edamontology.org/format_3620"
   }
 }
