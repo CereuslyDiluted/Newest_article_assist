@@ -16873,5 +16873,10 @@
     "label": "food waste",
     "definition": "A waste material which is primarily composed of uneaten food and removed from the food supply chain.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03600006"
+  },
+  "by gut microbiome.": {
+    "label": "gut microbiome measurement",
+    "definition": "quantification of some aspect of an individual's micrbiome of the gut",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0007874"
   }
 }
