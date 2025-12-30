@@ -26,7 +26,36 @@ def extract_pdf_layout(pdf_path):
                 "line": int(line),
                 "word_no": int(word_no)
             })
+# --- NEW: Rejoin hyphenated words across line breaks ---
+merged_words = []
+skip_next = False
 
+for i in range(len(words)):
+    if skip_next:
+        skip_next = False
+        continue
+
+    current = words[i]
+    text = current["text"]
+
+    # If a word ends with a hyphen, try to merge with the next word
+    if text.endswith("-") and i + 1 < len(words):
+        next_word = words[i + 1]
+        merged_text = text.rstrip("-") + next_word["text"]
+
+        # Create a merged word entry
+        merged_word = current.copy()
+        merged_word["text"] = merged_text
+
+        merged_words.append(merged_word)
+        skip_next = True
+    else:
+        merged_words.append(current)
+
+# Replace original words with merged version
+words = merged_words
+
+        
         pages_output.append({
             "page_number": page_index + 1,
             "width": page.rect.width,
