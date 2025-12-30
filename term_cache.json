@@ -268,5 +268,10 @@
     "label": "Targeting",
     "definition": "The process of directing an agent to a specific anatomic location.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64542"
+  },
+  "uvrc": {
+    "label": "uvrC",
+    "definition": "Probable excinuclease ABC (subunit C-nuclease) UvrC",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000886672"
   }
 }
