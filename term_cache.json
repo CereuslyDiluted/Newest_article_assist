@@ -5893,5 +5893,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "prior to": {
+    "label": "Prior to Study",
+    "definition": "The time period before the study.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C175039"
   }
 }
