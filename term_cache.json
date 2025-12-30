@@ -7708,5 +7708,10 @@
     "label": "Ventilated Cigarette",
     "definition": "A cigarette that incorporates a special filter perforated with small holes. A cigarette of this design results in lower machine-measured tar and nicotine yields and was promoted as safer and marketed as a \"light\" cigarette.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C162671"
+  },
+  "containers at 25\u00b0c.": {
+    "label": "Quantity Final Containers Returned",
+    "definition": "Quantity of final containers returned.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C106328"
   }
 }
