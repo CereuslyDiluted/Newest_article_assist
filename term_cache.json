@@ -4363,5 +4363,10 @@
     "label": "Substantially Decreased",
     "definition": "A subjective response indicating that something is or was substantially decreased.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C164133"
+  },
+  "less prominent. the": {
+    "label": "prominent",
+    "definition": "A quality inhering in a bearer by virtue of the bearer's standing out or projecting beyond a surface or line.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001482"
   }
 }
