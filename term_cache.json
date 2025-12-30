@@ -2008,5 +2008,10 @@
     "label": "Elimination Diets",
     "definition": "Temporary dietary restrictions designed to help identify specific foods or FOOD ADDITIVES that trigger ALLERGIC REACTIONS, symptoms of DIGESTIVE SYSTEM DISORDERS, or other adverse food reactions.",
     "iri": "http://id.nlm.nih.gov/mesh/D000092724"
+  },
+  "has become": {
+    "label": "Have Recently Lost Weight and Clothing Has Become Looser Question",
+    "definition": "A question about whether an individual has or had recent weight loss so that their clothing has become looser.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C157018"
   }
 }
