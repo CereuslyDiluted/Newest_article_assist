@@ -5073,5 +5073,10 @@
     "label": "indicating",
     "definition": "Indicating is signaling to make something known to the user about a flow. [NIST]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003488"
+  },
+  "heavy dominance by": {
+    "label": "dominance",
+    "definition": "Undertaking or practicing the dominant role in BDSM activities.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_001305"
   }
 }
