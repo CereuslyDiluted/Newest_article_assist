@@ -4173,5 +4173,10 @@
     "label": "CFU reduction assay",
     "definition": "CFU reduction assay is an assay that measures the reduction of the colony forming units of infected pathogens in vaccine-vaccinated animals compared to nonvaccinated animals.",
     "iri": "http://purl.obolibrary.org/obo/VO_0000242"
+  },
+  "inclusion": {
+    "label": "inclusion compound",
+    "definition": "A complex in which one component (the host) forms a cavity or, in the case of a crystal, a crystal lattice containing spaces in the shape of long tunnels or channels in which molecular entities of a second chemical species (the guest) are located. There is no covalent bonding between guest and host, the attraction being generally due to van der Waals forces.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_39022"
   }
 }
