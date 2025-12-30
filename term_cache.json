@@ -1323,5 +1323,20 @@
     "label": "Paired-End Sequencing",
     "definition": "A DNA sequencing strategy where a single read is initiated from each end of a DNA fragment.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C150423"
+  },
+  "of the genome,": null,
+  "the genome, paired-end": null,
+  "the genome,": null,
+  "genome, paired-end libraries": null,
+  "genome, paired-end": null,
+  "genome,": null,
+  "paired-end libraries with": null,
+  "paired-end libraries": null,
+  "libraries with an": null,
+  "libraries with": null,
+  "libraries": {
+    "label": "Libraries",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/OMIT_0009075"
   }
 }
