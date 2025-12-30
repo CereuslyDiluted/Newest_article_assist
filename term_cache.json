@@ -1893,5 +1893,10 @@
     "label": "Conversion",
     "definition": "PEFF keyword for the description of the conversion from original format to this current one.",
     "iri": "http://purl.obolibrary.org/obo/PEFF_0000016"
+  },
+  "and plant wastes": {
+    "label": "voiding of nitrogenous wastes",
+    "definition": "During the first day after feeding, deamination of amino acids produces excess nitrogen which is voided in the form of low molecular weight nitrogenous metabolites.",
+    "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002046"
   }
 }
