@@ -1214,5 +1214,11 @@
     "label": "ILLUMINA data",
     "definition": "",
     "iri": "http://www.ebi.ac.uk/swo/SWO_0000233"
+  },
+  "analysis software were": null,
+  "analysis software": {
+    "label": "analysis software",
+    "definition": "Analysis software.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1001456"
   }
 }
