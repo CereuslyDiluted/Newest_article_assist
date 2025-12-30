@@ -4978,5 +4978,10 @@
     "label": "operational taxonomic unit matrix",
     "definition": "Operational Taxonomic Unit matrix  is a data item, organized as a table, where organismal taxonomic units, computed by sequence analysis and genetic distance calculation, are counted in a set of biological or environmental samples. The table is  used to appraise biodiversity of a population or community of living organism.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0001968"
+  },
+  "indicated bacterial diversity": {
+    "label": "Diversity",
+    "definition": "Variety; quality, state, fact, or instance of being different.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
   }
 }
