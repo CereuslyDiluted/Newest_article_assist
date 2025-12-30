@@ -7648,5 +7648,10 @@
     "label": "inferred MHC restriction based on type of effector T cell utilized in T cell assay",
     "definition": "An inferred MHC restriction determined by a positive outcome in a T cell assay using specific T cell subsets as effector cells or by a negative outcome when a spceific subset is blocked by antibodies.",
     "iri": "http://purl.obolibrary.org/obo/MRO_0001730"
+  },
+  "(27). bsfl used": {
+    "label": "used",
+    "definition": "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven .",
+    "iri": "http://www.w3.org/ns/prov#used"
   }
 }
