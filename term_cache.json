@@ -1318,5 +1318,10 @@
     "label": "heat",
     "definition": "Mutation induced by exposure to a temperature that is higher than 25 degrees Celsius.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000468"
+  },
+  "infant": {
+    "label": "Infant",
+    "definition": "An age group comprised of individuals between one month and two years of age.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C27956"
   }
 }
