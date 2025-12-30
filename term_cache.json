@@ -5098,5 +5098,10 @@
     "label": "number of substrates",
     "definition": "Number of molecules which are acted upon by an enzyme.",
     "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "enterococcus populations in": {
+    "label": "Iberian populations in Spain",
+    "definition": "A population made up of 162 samples from Iberian populations individuals recruited in Spain as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation European.",
+    "iri": "http://purl.obolibrary.org/obo/HANCESTRO_0768"
   }
 }
