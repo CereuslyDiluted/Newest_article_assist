@@ -1303,5 +1303,10 @@
     "label": "produced by",
     "definition": "a produced_by b iff some process that occurs_in b has_output a.",
     "iri": "http://purl.obolibrary.org/obo/RO_0003001"
+  },
+  "limited": {
+    "label": "Limited",
+    "definition": "Restricted or in amount, size, or extent.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C142988"
   }
 }
