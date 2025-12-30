@@ -1553,5 +1553,10 @@
     "label": "050  legume animal feeds (al) (ccpr)",
     "definition": "Legume animal feeds include various species of leguminous plants used for animal forage, grazing, fodder hay or silage, with or without seed. Several species are grown exclusively for animal feeding purposes, whereas some others are grown primarily as food crops. The \"waste\" parts of the latter crops are often used as animal feed, either in the fresh form or as hay.\nThe entire commodity may be consumed by livestock animals.",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03400753"
+  },
+  "the presence of": {
+    "label": "decoupling in the presence of scalar interactions",
+    "definition": "A sequence of composite pulses designed to remove signal splitting due to heteronuclear J-couplings in multinuclear liquid NMR experiments. Also used to allow transfer of magnetisation between nuclei (by making the spins precess with at the same chemical shift and thus enjoy strong coupling\u2013-isotropic mixing). For the pulse sequence see J. Magn. Reson., (1988), 77, pg 274.",
+    "iri": "http://purl.obolibrary.org/obo/CHMO_0001846"
   }
 }
