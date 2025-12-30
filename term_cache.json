@@ -2822,5 +2822,19 @@
     "label": "analysis",
     "definition": "A result that is produced from the detailed examination of data to come to some conclusion.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0003108"
+  },
+  "mycoplasma bovis hb0801": null,
+  "hb0801 (chinese isolate).": null,
+  "hb0801 (chinese": null,
+  "(chinese isolate). plos": null,
+  "(chinese isolate).": null,
+  "isolate). plos one": null,
+  "isolate). plos": null,
+  "isolate).": null,
+  "plos one 7:e38239.": null,
+  "plos one": {
+    "label": "PLOS One",
+    "definition": "",
+    "iri": "https://portal.issn.org/resource/issn/1932-6203"
   }
 }
