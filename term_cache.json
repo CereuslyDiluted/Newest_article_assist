@@ -8368,5 +8368,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "were determined from": {
+    "label": "determined by",
+    "definition": "s determined by f if and only if s is a type of system, and f is a material entity that is part of s, such that f exerts a strong causal influence on the functioning of s, and the removal of f would cause the collapse of s.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002507"
   }
 }
