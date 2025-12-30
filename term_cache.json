@@ -4198,5 +4198,10 @@
     "label": "Genera (Croatia)",
     "definition": "Company in Croatia established in 1901",
     "iri": "https://ror.org/0518jvn15"
+  },
+  "whole, seldomly encountered": {
+    "label": "DRRI-2 - D: Encountered Land Mines",
+    "definition": "Deployment Risk and Resilience Inventory-2 (DRRI-2) During deployment: I encountered land or water mines, booby traps, or roadside bombs (for example, IEDs).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C141914"
   }
 }
