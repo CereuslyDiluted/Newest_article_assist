@@ -16653,5 +16653,10 @@
     "label": "electron",
     "definition": "Elementary particle not affected by the strong force having a spin quantum number 1/2, a negative elementary charge and a rest mass of 0.000 548 579 903(13) u. [IUPAC]",
     "iri": "http://purl.allotrope.org/ontologies/material#AFM_0000418"
+  },
+  "pathogenic anaerobic": {
+    "label": "Variant Pathogenic/Likely Pathogenic",
+    "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
   }
 }
