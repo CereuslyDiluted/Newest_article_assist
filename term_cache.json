@@ -3883,5 +3883,10 @@
     "label": "Prevention and Treatment Evaluation",
     "definition": "An assessment of the effectiveness of therapeutic intervention or preventive treatment.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C15839"
+  },
+  "day; however, fungal": {
+    "label": "day",
+    "definition": "A one-dimensional temporal region which spans the duration an astronomical body completes one rotation on its axis.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01003005"
   }
 }
