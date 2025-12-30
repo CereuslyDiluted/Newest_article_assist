@@ -193,5 +193,10 @@
     "label": "Affected",
     "definition": "To be influenced by or changed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64917"
+  },
+  "third": {
+    "label": "Third",
+    "definition": "A suffix denoting the third person having the same complete name (first, middle, and family names).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49464"
   }
 }
