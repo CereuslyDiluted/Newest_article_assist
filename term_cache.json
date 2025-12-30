@@ -6003,5 +6003,10 @@
     "label": "has potential to developmentally contribute to",
     "definition": "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y",
     "iri": "http://purl.obolibrary.org/obo/RO_0002385"
+  },
+  "increased glucose concentration": {
+    "label": "blood increased concentration glucose blood, abnormal",
+    "definition": "Abnormal(ly) increased concentration (of) blood (blood of glucose).",
+    "iri": "http://purl.obolibrary.org/obo/ZP_0146097"
   }
 }
