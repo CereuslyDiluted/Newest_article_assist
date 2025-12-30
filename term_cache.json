@@ -4628,5 +4628,10 @@
     "label": "dominance",
     "definition": "Undertaking or practicing the dominant role in BDSM activities.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_001305"
+  },
+  "few genera. sequence": {
+    "label": "Few",
+    "definition": "An indefinite but relatively small number.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64942"
   }
 }
