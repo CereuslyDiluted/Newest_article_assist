@@ -668,5 +668,10 @@
     "label": "made",
     "definition": "Something that was made by this agent.",
     "iri": "http://xmlns.com/foaf/0.1/made"
+  },
+  "equal": {
+    "label": "equal",
+    "definition": "This ordering relation for qualitative values indicates that the subject is equal to the object.",
+    "iri": "http://schema.org/equal"
   }
 }
