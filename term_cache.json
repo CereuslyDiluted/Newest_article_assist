@@ -16648,5 +16648,10 @@
     "label": "maize Rhizoctonia banded leaf fungal disease",
     "definition": "A maize disease caused by a Rhizoctonia solani affecting a vascular leaf.",
     "iri": "http://purl.obolibrary.org/obo/PSO_0000100"
+  },
+  "of potato. electron": {
+    "label": "electron",
+    "definition": "Elementary particle not affected by the strong force having a spin quantum number 1/2, a negative elementary charge and a rest mass of 0.000 548 579 903(13) u. [IUPAC]",
+    "iri": "http://purl.allotrope.org/ontologies/material#AFM_0000418"
   }
 }
