@@ -7128,5 +7128,10 @@
     "label": "number of treatments",
     "definition": "Number of treatments tested during an experiment.",
     "iri": "http://purl.obolibrary.org/obo/AGRO_00000323"
+  },
+  "and days are": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
   }
 }
