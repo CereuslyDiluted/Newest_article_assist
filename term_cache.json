@@ -388,5 +388,10 @@
     "label": "Performed",
     "definition": "Executed and carried through to completion.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C38000"
+  },
+  "illumina hiseq": {
+    "label": "Illumina HiSeq",
+    "definition": "A DNA sequencer manufactured by the Illumina corporation using sequence-by-synthesis chemistry, enabling deep sequencing and high yield.",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0100110"
   }
 }
