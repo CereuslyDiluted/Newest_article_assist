@@ -15853,5 +15853,10 @@
     "label": "Third Way",
     "definition": "Nonprofit in United States established in 2005",
     "iri": "https://ror.org/047vwpj87"
+  },
+  "anova was used": {
+    "label": "'ANOVA'",
+    "definition": "ANOVA or Analysis of Variance is a hypothesis testing algorithm which a variable is partitioned into components attributable to different sources of variation.",
+    "iri": "http://www.ebi.ac.uk/swo/SWO_1100011"
   }
 }
