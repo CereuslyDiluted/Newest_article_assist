@@ -6853,5 +6853,10 @@
     "label": "Major Help to Transfer",
     "definition": "A response indicating that an individual can transfer and sit, but needs major, physical help from one or two people.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C131941"
+  },
+  "answer this question.": {
+    "label": "answer to question",
+    "definition": "An information content entity that is the answer to a specific question",
+    "iri": "http://purl.obolibrary.org/obo/OPMI_0000022"
   }
 }
