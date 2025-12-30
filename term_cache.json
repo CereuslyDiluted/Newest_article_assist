@@ -8413,5 +8413,10 @@
     "label": "Substrate",
     "definition": "Any chemical that can be modified or consumed during a chemical reaction or biological process.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C120264"
+  },
+  "with morphology": {
+    "label": "inviable spore with normal morphology",
+    "definition": "A viability phenotype in which a spore is unable to survive under conditions in which wild type spores survive, and has a normal morphology (i.e. size, shape, or structure). An inviable spore does not germinate.",
+    "iri": "http://purl.obolibrary.org/obo/FYPO_0000944"
   }
 }
