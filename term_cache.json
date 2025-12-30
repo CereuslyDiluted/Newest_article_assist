@@ -1853,5 +1853,10 @@
     "label": "component of",
     "definition": "A physical object that is a component that is a physical part of another physical object that is a system. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/property#AFX_0000939"
+  },
+  "contain": {
+    "label": "Contain",
+    "definition": "Include or hold; have within or as a component.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C79873"
   }
 }
