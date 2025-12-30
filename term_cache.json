@@ -16963,5 +16963,10 @@
     "label": "Rapidly",
     "definition": "Acting or occurring in a brief period of time.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65069"
+  },
+  "resolves single": {
+    "label": "Single",
+    "definition": "Never married.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C150721"
   }
 }
