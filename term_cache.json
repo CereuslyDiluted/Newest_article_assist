@@ -2323,5 +2323,10 @@
     "label": "colony",
     "definition": "An organism population persisting in a site it has colonized.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000615"
+  },
+  "plastic": {
+    "label": "plastic",
+    "definition": "An environnmental material which 1) is composed primarily of polymers with high molecular mass and 2) once deformed does not spontaneously return to its original shape.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_06105101"
   }
 }
