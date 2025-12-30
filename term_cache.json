@@ -2558,5 +2558,10 @@
     "label": "Known",
     "definition": "Recognized, familiar, or within the scope of knowledge.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C80137"
+  },
+  "to cause sickness": {
+    "label": "to cause disease",
+    "definition": "to cause disease is the capability to materially change a biological object in that it functions abnormally.",
+    "iri": "http://semanticscience.org/resource/SIO_000547"
   }
 }
