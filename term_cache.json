@@ -16008,5 +16008,10 @@
     "label": "environmental pets or farm animals information",
     "definition": "An information content entity about presence of pets or farm animals in the environment of subject, if yes the animals should be specified; can include multiple animals present.",
     "iri": "http://purl.obolibrary.org/obo/EUPATH_0000602"
+  },
+  "2018. microbial community": {
+    "label": "microbial community",
+    "definition": "An ecological community which is composed of co-existing populations of microbial organisms that interact, directly or indirectly, such that they impact one another's ecological fitness.",
+    "iri": "http://purl.obolibrary.org/obo/PCO_1000004"
   }
 }
