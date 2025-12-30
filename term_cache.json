@@ -263,5 +263,10 @@
     "label": "polymerase chain reaction",
     "definition": "PCR is the process in which a DNA polymerase is used to amplify a piece of DNA by in vitro enzymatic replication. As PCR progresses, the DNA thus generated is itself used as a template for replication. This sets in motion a chain reaction in which the DNA template is exponentially amplified.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0000415"
+  },
+  "targeting": {
+    "label": "Targeting",
+    "definition": "The process of directing an agent to a specific anatomic location.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64542"
   }
 }
