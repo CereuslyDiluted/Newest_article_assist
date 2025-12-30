@@ -6188,5 +6188,10 @@
     "label": "antimicrobial",
     "definition": "A material entity with an antimicrobial disposition.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000558"
+  },
+  "activity is present": {
+    "label": "Ulceration is Present",
+    "definition": "A result that ulceration is present",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160707"
   }
 }
