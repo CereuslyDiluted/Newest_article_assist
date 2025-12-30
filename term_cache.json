@@ -1403,5 +1403,10 @@
     "label": "development",
     "definition": "Developmental processes.",
     "iri": "http://purl.obolibrary.org/obo/APO_0000023"
+  },
+  "to support": {
+    "label": "to support",
+    "definition": "To firmly fix a material into a defined location, or secure an energy or signal into a specific course. [NIST]",
+    "iri": "http://purl.allotrope.org/ontologies/function#AFFN_0000028"
   }
 }
