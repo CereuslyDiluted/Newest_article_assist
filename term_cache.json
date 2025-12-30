@@ -3518,5 +3518,10 @@
     "label": "Were Itchy Question",
     "definition": "A question about whether an individual feels or felt itchy.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "taken after 3": {
+    "label": "Taken",
+    "definition": "Having been accepted for some purpose; ingested as a medication.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25701"
   }
 }
