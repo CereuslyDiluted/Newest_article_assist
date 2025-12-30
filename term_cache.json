@@ -1718,5 +1718,26 @@
     "label": "PacBio RS",
     "definition": "A DNA sequencer manufactured by the Pacific Biosciences corporation which utilizes \u201cSMRT Cells\u201d for single-molecule real-time sequencing. The RS was the first model made by the company.",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0100131"
+  },
+  "sequencing platforms. the": null,
+  "sequencing platforms.": null,
+  "platforms. the illumina": null,
+  "platforms. the": null,
+  "platforms.": null,
+  "illumina data were": null,
+  "used to evaluate": null,
+  "to evaluate the": null,
+  "to evaluate": null,
+  "evaluate the complexity": null,
+  "evaluate the": null,
+  "evaluate": null,
+  "the complexity of": null,
+  "the complexity": null,
+  "complexity of the": null,
+  "complexity of": null,
+  "complexity": {
+    "label": "complexity",
+    "definition": "A monadic quality of continuant inhering in a bearer by virtue of the bearer's being intricate and compounded.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001502"
   }
 }
