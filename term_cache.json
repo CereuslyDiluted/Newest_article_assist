@@ -2358,5 +2358,10 @@
     "label": "necessary (continuant)",
     "definition": "A necessity quality (continuant) inhering in a bearer by virtue of the bearer's being essential or indispensable.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001635"
+  },
+  "the safety": {
+    "label": "The Lithuanian Maritime Safety Administration",
+    "definition": "Government in Lithuania established in 2002",
+    "iri": "https://ror.org/042qxra19"
   }
 }
