@@ -16793,5 +16793,10 @@
     "label": "Co-Culture",
     "definition": "A mixture of two or more different kinds of cells that are grown together.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C93168"
+  },
+  "staphylococcus aureus virulence": {
+    "label": "conserved virulence factor C (Staphylococcus aureus subsp. aureus NCTC 8325)",
+    "definition": "A protein that is a translation product of the cvfC gene in Staphylococcus aureus subsp. aureus NCTC 8325.",
+    "iri": "http://purl.obolibrary.org/obo/PR_Q2FYK3"
   }
 }
