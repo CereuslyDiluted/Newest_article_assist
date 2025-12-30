@@ -4008,5 +4008,10 @@
     "label": "None of These Describe Me",
     "definition": "A response indicating that an individual feels that no option listed is a good description for them.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C177109"
+  },
+  "differed for": {
+    "label": "For",
+    "definition": "The reason of something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64956"
   }
 }
