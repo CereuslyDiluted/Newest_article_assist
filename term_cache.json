@@ -88,5 +88,10 @@
     "label": "Important",
     "definition": "Of great significance, value, or consequence.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C115916"
+  },
+  "gen": {
+    "label": "GEN",
+    "definition": "The GEN file format contains genetic data and describes SNPs.",
+    "iri": "http://edamontology.org/format_3812"
   }
 }
