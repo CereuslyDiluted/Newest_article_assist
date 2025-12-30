@@ -5828,5 +5828,10 @@
     "label": "dominant",
     "definition": "A phenotypic attribute is described as dominant when it is manifest in individuals heterozygous for the allele that causes that phenotype.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000299"
+  },
+  "or exposure": {
+    "label": "exposure event or process",
+    "definition": "A process occurring within or in the vicinity of an organism that exerts some causal influence on the organism via the interaction between an exposure stimulus and an exposure receptor. The exposure stimulus may be a process, material entity or condition (for example, lack of nutrients). The exposure receptor can be an organism, organism population or a part of an organism.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002310"
   }
 }
