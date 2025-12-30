@@ -1728,5 +1728,10 @@
     "label": "assess fairness",
     "definition": "Activity/Process whereby digital objects are evaluated with the relevant FAIR metrics and assessment tools.",
     "iri": "http://purl.obolibrary.org/obo/T4FS_0000288"
+  },
+  "fungal diversity using": {
+    "label": "Diversity",
+    "definition": "Variety; quality, state, fact, or instance of being different.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
   }
 }
