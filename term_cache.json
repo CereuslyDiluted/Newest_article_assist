@@ -2928,5 +2928,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "0.0003). however, there": {
+    "label": "Someone There Question",
+    "definition": "Questions about whether an individual has someone there for them.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C172728"
   }
 }
