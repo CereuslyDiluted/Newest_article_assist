@@ -16293,5 +16293,10 @@
     "label": "review",
     "definition": "An article or book published after examination of published material on a subject.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000220"
+  },
+  "on staphylococcal food": {
+    "label": "Staphylococcal Food Poisoning",
+    "definition": "Food poisoning that is caused by Staphylococcal infection.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C35037"
   }
 }
