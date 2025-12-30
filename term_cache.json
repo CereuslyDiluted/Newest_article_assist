@@ -2293,5 +2293,10 @@
     "label": "Long-Term",
     "definition": "Involving or being in effect for a long time.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25322"
+  },
+  "and security of": {
+    "label": "University of Security and Economics",
+    "definition": "Education in Bulgaria established in 2003",
+    "iri": "https://ror.org/03athrm05"
   }
 }
