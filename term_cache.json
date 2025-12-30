@@ -2388,5 +2388,10 @@
     "label": "capable of",
     "definition": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.",
     "iri": "http://purl.obolibrary.org/obo/RO_0002215"
+  },
+  "alteration of substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
