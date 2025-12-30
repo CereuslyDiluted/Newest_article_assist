@@ -16113,5 +16113,10 @@
     "label": "blow",
     "definition": "The protein-coding gene blow (blown fuse) located on the chromosome 2R mapped at 43E1-43E3.",
     "iri": "http://identifiers.org/ncbigene/35694"
+  },
+  "conversion and ef\ufb01cient": {
+    "label": "Conversion",
+    "definition": "PEFF keyword for the description of the conversion from original format to this current one.",
+    "iri": "http://purl.obolibrary.org/obo/PEFF_0000016"
   }
 }
