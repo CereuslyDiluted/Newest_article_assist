@@ -7928,5 +7928,10 @@
     "label": "Was MR Spectroscopy Completed at Diagnosis Question",
     "definition": "A question whether MRS was completed at diagnosis.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C182181"
+  },
+  "to account for": {
+    "label": "account",
+    "definition": "An account describes authority and authorization to access resources on a system. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0001483"
   }
 }
