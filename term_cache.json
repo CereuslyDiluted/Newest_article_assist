@@ -6643,5 +6643,10 @@
     "label": "Like",
     "definition": "A feeling of fondness for a person or thing.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C77969"
+  },
+  "and lactococcus, which": {
+    "label": "during which exists",
+    "definition": "inverse of exists at [BFO]",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000157"
   }
 }
