@@ -2753,5 +2753,10 @@
     "label": "Importance Weight",
     "definition": "The relative importance granted to something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C48192"
+  },
+  "public health (13).": {
+    "label": "Public Health",
+    "definition": "The science and practice of protecting and improving the health of a community, as by preventive medicine, health education, control of communicable diseases, application of sanitary measures, and monitoring of environmental hazards.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C17039"
   }
 }
