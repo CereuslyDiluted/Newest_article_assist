@@ -1223,5 +1223,10 @@
     "label": "Level",
     "definition": "A position on a scale measuring intensity, quality, or amount.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25554"
+  },
+  "topic": {
+    "label": "Topic",
+    "definition": "A category denoting a rather broad domain or field of interest, study, application, work, data, or technology. Topics have no clearly defined borders between each other.",
+    "iri": "http://purl.obolibrary.org/obo/topic_0003"
   }
 }
