@@ -16193,5 +16193,10 @@
     "label": "specifies value of",
     "definition": "A relation between a value specification and an entity which the specification is about.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0001927"
+  },
+  "l.) prepupae for": {
+    "label": "Erwin L. Hahn Institute for Magnetic Resonance Imaging",
+    "definition": "Facility in Germany established in 2005",
+    "iri": "https://ror.org/00ns93f55"
   }
 }
