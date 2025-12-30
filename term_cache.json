@@ -1427,5 +1427,20 @@
     "label": "terms",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/GSSO_002608"
+  },
+  "4.0 international license.": null,
+  "international license. address": null,
+  "international license.": null,
+  "license. address correspondence": null,
+  "license. address": null,
+  "license.": null,
+  "address correspondence to": null,
+  "address correspondence": null,
+  "correspondence to yuming": null,
+  "correspondence to": null,
+  "correspondence": {
+    "label": "Correspondence",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C97019"
   }
 }
