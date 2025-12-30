@@ -16573,5 +16573,10 @@
     "label": "different type",
     "definition": "An evidence type concordance for evidence lines that are from different types.",
     "iri": "http://purl.obolibrary.org/obo/CIO_0000038"
+  },
+  "locations at laboratory": {
+    "label": "Age at Laboratory Test",
+    "definition": "The age of an individual when the laboratory test was conducted.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C192254"
   }
 }
