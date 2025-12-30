@@ -6063,5 +6063,10 @@
     "label": "Paraneoplastic Syndrome Status is Unknown",
     "definition": "A response that paraneoplastic syndrome status is unknown.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C160736"
+  },
+  "could have been": {
+    "label": "MFIS - Have Been Forgetful",
+    "definition": "Modified Fatigue Impact Scale (MFIS) Because of my fatigue during the past 4 weeks I have been forgetful.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C113971"
   }
 }
