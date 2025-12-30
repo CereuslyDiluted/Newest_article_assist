@@ -2433,5 +2433,10 @@
     "label": "SPP",
     "definition": "The protein-coding gene SPP located on the chromosome 2.",
     "iri": "http://identifiers.org/ncbigene/814841"
+  },
+  "there are also": {
+    "label": "NPI - Talk to People Who Are Not There",
+    "definition": "Neuropsychiatric Inventory (NPI) Does the patient talk to people who are not there?",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C100634"
   }
 }
