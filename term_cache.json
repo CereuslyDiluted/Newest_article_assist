@@ -6948,5 +6948,10 @@
     "label": "Someone There Question",
     "definition": "Questions about whether an individual has someone there for them.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C172728"
+  },
+  "been a consensus": {
+    "label": "Consensus",
+    "definition": "Agreement as the result of multiple results or opinions.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64197"
   }
 }
