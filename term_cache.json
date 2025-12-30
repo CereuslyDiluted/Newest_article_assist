@@ -1758,5 +1758,10 @@
     "label": "total number of bacterial colony forming units recovered",
     "definition": "The enumeration, i.e. measurement of the total number, of bacterial colony forming units (CFUs) in a specified sample of fluid removed from and/or solution used to wash the interior of a cavity in a body or an organ. A bacterial CFU is an individual bacterium which is able to clonally propagate itself into an entire colony of identical cells.",
     "iri": "http://purl.obolibrary.org/obo/CMO_0002657"
+  },
+  "and mrsa-speci\ufb01c cfu": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
