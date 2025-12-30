@@ -3033,5 +3033,10 @@
     "label": "Analyzed form",
     "definition": "A descriptive qualifier that indicates the nature/extent/availability of an analyte as it was determined in the sample, e.g. dissolved, labile, total etc.",
     "iri": "http://champ-project.org/images/ontology/cao.owl#CAO_000080"
+  },
+  "results": {
+    "label": "RESULTS and RESULTS Educational Fund",
+    "definition": "Nonprofit in United States established in 1980",
+    "iri": "https://ror.org/01kfs3w30"
   }
 }
