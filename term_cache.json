@@ -16923,5 +16923,10 @@
     "label": "Scalable Vector Graphics",
     "definition": "A specification for describing vector graphics using extensible markup language.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C85435"
+  },
+  "microbiome data science": {
+    "label": "data science",
+    "definition": "An interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_011173"
   }
 }
