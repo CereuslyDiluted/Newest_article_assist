@@ -8238,5 +8238,10 @@
     "label": "Was Insulin Administered During Surgery Question",
     "definition": "A question about whether insulin was administered during surgery.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C159291"
+  },
+  "collection to": {
+    "label": "Collection",
+    "definition": "Set of products and services with some common characteristics.",
+    "iri": "https://w3id.org/evorao/Collection"
   }
 }
