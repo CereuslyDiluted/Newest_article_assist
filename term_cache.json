@@ -283,5 +283,10 @@
     "label": "after",
     "definition": "T1 after t2 iff:= t2 before_or_simulataneous_with t1 and not (t1 simultaeous_with t2)",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0001739"
+  },
+  "fresh": {
+    "label": "fresh",
+    "definition": "A raw characteristic of organism(s) or organism pieces(s) which show little or no sign of decay, and which have not been subjected to rehydration or thawing.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00004722"
   }
 }
