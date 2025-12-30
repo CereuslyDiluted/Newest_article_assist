@@ -6848,5 +6848,10 @@
     "label": "Future University in Egypt",
     "definition": "Education in Egypt established in 2006",
     "iri": "https://ror.org/03s8c2x09"
+  },
+  "studies to help": {
+    "label": "Major Help to Transfer",
+    "definition": "A response indicating that an individual can transfer and sit, but needs major, physical help from one or two people.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C131941"
   }
 }
