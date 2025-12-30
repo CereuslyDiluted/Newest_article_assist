@@ -16478,5 +16478,10 @@
     "label": "rearing measurement",
     "definition": "Any measurement of a movement in which a quadrupedal subject rises up on its back legs.",
     "iri": "http://purl.obolibrary.org/obo/CMO_0001515"
+  },
+  "2021. food safety": {
+    "label": "Food Safety",
+    "definition": "Policies, practices and research that ensure the fitness of food for human consumption.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C26037"
   }
 }
