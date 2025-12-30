@@ -6513,5 +6513,10 @@
     "label": "exposure to EC 3.4.24.3 (microbial collagenase) inhibitor",
     "definition": "An exposure to EC 3.4.24.3 (microbial collagenase) inhibitor.",
     "iri": "http://purl.obolibrary.org/obo/ECTO_9001984"
+  },
+  "peptides produced commensally": {
+    "label": "produced by",
+    "definition": "a produced_by b iff some process that occurs_in b has_output a.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0003001"
   }
 }
