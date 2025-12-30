@@ -16683,5 +16683,10 @@
     "label": "composition",
     "definition": "A single physical entity inhering in an bearer by virtue of the bearer's quantities or relative ratios of subparts. [PATO]",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000025"
+  },
+  "roots after quarantine": {
+    "label": "Quarantine",
+    "definition": "Place into enforced isolation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C71902"
   }
 }
