@@ -308,5 +308,10 @@
     "label": "DNA",
     "definition": "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms (from CHEBI).",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000579"
+  },
+  "quanti\ufb01ed by": {
+    "label": "quantified by",
+    "definition": "Relation of something that is quantified by some quantity value which expresses it relative to some other thing. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002684"
   }
 }
