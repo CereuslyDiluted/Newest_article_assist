@@ -1498,5 +1498,10 @@
     "label": "University of Valle",
     "definition": "Education in Colombia established in 1945",
     "iri": "https://ror.org/00jb9vg53"
+  },
+  "maine, usa bschool": {
+    "label": "Maine",
+    "definition": "A state in the northeastern United States. Its capital is Augusta.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C43457"
   }
 }
