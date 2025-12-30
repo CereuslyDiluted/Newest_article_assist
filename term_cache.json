@@ -7168,5 +7168,10 @@
     "label": "soldier",
     "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
+  },
+  "is a novel": {
+    "label": "novel",
+    "definition": "An attribute of a genomic feature that represents a feature not previously found in a given genome, e.g. an extrachromosomal replicon or aneusomic third copy of a chromosome.",
+    "iri": "http://purl.obolibrary.org/obo/GENO_0000685"
   }
 }
