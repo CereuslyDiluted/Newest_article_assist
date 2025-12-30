@@ -5128,5 +5128,10 @@
     "label": "Were Itchy Question",
     "definition": "A question about whether an individual feels or felt itchy.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "in their presence.": {
+    "label": "Somatostatin [Presence] in Plasma",
+    "definition": "A procedure that that detects somatostatin in a plasma specimen.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C193593"
   }
 }
