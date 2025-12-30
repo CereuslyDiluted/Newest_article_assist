@@ -957,5 +957,21 @@
     "label": "Revolutions per minute (qualifier value)",
     "definition": "",
     "iri": "http://snomed.info/id/304618008"
+  },
+  "for 10 min,": null,
+  "10 min, and": null,
+  "10 min,": null,
+  "min, and the": null,
+  "min, and": null,
+  "min,": null,
+  "and the cell": null,
+  "the cell pellets": null,
+  "the cell": null,
+  "cell pellets were": null,
+  "cell pellets": null,
+  "cell": {
+    "label": "cell",
+    "definition": "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.",
+    "iri": "http://purl.obolibrary.org/obo/CL_0000000"
   }
 }
