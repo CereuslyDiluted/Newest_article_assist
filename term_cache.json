@@ -1438,5 +1438,10 @@
     "label": "Difference",
     "definition": "The quality of being unlike or dissimilar.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C46003"
+  },
+  "\ufb01rst": {
+    "label": "First",
+    "definition": "Preceding all others in time or space or degree.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25509"
   }
 }
