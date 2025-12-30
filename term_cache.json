@@ -2033,5 +2033,10 @@
     "label": "Accepted",
     "definition": "Generally approved or used.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C62559"
+  },
+  "as feed by": {
+    "label": "hyperactivity elicited by feed restriction",
+    "definition": "increased activity after restriction of food",
+    "iri": "http://purl.obolibrary.org/obo/MP_0012297"
   }
 }
