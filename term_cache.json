@@ -1113,5 +1113,10 @@
     "label": "application",
     "definition": "Intended use of the molecular entity or part thereof by humans.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_33232"
+  },
+  "generating": {
+    "label": "generating",
+    "definition": "Generating is a subtype of funcioning: A process that produces output from nothing.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0000381"
   }
 }
