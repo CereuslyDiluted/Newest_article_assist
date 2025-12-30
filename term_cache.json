@@ -16103,5 +16103,10 @@
     "label": "concentration of substrate",
     "definition": "The amount of a specific entity pool substrate present per unit of volume. The participant role 'substrate' is defined in SBO:0000015.",
     "iri": "http://biomodels.net/SBO/SBO_0000515"
+  },
+  "inhabited by black": {
+    "label": "Black people by nationality",
+    "definition": "Black persons categorized by nationality.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_003731"
   }
 }
