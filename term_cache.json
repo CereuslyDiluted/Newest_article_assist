@@ -5838,5 +5838,10 @@
     "label": "exposure to antimicrobial agent",
     "definition": "An exposure to antimicrobial agent.",
     "iri": "http://purl.obolibrary.org/obo/ECTO_0000544"
+  },
+  "origin. the antimicrobial": {
+    "label": "antimicrobial",
+    "definition": "A material entity with an antimicrobial disposition.",
+    "iri": "http://purl.obolibrary.org/obo/IDO_0000558"
   }
 }
