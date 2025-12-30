@@ -16253,5 +16253,10 @@
     "label": "Appl (fruit fly)",
     "definition": "A protein coding gene Appl in fruit fly.",
     "iri": "http://flybase.org/reports/FBgn0000108"
+  },
+  "spread of methicillin": {
+    "label": "methicillin",
+    "definition": "A penicillin that is 6-aminopenicillanic acid in which one of the amino hydrogens is replaced by a 2,6-dimethoxybenzoyl group.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_6827"
   }
 }
