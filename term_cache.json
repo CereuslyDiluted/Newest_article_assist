@@ -16038,5 +16038,10 @@
     "label": "protein",
     "definition": "A biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome.",
     "iri": "http://purl.obolibrary.org/obo/CHEBI_36080"
+  },
+  "for aquafeed.": {
+    "label": "For",
+    "definition": "The reason of something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64956"
   }
 }
