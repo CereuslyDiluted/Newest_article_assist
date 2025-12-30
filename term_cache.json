@@ -2004,5 +2004,27 @@
     "label": "Inner",
     "definition": "Inside or closer to the inside of the body or object.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C37980"
+  },
+  "gaps and to": null,
+  "gaps and": null,
+  "gaps": null,
+  "correct the single-base": null,
+  "the single-base polymorphisms": null,
+  "the single-base": null,
+  "single-base polymorphisms for": null,
+  "single-base polymorphisms": null,
+  "single-base": null,
+  "polymorphisms for the": null,
+  "polymorphisms for": null,
+  "polymorphisms": null,
+  "for the \ufb01nal": null,
+  "the \ufb01nal assembly": null,
+  "the \ufb01nal": null,
+  "\ufb01nal assembly results.": null,
+  "\ufb01nal assembly": null,
+  "\ufb01nal": {
+    "label": "Final",
+    "definition": "Conclusive in a process or progression.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25508"
   }
 }
