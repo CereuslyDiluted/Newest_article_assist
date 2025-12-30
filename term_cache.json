@@ -833,5 +833,10 @@
     "label": "plant",
     "definition": "Any of a kingdom (Plantae) of living things typically lacking locomotive movement or obvious nervous or sensory organs and possessing cellulose cell walls.",
     "iri": "http://purl.obolibrary.org/obo/BTO_0001481"
+  },
+  "ingredients": {
+    "label": "ingredients",
+    "definition": "A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
+    "iri": "http://schema.org/ingredients"
   }
 }
