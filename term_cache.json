@@ -3103,5 +3103,10 @@
     "label": "capable of part of",
     "definition": "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.",
     "iri": "http://purl.obolibrary.org/obo/RO_0002216"
+  },
+  "within contaminated potato": {
+    "label": "Contaminated",
+    "definition": "The presence of any substance or organism that makes a preparation impure.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68768"
   }
 }
