@@ -1468,5 +1468,10 @@
     "label": "Each",
     "definition": "Used to refer to every member of a group of people or things, considered individually.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64933"
+  },
+  "not signi\ufb01cant": {
+    "label": "Not Significant",
+    "definition": "A result that does not allow a researcher to conclude that differences in the data obtained for different samples are meaningful.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C201564"
   }
 }
