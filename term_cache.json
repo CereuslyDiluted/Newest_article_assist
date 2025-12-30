@@ -783,5 +783,10 @@
     "label": "analysis",
     "definition": "A result that is produced from the detailed examination of data to come to some conclusion.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0003108"
+  },
+  "pathogen": {
+    "label": "Pathogen",
+    "definition": "Biological entity that causes disease in its host, which is typically an infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus.",
+    "iri": "https://w3id.org/evorao/Pathogen"
   }
 }
