@@ -1383,5 +1383,10 @@
     "label": "reference",
     "definition": "A reference is an information content entity that is referred to in another information content entity for the purpose of comparison. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002008"
+  },
+  "left": {
+    "label": "left",
+    "definition": "A directional quality inhering in a bearer by virtue of the bearer's direction that is similar to the direction of an object to the north when it faces east.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000366"
   }
 }
