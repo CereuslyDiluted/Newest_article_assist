@@ -15823,5 +15823,10 @@
     "label": "Calculated result data item",
     "definition": "A logical set of calculated values, e.g. the slope, intercept and r2 of a calibration curve",
     "iri": "http://champ-project.org/images/ontology/cao.owl#CAO_000086"
+  },
+  "were analyzed separately": {
+    "label": "Analyzed form",
+    "definition": "A descriptive qualifier that indicates the nature/extent/availability of an analyte as it was determined in the sample, e.g. dissolved, labile, total etc.",
+    "iri": "http://champ-project.org/images/ontology/cao.owl#CAO_000080"
   }
 }
