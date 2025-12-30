@@ -8308,5 +8308,10 @@
     "label": "Then",
     "definition": "Occurring at a time in the near future.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65106"
+  },
+  "diluted and plated": {
+    "label": "diluted",
+    "definition": "A concentration which is relatively low. [PATO]",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001161"
   }
 }
