@@ -4123,5 +4123,10 @@
     "label": "absent third ventricle in the brain",
     "definition": "Absence of the third ventricle in the brain.",
     "iri": "http://purl.obolibrary.org/obo/UPHENO_0027496"
+  },
+  "on selective media": {
+    "label": "growth defective on low phosphate media",
+    "definition": "Animals are unable to grow on media depleted of phosphate.",
+    "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0002235"
   }
 }
