@@ -16233,5 +16233,10 @@
     "label": "bleomycin resistance protein (Staphylococcus aureus)",
     "definition": "A bleomycin resistance protein that is encoded in the genome of Staphylococcus aureus.",
     "iri": "http://purl.obolibrary.org/obo/PR_Q7DJ53"
+  },
+  "by pbp2a in": {
+    "label": "pbp2a (Streptococcus pneumoniae R6)",
+    "definition": "A protein coding gene pbp2a in Streptococcus pneumoniae R6.",
+    "iri": "http://www.ensembl.org/id/spr1823"
   }
 }
