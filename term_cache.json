@@ -1893,5 +1893,10 @@
     "label": "membrane",
     "definition": "A lipid bilayer along with all the proteins and protein complexes embedded in it and attached to it.",
     "iri": "http://purl.obolibrary.org/obo/GO_0016020"
+  },
+  "disruption": {
+    "label": "disruption",
+    "definition": "a negative regulation that results in a disruption.",
+    "iri": "http://purl.obolibrary.org/obo/INO_0000091"
   }
 }
