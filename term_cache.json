@@ -1898,5 +1898,10 @@
     "label": "voiding of nitrogenous wastes",
     "definition": "During the first day after feeding, deamination of amino acids produces excess nitrogen which is voided in the form of low molecular weight nitrogenous metabolites.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002046"
+  },
+  "scale. however, contamination": {
+    "label": "contamination",
+    "definition": "The process of existence without reproduction of a pathogen of a particular biological taxon in or on some material entity or the process of reproduction of a pathogen in or on a material entity that is not an organism.",
+    "iri": "http://purl.obolibrary.org/obo/APOLLO_SV_00000186"
   }
 }
