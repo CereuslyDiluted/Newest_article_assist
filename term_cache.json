@@ -16198,5 +16198,10 @@
     "label": "Erwin L. Hahn Institute for Magnetic Resonance Imaging",
     "definition": "Facility in Germany established in 2005",
     "iri": "https://ror.org/00ns93f55"
+  },
+  "piglets. anim feed": {
+    "label": "Feed",
+    "definition": "To move something gradually into or through.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C69427"
   }
 }
