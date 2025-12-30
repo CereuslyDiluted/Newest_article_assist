@@ -2003,5 +2003,10 @@
     "label": "integration",
     "definition": "The method used to obtain the integral of a function or curve. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0000970"
+  },
+  "into the diets": {
+    "label": "Elimination Diets",
+    "definition": "Temporary dietary restrictions designed to help identify specific foods or FOOD ADDITIVES that trigger ALLERGIC REACTIONS, symptoms of DIGESTIVE SYSTEM DISORDERS, or other adverse food reactions.",
+    "iri": "http://id.nlm.nih.gov/mesh/D000092724"
   }
 }
