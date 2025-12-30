@@ -743,5 +743,10 @@
     "label": "Locus",
     "definition": "The position of a gene or a chromosomal marker on a chromosome; also, a stretch of DNA at a particular place on a particular chromosome. The use of locus is sometimes restricted to mean regions of DNA that are expressed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45822"
+  },
+  "tandem repeat": {
+    "label": "Tandem repeat",
+    "definition": "Two or more adjacent copies of a region (of length greater than 1).",
+    "iri": "http://ensembl.org/glossary/ENSGLOSSARY_0000119"
   }
 }
