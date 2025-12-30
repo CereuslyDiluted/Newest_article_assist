@@ -3803,5 +3803,10 @@
     "label": "Harvest of Product from Cell Media",
     "definition": "Collection of a material of interest from a cell culture supernatant.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C112936"
+  },
+  "not containing black": {
+    "label": "black",
+    "definition": "A color that lacks any hues as parts.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000317"
   }
 }
