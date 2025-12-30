@@ -15888,5 +15888,10 @@
     "label": "Were Itchy Question",
     "definition": "A question about whether an individual feels or felt itchy.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
+  },
+  "individually using the": {
+    "label": "QTci - Individually Corrected",
+    "definition": "A corrected QT interval which takes into account the physiologic shortening of the QT interval which occurs as the heart rate increases. Correction method applies regression analysis techniques to individual subject pre-therapy QT and RR interval data over a range of heart rates, then applies this correction to on-treatment QT values. This method theoretically corrects the QT interval to that which would be observed at a heart rate of 1 cycle per second. [ICH E14]",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C71098"
   }
 }
