@@ -56,12 +56,12 @@ for i in range(len(words)):
 words = merged_words
 
         
-pages_output.append({
+    pages_output.append({
         "page_number": page_index + 1,
         "width": page.rect.width,
         "height": page.rect.height,
         "words": words
         })
 
-doc.close()
-return pages_output
+    doc.close()
+    return pages_output
