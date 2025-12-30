@@ -883,5 +883,10 @@
     "label": "potato",
     "definition": "A shoot axis tuber of a potato plant (Solanum tuberosum).",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03315354"
+  },
+  "containing": {
+    "label": "containing",
+    "definition": "Containing is the state of keeping an object in the inside of a cavity. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003623"
   }
 }
