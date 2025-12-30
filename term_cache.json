@@ -7323,5 +7323,10 @@
     "label": "microbiome",
     "definition": "A collection or collectivity of microorganisms.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0004982"
+  },
+  "in larval \ufb02ora.": {
+    "label": "increased apoptosis in larval aorta",
+    "definition": "An increased occurrence of apoptotic process in larval aorta.",
+    "iri": "http://purl.obolibrary.org/obo/XPO_0133802"
   }
 }
