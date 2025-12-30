@@ -4358,5 +4358,10 @@
     "label": "Contrast",
     "definition": "The degree of difference between the lightest and darkest areas of an image or object.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C70754"
+  },
+  "bacillus were substantially": {
+    "label": "Substantially Decreased",
+    "definition": "A subjective response indicating that something is or was substantially decreased.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C164133"
   }
 }
