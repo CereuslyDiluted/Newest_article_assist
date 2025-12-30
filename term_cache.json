@@ -16588,5 +16588,10 @@
     "label": "Dual Oxidase 1",
     "definition": "Dual oxidase 1 (1551 aa, ~177 kDa) is encoded by the human DUOX1 gene. This protein is involved in the positive regulation of both lactoperoxidase antimicrobial activity and thyroid hormone biosynthesis.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C200905"
+  },
+  "duox and": {
+    "label": "Duox (fruit fly)",
+    "definition": "A protein coding gene Duox in fruit fly.",
+    "iri": "http://flybase.org/reports/FBgn0283531"
   }
 }
