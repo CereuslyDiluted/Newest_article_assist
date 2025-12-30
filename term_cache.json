@@ -1578,5 +1578,10 @@
     "label": "adoption",
     "definition": "A process whereby a person assumes the parenting of another, usually a child, from that person's biological or legal parent or parents.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_003906"
+  },
+  "technology. fortunately, black": {
+    "label": "black",
+    "definition": "A color that lacks any hues as parts.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000317"
   }
 }
