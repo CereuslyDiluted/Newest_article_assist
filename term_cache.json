@@ -2543,5 +2543,14 @@
     "label": "decreased virulence",
     "definition": "An altered virulence phenotype where the rate, frequency, timing, or extent of the ability of a microbe to cause disease in another organism (the host) is decreased relative to a designated control.",
     "iri": "http://purl.obolibrary.org/obo/OMP_0000061"
+  },
+  "with increasing pas-": null,
+  "with increasing": null,
+  "increasing pas- sages": null,
+  "increasing pas-": null,
+  "increasing": {
+    "label": "Increasing",
+    "definition": "",
+    "iri": "http://snomed.info/id/260369004"
   }
 }
