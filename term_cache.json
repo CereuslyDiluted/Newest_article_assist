@@ -733,5 +733,10 @@
     "label": "based on",
     "definition": "The sequence on which the description of a modified sequence is based.",
     "iri": "http://purl.uniprot.org/core/basedOn"
+  },
+  "based": {
+    "label": "BASED",
+    "definition": "Bis(beta-[4-azidosalicylamido]-ethyl) disulfide.",
+    "iri": "http://purl.obolibrary.org/obo/XLMOD_02093"
   }
 }
