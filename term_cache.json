@@ -2093,5 +2093,10 @@
     "label": "bsf",
     "definition": "The protein-coding gene bsf (bicoid stability factor) located on the chromosome 2L mapped at 36F5-36F5.",
     "iri": "http://identifiers.org/ncbigene/35100"
+  },
+  "(bsfl), has emerged": {
+    "label": "F0 adults emerged from field collected eggs",
+    "definition": "Mosquitoes collected as eggs in the field and grown to adult stage before determining resistance to insecticides.",
+    "iri": "http://purl.obolibrary.org/obo/MIRO_30000002"
   }
 }
