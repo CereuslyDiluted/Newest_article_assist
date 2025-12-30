@@ -1463,5 +1463,10 @@
     "label": "Same",
     "definition": "Equal, or closely similar or comparable, in kind or quality or quantity or degree.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64637"
+  },
+  "each": {
+    "label": "Each",
+    "definition": "Used to refer to every member of a group of people or things, considered individually.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64933"
   }
 }
