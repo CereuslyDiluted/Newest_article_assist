@@ -738,5 +738,10 @@
     "label": "BASED",
     "definition": "Bis(beta-[4-azidosalicylamido]-ethyl) disulfide.",
     "iri": "http://purl.obolibrary.org/obo/XLMOD_02093"
+  },
+  "locus": {
+    "label": "Locus",
+    "definition": "The position of a gene or a chromosomal marker on a chromosome; also, a stretch of DNA at a particular place on a particular chromosome. The use of locus is sometimes restricted to mean regions of DNA that are expressed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C45822"
   }
 }
