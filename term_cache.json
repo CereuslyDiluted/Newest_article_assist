@@ -7203,5 +7203,10 @@
     "label": "Minimal Clinically Important Difference",
     "definition": "A statistically significant minimum set of clinical outcomes that demonstrates a clinical benefit of an intervention or treatment.",
     "iri": "http://id.nlm.nih.gov/mesh/D000071081"
+  },
+  "isolates are likely": {
+    "label": "Likely",
+    "definition": "Having a good chance of being the case or of coming about.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C85550"
   }
 }
