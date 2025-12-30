@@ -2663,5 +2663,10 @@
     "label": "can",
     "definition": "carbonic anhydrase",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000944832"
+  },
+  "radiation, and heat": {
+    "label": "drying by infrared heat radiation",
+    "definition": "LanguaL curation note: Used when susceptible materials are dried by electromagnetic radiation with wave-lengths between 0.76um and 1 mm.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03470166"
   }
 }
