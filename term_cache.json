@@ -16278,5 +16278,10 @@
     "label": "different type",
     "definition": "An evidence type concordance for evidence lines that are from different types.",
     "iri": "http://purl.obolibrary.org/obo/CIO_0000038"
+  },
+  "sequence types in": {
+    "label": "Sequence database filter types",
+    "definition": "Filter types which are used to filter a sequence database.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1001511"
   }
 }
