@@ -748,5 +748,10 @@
     "label": "Tandem repeat",
     "definition": "Two or more adjacent copies of a region (of length greater than 1).",
     "iri": "http://ensembl.org/glossary/ENSGLOSSARY_0000119"
+  },
+  "identi\ufb01cation": {
+    "label": "Identification",
+    "definition": "A taxonomic determination (e.g., the assignment to a taxon).",
+    "iri": "http://rs.tdwg.org/dwc/terms/Identification"
   }
 }
