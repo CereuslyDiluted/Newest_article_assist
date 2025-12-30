@@ -2523,5 +2523,10 @@
     "label": "number of substrates",
     "definition": "Number of molecules which are acted upon by an enzyme.",
     "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "are necessary to": {
+    "label": "necessary (continuant)",
+    "definition": "A necessity quality (continuant) inhering in a bearer by virtue of the bearer's being essential or indispensable.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001635"
   }
 }
