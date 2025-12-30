@@ -16768,5 +16768,10 @@
     "label": "resistant to an antimicrobial agent",
     "definition": "An antimicrobial agent resistance phenotype where growth and reproduction of a microbe occurs in the presence of the antimicrobial agent specified in the Annotation Extension field.",
     "iri": "http://purl.obolibrary.org/obo/OMP_0007876"
+  },
+  "activity of": {
+    "label": "activity directly regulates activity of",
+    "definition": "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.",
+    "iri": "http://purl.obolibrary.org/obo/RO_0002448"
   }
 }
