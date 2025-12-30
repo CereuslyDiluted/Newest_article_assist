@@ -4908,5 +4908,10 @@
     "label": "Completely Unable",
     "definition": "A response indicating that an individual is completely unable to do something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C110958"
+  },
+  "the substrate inoculated": {
+    "label": "Substrate",
+    "definition": "Any chemical that can be modified or consumed during a chemical reaction or biological process.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C120264"
   }
 }
