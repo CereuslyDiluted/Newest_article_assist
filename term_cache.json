@@ -8133,5 +8133,10 @@
     "label": "band",
     "definition": "The area that is oblong and differs from surrounding areas in coloration, surface sculpture and setae.",
     "iri": "http://purl.obolibrary.org/obo/HAO_0000163"
+  },
+  "jars were stored": {
+    "label": "stored object role",
+    "definition": "A stored object is the storage role of an material entity that is being stored in a storage medium. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/role#AFRL_0000487"
   }
 }
