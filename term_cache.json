@@ -2405,5 +2405,27 @@
     "label": "equal",
     "definition": "This ordering relation for qualitative values indicates that the subject is equal to the object.",
     "iri": "http://schema.org/equal"
+  },
+  "contributions to the": null,
+  "contributions to": null,
+  "contributions": null,
+  "to the work": null,
+  "the work described": null,
+  "the work": null,
+  "work described in": null,
+  "work described": null,
+  "the manuscript, they": null,
+  "manuscript, they are": null,
+  "manuscript, they": null,
+  "they are listed": null,
+  "they are": null,
+  "are listed as": null,
+  "are listed": null,
+  "listed as co-\ufb01rst": null,
+  "listed as": null,
+  "listed": {
+    "label": "Listed",
+    "definition": "Included on a list of items.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C203645"
   }
 }
