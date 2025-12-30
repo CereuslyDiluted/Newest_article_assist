@@ -6298,5 +6298,10 @@
     "label": "Additional",
     "definition": "Added; extra; further.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25406"
+  },
+  "micro\ufb02ora and could": {
+    "label": "Could Do Sports and Exercise Other Kids Same Age Could Do Question",
+    "definition": "A question about whether an individual is or was able to do sports and exercise that others of same age could do.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C192042"
   }
 }
