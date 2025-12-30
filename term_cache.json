@@ -1688,5 +1688,10 @@
     "label": "TSA cell",
     "definition": "TSA is an aggressive and poorly immunogenic cell line established from a moderately differentiated mammary adenocarcinoma that arose spontaneously in a multiparous BALB/c mouse.",
     "iri": "http://purl.obolibrary.org/obo/BTO_0004282"
+  },
+  "(sa) to quantify": {
+    "label": "Quantify Research (Sweden)",
+    "definition": "Company in Sweden established in 2011",
+    "iri": "https://ror.org/05nqb8479"
   }
 }
