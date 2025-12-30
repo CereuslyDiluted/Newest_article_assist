@@ -2933,5 +2933,10 @@
     "label": "Someone There Question",
     "definition": "Questions about whether an individual has someone there for them.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C172728"
+  },
+  "a signi\ufb01cant difference": {
+    "label": "Difference",
+    "definition": "The quality of being unlike or dissimilar.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C46003"
   }
 }
