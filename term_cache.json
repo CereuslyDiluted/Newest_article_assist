@@ -1819,5 +1819,15 @@
     "label": "assembly",
     "definition": "The process of individual components of a sample associating to form a new pattern or structure.",
     "iri": "http://purl.obolibrary.org/obo/CHMO_0001302"
+  },
+  "with the longest": null,
+  "the longest n50": null,
+  "the longest": null,
+  "longest n50 value,": null,
+  "longest n50": null,
+  "longest": {
+    "label": "Longest",
+    "definition": "Having the greater length of two or the greatest length of several.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25558"
   }
 }
