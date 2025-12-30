@@ -548,5 +548,10 @@
     "label": "Information",
     "definition": "Knowledge derived from study, experience, or instruction that has been gathered or received by communication.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C48191"
+  },
+  "custom": {
+    "label": "custom",
+    "definition": "Frequent repetition of the same behavior; way of behavior common to many; ordinary manner; habitual practice; method of doing, living or behaving.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_009672"
   }
 }
