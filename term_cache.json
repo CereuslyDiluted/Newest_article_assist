@@ -6818,5 +6818,10 @@
     "label": "Burden",
     "definition": "The quantity of something that is borne or carried by an individual or population.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C85883"
+  },
+  "the substrate could": {
+    "label": "Could not Shake Off the Blues Question",
+    "definition": "A question about whether an individual could or could not shake off the blues.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C126431"
   }
 }
