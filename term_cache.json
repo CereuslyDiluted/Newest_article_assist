@@ -1488,5 +1488,10 @@
     "label": "sampling",
     "definition": "Sampling is the process of taking parts or partitions of an object aggregate or data set for the interest for studying it. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003634"
+  },
+  "interaction": {
+    "label": "interaction",
+    "definition": "Previously described interaction now being used as an interactor to describe hierarchical build-up of complexes.",
+    "iri": "http://purl.obolibrary.org/obo/MI_0317"
   }
 }
