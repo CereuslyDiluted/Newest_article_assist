@@ -284,7 +284,7 @@ def commit_cache_to_github():
         content = f.read()
 
     # GitHub API URL
-    url = f"url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}""
+    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}""
 
     # Get current file SHA
     r = requests.get(url, headers={"Authorization": f"token {token}"})
