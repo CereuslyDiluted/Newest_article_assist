@@ -5933,5 +5933,10 @@
     "label": "larval alimentary canal",
     "definition": "The organ of digestion and food uptake of the mosquito larva, which has also functions of ionic and osmotic regulation and of excretion.",
     "iri": "http://purl.obolibrary.org/obo/TGMA_0001576"
+  },
+  "have contributed to": {
+    "label": "caused or contributed to by",
+    "definition": "A relationship between a condition (a phenotype or disease) and an entity (a genotype or genetic variation) where the entity has a causal role for the condition.",
+    "iri": "http://purl.obolibrary.org/obo/SCDO_0000660"
   }
 }
