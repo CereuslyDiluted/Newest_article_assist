@@ -1333,5 +1333,10 @@
     "label": "Staphylococcal Food Poisoning",
     "definition": "Food poisoning that is caused by Staphylococcal infection.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C35037"
+  },
+  "over": {
+    "label": "Over",
+    "definition": "Being above or beyond something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C65018"
   }
 }
