@@ -648,5 +648,10 @@
     "label": "biosample",
     "definition": "Biological source material characterized by an experiment.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0003024"
+  },
+  "work": {
+    "label": "work",
+    "definition": "A physical quality which is equal to the energy transferred by a force to a moving object.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001026"
   }
 }
