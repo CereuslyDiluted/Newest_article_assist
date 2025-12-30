@@ -1808,5 +1808,10 @@
     "label": "The Antitumor Testing Shared Resource",
     "definition": "The Antitumor Testing Shared Resource provides Cancer Center investigators with in vitro and in vivo testing and screening service aimed on identification and preclinical evaluation of potential anticancer drugs.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C39527"
+  },
+  "treatments": {
+    "label": "number of treatments",
+    "definition": "Number of treatments tested during an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00000323"
   }
 }
