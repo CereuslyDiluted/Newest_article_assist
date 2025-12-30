@@ -2638,5 +2638,10 @@
     "label": "grade of meat",
     "definition": "LanguaL curation note: Use the appropriate narrower term only if meat is the first or sole ingredient of a food product.",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03530064"
+  },
+  "products by mrsa": {
+    "label": "mrsA",
+    "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
   }
 }
