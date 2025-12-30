@@ -673,5 +673,10 @@
     "label": "equal",
     "definition": "This ordering relation for qualitative values indicates that the subject is equal to the object.",
     "iri": "http://schema.org/equal"
+  },
+  "listed": {
+    "label": "Listed",
+    "definition": "Included on a list of items.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C203645"
   }
 }
