@@ -6023,5 +6023,10 @@
     "label": "Expected",
     "definition": "Considered likely or probable; anticipated.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25501"
+  },
+  "to bene\ufb01t fast-growing": {
+    "label": "Fast Growing",
+    "definition": "An indication that something is growing at a fast rate.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C124825"
   }
 }
