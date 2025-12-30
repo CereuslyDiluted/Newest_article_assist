@@ -1503,5 +1503,10 @@
     "label": "Observed",
     "definition": "Ascertained or determined through monitoring or observation.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25599"
+  },
+  "media": {
+    "label": "Media",
+    "definition": "Any mechanism of mass communication.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C19442"
   }
 }
