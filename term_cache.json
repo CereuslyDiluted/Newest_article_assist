@@ -2298,5 +2298,10 @@
     "label": "University of Security and Economics",
     "definition": "Education in Bulgaria established in 2003",
     "iri": "https://ror.org/03athrm05"
+  },
+  "bsfl use, particularly": {
+    "label": "Use",
+    "definition": "To put into action or service.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C95018"
   }
 }
