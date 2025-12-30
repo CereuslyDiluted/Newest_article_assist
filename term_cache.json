@@ -16463,5 +16463,10 @@
     "label": "Preparations",
     "definition": "A list (concatenated and separated) of preparations and preservation methods for a specimen.",
     "iri": "http://rs.tdwg.org/dwc/terms/preparations"
+  },
+  "https://doi.org/10.1016/j .lwt.2021.111806.": {
+    "label": "J wave",
+    "definition": "The J wave is a positive convex deflection that occurs at the junction of the QRS complex and ST segment, the J-point.",
+    "iri": "http://purl.obolibrary.org/obo/HP_0012272"
   }
 }
