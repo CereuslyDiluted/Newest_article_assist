@@ -5063,5 +5063,10 @@
     "label": "gram positive",
     "definition": "A gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
     "iri": "http://purl.obolibrary.org/obo/OMP_0000188"
+  },
+  "and gram-negative bacteria": {
+    "label": "Gram Negative Bacteria",
+    "definition": "Any bacteria with a thin peptidoglycan layer and an outer lipid membrane that stains pink with the Gram staining technique.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C173514"
   }
 }
