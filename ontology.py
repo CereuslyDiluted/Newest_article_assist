@@ -82,7 +82,7 @@ def lookup_term_ols4(term):
         "q": term,
         "queryFields": "label",
         "fields": "label,description,iri",
-        "exact": "true"
+        "exact": "false"
     }
 
     try:
