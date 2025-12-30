@@ -16483,5 +16483,10 @@
     "label": "Food Safety",
     "definition": "Policies, practices and research that ensure the fitness of food for human consumption.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C26037"
+  },
+  "of consuming black": {
+    "label": "consuming",
+    "definition": "A process where a essential material entity participant ceases to exist at the end and  it was existing at the start. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003316"
   }
 }
