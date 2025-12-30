@@ -4203,5 +4203,10 @@
     "label": "DRRI-2 - D: Encountered Land Mines",
     "definition": "Deployment Risk and Resilience Inventory-2 (DRRI-2) During deployment: I encountered land or water mines, booby traps, or roadside bombs (for example, IEDs).",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C141914"
+  },
+  "our study (table": {
+    "label": "Study Characteristics Table",
+    "definition": "A table of data specifically regarding study characteristics.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C168896"
   }
 }
