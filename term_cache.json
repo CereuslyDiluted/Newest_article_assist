@@ -993,5 +993,10 @@
     "label": "ubiquitous",
     "definition": "Expressed everywhere at some specified stage.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0000069"
+  },
+  "keywords": {
+    "label": "keywords",
+    "definition": "List of terms used to tag and categorize this Item.",
+    "iri": "https://w3id.org/evorao/keywords"
   }
 }
