@@ -6093,5 +6093,10 @@
     "label": "mixed potential and kinetic energy",
     "definition": "Energy which is the sum of 1) kinetic energy and 2) potential energy.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_2000018"
+  },
+  "further investigation of": {
+    "label": "Further",
+    "definition": "To or at a greater distance in time or space.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25519"
   }
 }
