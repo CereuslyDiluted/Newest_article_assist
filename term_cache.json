@@ -5983,5 +5983,10 @@
     "label": "exudation of carbohydrates",
     "definition": "A process in which carbohydrates are transported from the interior of an organism to its surroundings.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_1000747"
+  },
+  "contained in an": {
+    "label": "contained in",
+    "definition": "Inverse of contains. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0001049"
   }
 }
