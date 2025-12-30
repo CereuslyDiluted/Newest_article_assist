@@ -173,5 +173,10 @@
     "label": "farm",
     "definition": "An area of land which is used for the cultivation of crops or grazing of livestock, including any agricultural constructions therein.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_00000078"
+  },
+  "serious": {
+    "label": "Serious",
+    "definition": "Causing fear or anxiety by threatening great harm; of great consequence.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C54035"
   }
 }
