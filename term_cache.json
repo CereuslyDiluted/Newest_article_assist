@@ -1633,5 +1633,10 @@
     "label": "biomass yield on substrate",
     "definition": "generation of biomass for an substrate through a defined reaction/s.",
     "iri": "http://biomodels.net/SBO/SBO_0000669"
+  },
+  "autoclaved potatoes containing": {
+    "label": "autoclaved sand",
+    "definition": "Autoclaved sand is sand that has been sterlised by exposure to high pressure saturated steam at at least 121 degrees Celsius.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_01000350"
   }
 }
