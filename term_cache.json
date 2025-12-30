@@ -3678,5 +3678,10 @@
     "label": "day 7 of adulthood",
     "definition": "7th day after eclosion.",
     "iri": "http://purl.obolibrary.org/obo/FBdv_00007082"
+  },
+  "in the third": {
+    "label": "absent third ventricle in the brain",
+    "definition": "Absence of the third ventricle in the brain.",
+    "iri": "http://purl.obolibrary.org/obo/UPHENO_0027496"
   }
 }
