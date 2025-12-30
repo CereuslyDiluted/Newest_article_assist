@@ -5293,5 +5293,10 @@
     "label": "Shannon diversity index",
     "definition": "A community species diversity metric that accounts for both the abundance and evenness of the species present quantified via the following formula: the negative sum of, the product of the proportion of species i relative to the total number of species (pi) multiplied by the natural logarithm of this proportion (ln pi).",
     "iri": "http://purl.obolibrary.org/obo/PCO_0000062"
+  },
+  "value (h9) 3": {
+    "label": "H9",
+    "definition": "This human ES cell line expresses cell surface markers specific to undifferentiated nonhuman primate ES and human EC cells: stage-specific embryonic antigen (SSEA)\u20133, SSEA-4, TRA-l-60, TRA-1- 81, and alkaline phosphatase. It has a normal 46, XX karyotype. Teratomas are formed upon cell injection into SCID mice. These teratomas include cells from all three germ layers.\n\nIsolation & Growth Conditions\nThis cell line can be cultured using feeder cells or in a feeder-free protocol. When using feeder cells, human ESC culture medium should be compreised of Advanced DMEM/F12 supplemented with knockout serum replacement (20%), non-essential amino acids (1x), L-glutamine (1x), penicillin/streptomycin (1x), \u03b2-mercaptoethanol (1x) and FGF-2 (4 ng/ml). Maintain the human ESCs on Matrigel using hESC medium conditioned by mouse embryonic fibroblasts.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0003045"
   }
 }
