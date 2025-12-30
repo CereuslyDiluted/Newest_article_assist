@@ -2363,5 +2363,10 @@
     "label": "The Lithuanian Maritime Safety Administration",
     "definition": "Government in Lithuania established in 2002",
     "iri": "https://ror.org/042qxra19"
+  },
+  "as feed. several": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   }
 }
