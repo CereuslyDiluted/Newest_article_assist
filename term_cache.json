@@ -6573,5 +6573,10 @@
     "label": "aerobic",
     "definition": "A quality inhering in a bearer by virtue of the bearer's dependence on oxygen.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001455"
+  },
+  "environment, a combination": {
+    "label": "Combination",
+    "definition": "A collection of things that have been assembled together to form a new whole.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C61517"
   }
 }
