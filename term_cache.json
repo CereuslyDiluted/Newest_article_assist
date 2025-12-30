@@ -973,5 +973,18 @@
     "label": "cell",
     "definition": "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.",
     "iri": "http://purl.obolibrary.org/obo/CL_0000000"
+  },
+  "pellets were used": null,
+  "pellets were": null,
+  "pellets": null,
+  "used to isolate": null,
+  "to isolate genomic": null,
+  "isolate genomic dna": null,
+  "isolate genomic": null,
+  "genomic dna with": null,
+  "genomic dna": {
+    "label": "Genomic DNA",
+    "definition": "The DNA that is part of the normal chromosomal complement of an organism.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C95940"
   }
 }
