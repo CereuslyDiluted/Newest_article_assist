@@ -16523,5 +16523,10 @@
     "label": "Key",
     "definition": "A value used to identify a record in a database.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C46002"
+  },
+  "acids for anti-gram-negative": {
+    "label": "gram negative",
+    "definition": "A gram stain phenotype where a cell or cells do not retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000189"
   }
 }
