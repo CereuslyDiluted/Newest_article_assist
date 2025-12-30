@@ -2433,5 +2433,10 @@
     "label": "Average",
     "definition": "A statistical calculation describing the central tendency of a set of numbers; used to interpret quantitative data.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C37917"
+  },
+  "larva": {
+    "label": "larva",
+    "definition": "Organism during the period between hatching and prepupa formation.",
+    "iri": "http://purl.obolibrary.org/obo/FBbt_00001727"
   }
 }
