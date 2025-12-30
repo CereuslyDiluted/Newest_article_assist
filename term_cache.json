@@ -15978,5 +15978,10 @@
     "label": "Center for Innovation",
     "definition": "Facility in United States",
     "iri": "https://ror.org/04c1v2b17"
+  },
+  "research at": {
+    "label": "Research Complex at Harwell",
+    "definition": "Facility in United Kingdom established in 2006",
+    "iri": "https://ror.org/00gqx0331"
   }
 }
