@@ -2483,5 +2483,10 @@
     "label": "S phase checkpoint variant",
     "definition": "Mitotic cells exhibit variations during the passage through a cell cycle control point late in the S phase of the mitotic cell cycle, which ensures DNA replication is complete, compared to control cells.",
     "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0000875"
+  },
+  "resistant to the": {
+    "label": "resistant to",
+    "definition": "A resistance quality inhering in a bearer by virtue of the bearer's resistance to a stimulus.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0001178"
   }
 }
