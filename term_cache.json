@@ -1493,5 +1493,10 @@
     "label": "Molecular and Cellular Biology",
     "definition": "Interdisciplinary studies combining cell biology and molecular biology.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C19372"
+  },
+  "university of": {
+    "label": "University of Valle",
+    "definition": "Education in Colombia established in 1945",
+    "iri": "https://ror.org/00jb9vg53"
   }
 }
