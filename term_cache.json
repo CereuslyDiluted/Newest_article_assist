@@ -1803,5 +1803,10 @@
     "label": "Genera (Croatia)",
     "definition": "Company in Croatia established in 1901",
     "iri": "https://ror.org/0518jvn15"
+  },
+  "shared among the": {
+    "label": "The Antitumor Testing Shared Resource",
+    "definition": "The Antitumor Testing Shared Resource provides Cancer Center investigators with in vitro and in vivo testing and screening service aimed on identification and preclinical evaluation of potential anticancer drugs.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C39527"
   }
 }
