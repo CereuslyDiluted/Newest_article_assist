@@ -1203,5 +1203,10 @@
     "label": "Many",
     "definition": "An indefinite large quantity that is considered to be greater than several.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C78728"
+  },
+  "group": {
+    "label": "group",
+    "definition": "A group is a an aggregate of people. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/material#AFM_0001084"
   }
 }
