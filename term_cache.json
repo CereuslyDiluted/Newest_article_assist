@@ -2963,5 +2963,10 @@
     "label": "Treatment Free Epoch",
     "definition": "A period in a study immediately following the end of treatment during which the subject(s) is no longer receiving investigational therapy or treatment and is not being assessed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C186262"
+  },
+  "statistically different": {
+    "label": "different type",
+    "definition": "An evidence type concordance for evidence lines that are from different types.",
+    "iri": "http://purl.obolibrary.org/obo/CIO_0000038"
   }
 }
