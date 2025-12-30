@@ -17038,5 +17038,10 @@
     "label": "theory",
     "definition": "A model that explains some principle rules about something. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000994"
+  },
+  "measurement of diversity.": {
+    "label": "Diversity",
+    "definition": "Variety; quality, state, fact, or instance of being different.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
   }
 }
