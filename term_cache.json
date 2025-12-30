@@ -7168,5 +7168,10 @@
     "label": "Over",
     "definition": "Being above or beyond something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65018"
+  },
+  "spp. research has": {
+    "label": "SPP",
+    "definition": "The protein-coding gene SPP located on the chromosome 2.",
+    "iri": "http://identifiers.org/ncbigene/814841"
   }
 }
