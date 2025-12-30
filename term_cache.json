@@ -6088,5 +6088,10 @@
     "label": "reservoir",
     "definition": "The reservoir is a container that stores solutions. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0000378"
+  },
+  "and potential": {
+    "label": "mixed potential and kinetic energy",
+    "definition": "Energy which is the sum of 1) kinetic energy and 2) potential energy.",
+    "iri": "http://purl.obolibrary.org/obo/ENVO_2000018"
   }
 }
