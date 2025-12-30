@@ -4733,5 +4733,10 @@
     "label": "Research and Development Centre for Wood-Based Panels",
     "definition": "Facility in Poland established in 1957",
     "iri": "https://ror.org/05cnz8f61"
+  },
+  "and b. p1mrsa1bsfl": {
+    "label": "Haemophilus b and Hepatitis B vaccine",
+    "definition": "a viral vaccine against Hepatitis B virus and at the same time against bacterial H. influenzae serotype b.",
+    "iri": "http://purl.obolibrary.org/obo/VO_0000746"
   }
 }
