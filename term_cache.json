@@ -1838,5 +1838,10 @@
     "label": "Universally Unique Identifier",
     "definition": "A 128 bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C54100"
+  },
+  "present.": {
+    "label": "present",
+    "definition": "A quality inhering in a bearer by virtue of the bearer's existence.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0000467"
   }
 }
