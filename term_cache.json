@@ -4653,5 +4653,10 @@
     "label": "Diversity",
     "definition": "Variety; quality, state, fact, or instance of being different.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C62263"
+  },
+  "rarefaction (data not": {
+    "label": "Rarefaction",
+    "definition": "The calculation of species richness for a number of individual samples, based on plots of the number of species as a function of the number of samples (rarefaction curves).",
+    "iri": "http://edamontology.org/operation_3797"
   }
 }
