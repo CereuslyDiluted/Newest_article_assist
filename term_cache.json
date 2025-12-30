@@ -7198,5 +7198,10 @@
     "label": "has fewer parts of type",
     "definition": "The bearer of this quality has_part < n AND has_part > 0 of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0002001"
+  },
+  "the 16s sequencing": {
+    "label": "16S rRNA sequencing",
+    "definition": "16S ribosomal RNA sequencing is a sequencing method used to identify and compare bacteria present within a given sample. 16S rRNA gene sequencing is a well-established method for studying phylogeny and taxonomy of samples from complex microbiomes or environments that are difficult or impossible to study.",
+    "iri": "http://purl.obolibrary.org/obo/GENEPIO_0000053"
   }
 }
