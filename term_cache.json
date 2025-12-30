@@ -1588,5 +1588,10 @@
     "label": "soldier",
     "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
+  },
+  "may have some": {
+    "label": "Have Some Difficulties Swallowing Fluids Question",
+    "definition": "A question about how often an individual has or had some difficulties swallowing fluids.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136545"
   }
 }
