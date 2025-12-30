@@ -1594,5 +1594,15 @@
     "label": "Then",
     "definition": "Occurring at a time in the near future.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65106"
+  },
+  "puri\ufb01ed, end repaired,": null,
+  "puri\ufb01ed, end": null,
+  "puri\ufb01ed,": null,
+  "end repaired, and": null,
+  "end repaired,": null,
+  "end": {
+    "label": "end",
+    "definition": "The process boundary when the process ends. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003286"
   }
 }
