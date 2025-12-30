@@ -5003,5 +5003,10 @@
     "label": "Fragmentation of the epiphyses of the phalanges of the hand",
     "definition": "Fragmented appearance of the epiphyses of the phalanges of the fingers.",
     "iri": "http://purl.obolibrary.org/obo/HP_0010232"
+  },
+  "gut are believed": {
+    "label": "Are",
+    "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
   }
 }
