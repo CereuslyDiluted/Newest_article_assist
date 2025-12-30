@@ -1613,5 +1613,10 @@
     "label": "Child Can be Rebellious Question",
     "definition": "A question about whether a child is sometimes rebellious.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C183265"
+  },
+  "to humans and": {
+    "label": "exposure to humans",
+    "definition": "A history of exposure to Homo sapiens.",
+    "iri": "http://purl.obolibrary.org/obo/ECTO_3000005"
   }
 }
