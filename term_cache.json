@@ -1997,5 +1997,12 @@
     "label": "Local",
     "definition": "Of or belonging to a restricted area or locality.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C67263"
+  },
+  "inner gaps and": null,
+  "inner gaps": null,
+  "inner": {
+    "label": "Inner",
+    "definition": "Inside or closer to the inside of the body or object.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C37980"
   }
 }
