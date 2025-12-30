@@ -2654,5 +2654,28 @@
     "label": "Genes",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/OMIT_0006994"
+  },
+  "by pcr. mol": null,
+  "by pcr.": null,
+  "pcr. mol cell": null,
+  "pcr. mol": null,
+  "pcr.": null,
+  "i. 2009. abyss:": null,
+  "2009. abyss: a": null,
+  "2009. abyss:": null,
+  "abyss: a parallel": null,
+  "abyss: a": null,
+  "abyss:": null,
+  "a parallel assembler": null,
+  "a parallel": null,
+  "parallel assembler for": null,
+  "parallel assembler": null,
+  "parallel": null,
+  "assembler for short": null,
+  "assembler for": null,
+  "assembler": {
+    "label": "Assembler",
+    "definition": "Occupations held by individuals who assemble prefabricated parts of components to form subassemblies, products and equipment.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C198721"
   }
 }
