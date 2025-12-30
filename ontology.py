@@ -138,8 +138,8 @@ SCI_PREFIXES = (
 )
 
 SCI_SUFFIXES = (
-    "ase", "itis", "osis", "emia", "phage", "phyte", "coccus",
-    "viridae", "aceae", "ales"
+    "ase","itis","osis","emia","phage","phyte","coccus","viridae","aceae","ales",
+    "bacteria","mycetes","mycotina","phyta","phyceae","mycota","archaea"
 )
 
 
@@ -188,6 +188,10 @@ def is_candidate_term(word):
 
     # Class names (Mollicutes-style)
     if re.match(r"^[A-Z][a-z]+$", word_clean):
+        return True
+    
+    # Broad taxonomic names (e.g., Firmicutes, Actinobacteria, Proteobacteria)
+    if re.match(r"^[A-Z][a-zA-Z]+$", word_clean):
         return True
 
     # Protein names
