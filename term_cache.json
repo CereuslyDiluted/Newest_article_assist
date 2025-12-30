@@ -2098,5 +2098,10 @@
     "label": "F0 adults emerged from field collected eggs",
     "definition": "Mosquitoes collected as eggs in the field and grown to adult stage before determining resistance to insecticides.",
     "iri": "http://purl.obolibrary.org/obo/MIRO_30000002"
+  },
+  "alternative feed ingredient": {
+    "label": "animal feed ingredient",
+    "definition": "An ingredient that is used in the preparation of animal feed.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00004322"
   }
 }
