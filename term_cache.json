@@ -4873,5 +4873,10 @@
     "label": "proportion mapped reads",
     "definition": "A sequence datum that is the specified output of a read mapping and is the ratio of the count of mapped reads to the total count of reads.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0003056"
+  },
+  "in each treatment-day": {
+    "label": "Treatment Cycle Day Number",
+    "definition": "A number that indicates the position of a day within a treatment cycle.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C166221"
   }
 }
