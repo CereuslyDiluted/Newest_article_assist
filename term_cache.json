@@ -2338,5 +2338,10 @@
     "label": "sardine and tomato spread",
     "definition": "SIREN DB annotation:\n* semisolid FOODON:03430144\n* fully heat-treated FOODON:03440014\n* whole animal or most parts used FOODON:03420173\n* ingredient: flavoring, spice or herb added FOODON:03460227",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03305729"
+  },
+  "of pathogenic": {
+    "label": "Variant Pathogenic/Likely Pathogenic",
+    "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
   }
 }
