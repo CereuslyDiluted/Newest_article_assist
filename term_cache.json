@@ -1253,5 +1253,10 @@
     "label": "Concern",
     "definition": "A matter of interest or importance.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C79892"
+  },
+  "meat": {
+    "label": "Meat",
+    "definition": "The flesh of animals used as food.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C126482"
   }
 }
