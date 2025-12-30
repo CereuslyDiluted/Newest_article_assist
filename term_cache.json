@@ -6298,5 +6298,10 @@
     "label": "antimicrobial peptide production",
     "definition": "The synthesis or release of an antimicrobial peptide during an immune response, resulting in an increase in intracellular or extracellular levels. Such peptides may have protective properties against bacteria, fungi, viruses, or protozoa.",
     "iri": "http://purl.obolibrary.org/obo/GO_0002775"
+  },
+  "within larval hemolymph,": {
+    "label": "embryonic/larval hemolymph",
+    "definition": "Hemolymph of the embryonic/larval circulatory system.",
+    "iri": "http://purl.obolibrary.org/obo/FBbt_00001683"
   }
 }
