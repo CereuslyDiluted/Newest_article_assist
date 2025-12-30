@@ -16248,5 +16248,10 @@
     "label": "rev",
     "definition": "p19",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000155908"
+  },
+  "pathogen. lett appl": {
+    "label": "Appl (fruit fly)",
+    "definition": "A protein coding gene Appl in fruit fly.",
+    "iri": "http://flybase.org/reports/FBgn0000108"
   }
 }
