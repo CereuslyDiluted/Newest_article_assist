@@ -2668,5 +2668,10 @@
     "label": "drying by infrared heat radiation",
     "definition": "LanguaL curation note: Used when susceptible materials are dried by electromagnetic radiation with wave-lengths between 0.76um and 1 mm.",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03470166"
+  },
+  "treatments (20).": {
+    "label": "number of treatments",
+    "definition": "Number of treatments tested during an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00000323"
   }
 }
