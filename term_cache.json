@@ -16423,5 +16423,10 @@
     "label": "antimicrobial gene expression variant",
     "definition": "Animals exhibit variations in the expression of one or more known, endogenous, antimicrobial genes, compared to controls.",
     "iri": "http://purl.obolibrary.org/obo/WBPhenotype_0002534"
+  },
+  "in the black": {
+    "label": "The Welsh Black Cattle Society",
+    "definition": "Nonprofit in United Kingdom established in 1904",
+    "iri": "https://ror.org/005smnq10"
   }
 }
