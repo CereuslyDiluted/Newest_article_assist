@@ -4973,5 +4973,10 @@
     "label": "proportion mapped reads",
     "definition": "A sequence datum that is the specified output of a read mapping and is the ratio of the count of mapped reads to the total count of reads.",
     "iri": "http://purl.obolibrary.org/obo/OBI_0003056"
+  },
+  "to operational taxonomic": {
+    "label": "operational taxonomic unit matrix",
+    "definition": "Operational Taxonomic Unit matrix  is a data item, organized as a table, where organismal taxonomic units, computed by sequence analysis and genetic distance calculation, are counted in a set of biological or environmental samples. The table is  used to appraise biodiversity of a population or community of living organism.",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0001968"
   }
 }
