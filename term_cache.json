@@ -16373,5 +16373,10 @@
     "label": "Med",
     "definition": "The protein-coding gene Med (Medea) located on the chromosome 3R mapped at 100C7-100D1|3-106 cM.",
     "iri": "http://identifiers.org/ncbigene/43725"
+  },
+  "nutrient": {
+    "label": "nutrient",
+    "definition": "A nutrient is a food component that an organism uses to survive and grow.",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_33284"
   }
 }
