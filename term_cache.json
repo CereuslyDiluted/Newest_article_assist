@@ -5218,5 +5218,10 @@
     "label": "ITS and S",
     "definition": "Other in Czechia established in 2000",
     "iri": "https://ror.org/03qy0hv94"
+  },
+  "respectively, in the": {
+    "label": "In the Field",
+    "definition": "A setting outside the clinic or a comparable health care facility, e.g., a doctor's office, the subject's home or workplace, a school, a public park, or a restaurant.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C102650"
   }
 }
