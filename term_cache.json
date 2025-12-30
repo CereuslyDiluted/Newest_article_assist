@@ -16628,5 +16628,10 @@
     "label": "absence of virulence",
     "definition": "A virulence phenotype where an organism does not possess the ability to cause disease in another organism (host).",
     "iri": "http://purl.obolibrary.org/obo/OMP_0000065"
+  },
+  "solani: global gene": {
+    "label": "global gene silencing by mRNA cleavage",
+    "definition": "A posttranscriptional gene silencing pathway that involves the cleavage of mRNAs in a non-gene-specific manner.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0098795"
   }
 }
