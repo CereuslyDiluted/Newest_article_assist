@@ -16828,5 +16828,10 @@
     "label": "confectionery product (long-life, made from pectins)",
     "definition": "SIREN DB annotation:\n* whole, shape achieved by forming FOODON:03430147\n* pectin FOODON:03420198\n* ingredient: sugar or sugar syrup added FOODON:03460136",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03316551"
+  },
+  "using 16s rdna": {
+    "label": "rDNA protrusion",
+    "definition": "Any of the tandem arrays of rDNA localized at the periphery of the nucleus and protruding into the nucleolus, and associated proteins. May be visible as a single or double spot by DAPI staining.",
+    "iri": "http://purl.obolibrary.org/obo/GO_0030875"
   }
 }
