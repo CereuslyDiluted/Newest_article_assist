@@ -16243,5 +16243,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "pathogen? annu rev": {
+    "label": "rev",
+    "definition": "p19",
+    "iri": "http://purl.obolibrary.org/obo/OGG_3000155908"
   }
 }
