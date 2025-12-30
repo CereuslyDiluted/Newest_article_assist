@@ -643,5 +643,10 @@
     "label": "sra",
     "definition": "stationary-phase-induced ribosome-associated protein",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000946030"
+  },
+  "biosample": {
+    "label": "biosample",
+    "definition": "Biological source material characterized by an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0003024"
   }
 }
