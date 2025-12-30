@@ -6508,5 +6508,10 @@
     "label": "Therapy Delayed or Prolonged",
     "definition": "An indication that a therapy was either delayed or prolonged.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C50425"
+  },
+  "exposure to microbial": {
+    "label": "exposure to EC 3.4.24.3 (microbial collagenase) inhibitor",
+    "definition": "An exposure to EC 3.4.24.3 (microbial collagenase) inhibitor.",
+    "iri": "http://purl.obolibrary.org/obo/ECTO_9001984"
   }
 }
