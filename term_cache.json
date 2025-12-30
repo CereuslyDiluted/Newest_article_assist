@@ -5538,5 +5538,10 @@
     "label": "Detectable",
     "definition": "The capability of being noticed, identified or discovered.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C111567"
+  },
+  "inoculated treatments": {
+    "label": "number of treatments",
+    "definition": "Number of treatments tested during an experiment.",
+    "iri": "http://purl.obolibrary.org/obo/AGRO_00000323"
   }
 }
