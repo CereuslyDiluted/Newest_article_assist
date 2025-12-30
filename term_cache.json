@@ -1028,5 +1028,10 @@
     "label": "Attractive",
     "definition": "Pleasing to the eye or mind especially through beauty or charm.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C73114"
+  },
+  "more": {
+    "label": "More",
+    "definition": "Greater in size, amount, extent, or degree.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C128667"
   }
 }
