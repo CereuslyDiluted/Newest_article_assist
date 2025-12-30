@@ -15993,5 +15993,10 @@
     "label": "food for invalids",
     "definition": "SIREN DB annotation:\n* dietary claim or use FOODON:03510023",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03315429"
+  },
+  "waste biomasses/streams to": {
+    "label": "Sierra Streams Institute",
+    "definition": "Nonprofit in United States established in 1995",
+    "iri": "https://ror.org/029pa0p32"
   }
 }
