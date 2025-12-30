@@ -694,5 +694,14 @@
     "label": "When",
     "definition": "At what time, how soon, in what circumstances?",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65140"
+  },
+  "a slight color": null,
+  "a slight": null,
+  "slight color change": null,
+  "slight color": null,
+  "slight": {
+    "label": "Slight",
+    "definition": "Small or little in size, quantity, or degree.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C103807"
   }
 }
