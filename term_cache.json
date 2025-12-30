@@ -1818,5 +1818,10 @@
     "label": "Some Days",
     "definition": "A response indicating that an individual experiences or experienced something on some days.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C131735"
+  },
+  "relative abundances often": {
+    "label": "Often",
+    "definition": "A subjective answer that something occurs frequently.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C120595"
   }
 }
