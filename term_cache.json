@@ -15953,5 +15953,10 @@
     "label": "Nanjing Health and Health Commission",
     "definition": "Government in China",
     "iri": "https://ror.org/0067hwx77"
+  },
+  "the environment (oh&e):": {
+    "label": "The Environment Ontology",
+    "definition": "ENVO is an ontology which represents knowledge about environments,environmental processes, ecosystems, habitats, and related entities",
+    "iri": "http://purl.obolibrary.org/obo/envo.owl"
   }
 }
