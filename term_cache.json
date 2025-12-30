@@ -2873,5 +2873,10 @@
     "label": "metabolism and growth",
     "definition": "Processes relating to metabolism and growth.",
     "iri": "http://purl.obolibrary.org/obo/APO_0000094"
+  },
+  "potato is known": {
+    "label": "Known",
+    "definition": "Recognized, familiar, or within the scope of knowledge.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C80137"
   }
 }
