@@ -7338,5 +7338,10 @@
     "label": "vitamin and mineral preparation",
     "definition": "SIREN DB annotation:\n* ingredient: mineral added FOODON:03460159\n* ingredient: nutrient or dietary substance added FOODON:03460194",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03315201"
+  },
+  "materials. several 1-pt": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   }
 }
