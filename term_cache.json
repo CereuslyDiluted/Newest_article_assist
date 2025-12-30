@@ -5493,5 +5493,10 @@
     "label": "Are",
     "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "to reduce bacterial": {
+    "label": "to reduce",
+    "definition": "to reduce is the capability to add an electron or an decrease in oxidation state of a chemical entity.",
+    "iri": "http://semanticscience.org/resource/SIO_010359"
   }
 }
