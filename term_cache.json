@@ -2068,5 +2068,10 @@
     "label": "Documented",
     "definition": "Furnished with or supported by documents and documentation.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25356"
+  },
+  "competitive relationship": {
+    "label": "competitive relationship",
+    "definition": "A relationship between two or more persons or groups which is competitive in nature.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_012469"
   }
 }
