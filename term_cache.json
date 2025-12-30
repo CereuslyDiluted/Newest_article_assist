@@ -2268,5 +2268,10 @@
     "label": "incubator",
     "definition": "A device in which environmental conditions (light, photoperiod, temperature, humidity, etc.) can be controlled",
     "iri": "http://purl.obolibrary.org/obo/OBI_0000136"
+  },
+  "relative humidity": {
+    "label": "relative humidity",
+    "definition": "Relative humidity is the ratio, often expressed as a percentage, of the partial pressure of water in the atmosphere at some observed temperature, to the saturation vapor pressure of pure water at this temperature. [IUPAC]",
+    "iri": "http://purl.allotrope.org/ontologies/result#AFR_0002614"
   }
 }
