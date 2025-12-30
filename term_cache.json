@@ -6688,5 +6688,10 @@
     "label": "counts",
     "definition": "Counts are like ratio scale that they have a zero point but there are no meaningful fractional units. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0000915"
+  },
+  "cfu/g for all": {
+    "label": "Science for All",
+    "definition": "Nonprofit in Australia established in 2018",
+    "iri": "https://ror.org/0282y0p95"
   }
 }
