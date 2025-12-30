@@ -383,5 +383,10 @@
     "label": "read length",
     "definition": "A datum of the number of base pairs per read.",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0000076"
+  },
+  "performed": {
+    "label": "Performed",
+    "definition": "Executed and carried through to completion.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C38000"
   }
 }
