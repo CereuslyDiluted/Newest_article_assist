@@ -2346,5 +2346,27 @@
     "label": "experiments",
     "definition": "",
     "iri": "http://purl.uniprot.org/core/experiments"
+  },
+  "described in the": null,
+  "described in": null,
+  "in the manuscript,": null,
+  "the manuscript, and": null,
+  "the manuscript,": null,
+  "manuscript, and they": null,
+  "manuscript, and": null,
+  "manuscript,": null,
+  "and they were": null,
+  "and they": null,
+  "they were both": null,
+  "they were": null,
+  "they": null,
+  "were both involved": null,
+  "were both": null,
+  "both involved in": null,
+  "both involved": null,
+  "both": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
   }
 }
