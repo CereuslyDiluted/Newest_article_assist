@@ -16453,5 +16453,10 @@
     "label": "manure",
     "definition": "An environmental material consisting of organic matter from plants and/or animals that is used in agriculture as fertilizer.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_03501300"
+  },
+  "suppressing activity in": {
+    "label": "cisphenotypic inter-suppressing genetic interaction",
+    "definition": "An effect in which individual perturbations of different genes result in the same mutant phenotype to varying degrees of severity/penetrance and the resulting phenotype of their combination has a phenotype more severe/penetrant than the least severe/penetrant and less severe/penetrant than the most severe/penetrant of the individual perturbations. With respect to any single quantifiable phenotype, this may be expressed as an inequality as:\na* < ab < b < wt [E = a*]\nOR\nwt < b < ab < a* [E = a*]\nwhere 'a' and 'b' are the observed phenotype values of the individual perturbations ('a*' being the most severe of the two), 'ab' is the observed phenotype value of the double perturbation, 'E' is the expected phenotype value of the double perturbation, and 'wt' is the wild type phenotype value.",
+    "iri": "http://purl.obolibrary.org/obo/MI_1283"
   }
 }
