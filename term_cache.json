@@ -1778,5 +1778,10 @@
     "label": "chicken feed",
     "definition": "SIREN DB annotation:\n* ingredient: grain added FOODON:03460152\n* poultry as consumer FOODON:03510018",
     "iri": "http://purl.obolibrary.org/obo/FOODON_03310338"
+  },
+  "project": {
+    "label": "project",
+    "definition": "A project is a planned process that is undertaken or attempted to meet some requirement. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003730"
   }
 }
