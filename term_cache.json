@@ -4718,5 +4718,10 @@
     "label": "published",
     "definition": "Publication published in a journal.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0001796"
+  },
+  "past 2 decades.": {
+    "label": "Past 2 Weeks",
+    "definition": "A period of time consisting of the 14 days before the present.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C126890"
   }
 }
