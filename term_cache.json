@@ -798,5 +798,10 @@
     "label": "methicillin-resistant Staphylococcus aureus",
     "definition": "Any strain of Staphylococcus aureus that has tested resistant (R) to at least one of methicillin, oxacillin or cefoxitin by standard susceptibility testing methods.",
     "iri": "http://purl.obolibrary.org/obo/ARO_3004306"
+  },
+  "usa": {
+    "label": "USA",
+    "definition": "USA is a country that exists in north America.",
+    "iri": "http://purl.obolibrary.org/obo/VO_0010633"
   }
 }
