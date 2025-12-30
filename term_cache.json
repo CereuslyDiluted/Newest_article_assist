@@ -908,5 +908,10 @@
     "label": "Internal",
     "definition": "Happening or arising or located within some limits, or especially, within some surface.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25234"
+  },
+  "spacer": {
+    "label": "spacer",
+    "definition": "[definition source]: Wikipedia",
+    "iri": "http://purl.bioontology.org/ontology/npo#NPO_485"
   }
 }
