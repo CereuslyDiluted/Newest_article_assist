@@ -83,5 +83,10 @@
     "label": "family",
     "definition": "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption.",
     "iri": "http://purl.obolibrary.org/obo/PCO_0000020"
+  },
+  "important": {
+    "label": "Important",
+    "definition": "Of great significance, value, or consequence.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C115916"
   }
 }
