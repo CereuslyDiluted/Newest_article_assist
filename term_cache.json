@@ -4588,5 +4588,10 @@
     "label": "Remaining",
     "definition": "Enduring or persisting; residual, left over or behind.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25649"
+  },
+  "were similar in": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
   }
 }
