@@ -723,5 +723,10 @@
     "label": "decreased virulence",
     "definition": "An altered virulence phenotype where the rate, frequency, timing, or extent of the ability of a microbe to cause disease in another organism (the host) is decreased relative to a designated control.",
     "iri": "http://purl.obolibrary.org/obo/OMP_0000061"
+  },
+  "potential": {
+    "label": "Potential",
+    "definition": "The likelihood or possibility that a specific state or condition will exist or that an action will occur.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C62230"
   }
 }
