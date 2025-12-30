@@ -708,5 +708,10 @@
     "label": "Due",
     "definition": "Expected or scheduled.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45263"
+  },
+  "comparative genomics": {
+    "label": "Comparative genomics",
+    "definition": "The study (typically comparison) of the sequence, structure or function of multiple genomes.",
+    "iri": "http://edamontology.org/topic_0797"
   }
 }
