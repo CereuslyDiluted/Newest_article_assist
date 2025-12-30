@@ -15988,5 +15988,10 @@
     "label": "former smoker",
     "definition": "A person who was not smoking at the time of the interview but has smoked at least 100 cigarettes in their life.",
     "iri": "http://purl.obolibrary.org/obo/ExO_0000116"
+  },
+  "for upgrading food": {
+    "label": "food for invalids",
+    "definition": "SIREN DB annotation:\n* dietary claim or use FOODON:03510023",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_03315429"
   }
 }
