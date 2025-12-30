@@ -7343,5 +7343,10 @@
     "label": "used in treatment",
     "definition": "a relation between a continuant and a treatment, in which the continuant is a necessary component of the treatment",
     "iri": "http://purl.obolibrary.org/obo/mco.owl/MCO_0000859"
+  },
+  "would be fewer": {
+    "label": "BEBQ Concurrent Version - Baby Would Always Be Feeding",
+    "definition": "Baby Eating Behaviour Questionnaire Concurrent Version (BEBQ Concurrent Version) If given the chance, my baby would always be feeding.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C135790"
   }
 }
