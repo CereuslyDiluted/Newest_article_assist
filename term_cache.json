@@ -2609,5 +2609,14 @@
     "label": "Typing",
     "definition": "",
     "iri": "http://snomed.info/id/246232002"
+  },
+  "multiple-locus variable-number tandem": null,
+  "variable-number tandem repeat": null,
+  "variable-number tandem": null,
+  "tandem repeat analysis.": null,
+  "tandem repeat": {
+    "label": "Tandem repeat",
+    "definition": "Two or more adjacent copies of a region (of length greater than 1).",
+    "iri": "http://ensembl.org/glossary/ENSGLOSSARY_0000119"
   }
 }
