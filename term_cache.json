@@ -1068,5 +1068,12 @@
     "label": "High",
     "definition": "An elevated level or position or degree; greater than normal in degree or intensity or amount.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25227"
+  },
+  "quality (optical density": null,
+  "quality (optical": null,
+  "quality": {
+    "label": "quality",
+    "definition": "",
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000019"
   }
 }
