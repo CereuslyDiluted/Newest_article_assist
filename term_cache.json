@@ -763,5 +763,10 @@
     "label": "Short",
     "definition": "A variable that is stored as a signed 16-bit (2-byte) integer.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C73939"
+  },
+  "large": {
+    "label": "Large",
+    "definition": "Of considerable or relatively great size, extent, or capacity.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49508"
   }
 }
