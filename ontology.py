@@ -262,45 +262,4 @@ def generate_ngrams(words, max_n=3):
                 ngrams.append((i, i+n, phrase))
     return ngrams
 
-#----------------------
-#Token to write terms into file
-#----------------------
 
-import base64
-
-def commit_cache_to_github():
-    import os
-    import requests
-
-    repo_owner = "CereuslyDilutedScience"
-    repo_name = "comprehendase"
-    file_path = "term_cache.json"
-    branch = "main"
-
-    token = os.environ.get("GITHUB_TOKEN")
-    if not token:
-        raise RuntimeError("GITHUB_TOKEN not set")
-
-    # Read updated cache from /tmp
-    with open("/tmp/term_cache.json", "r") as f:
-        content = f.read()
-
-    # GitHub API URL
-    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}"
-
-    # Get current file SHA
-    r = requests.get(url, headers={"Authorization": f"token {token}"})
-    r.raise_for_status()
-    sha = r.json()["sha"]
-
-    # Prepare commit payload
-    payload = {
-        "message": "Update ontology cache",
-        "content": base64.b64encode(content.encode()).decode(),
-        "sha": sha,
-        "branch": branch
-    }
-
-    # Commit the file
-    r = requests.put(url, json=payload, headers={"Authorization": f"token {token}"})
-    r.raise_for_status()
