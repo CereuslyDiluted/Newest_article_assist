@@ -1161,5 +1161,26 @@
     "label": "All",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/HP_0000001"
+  },
+  "software unless otherwise": null,
+  "software unless": null,
+  "unless otherwise speci\ufb01ed.": null,
+  "unless otherwise": null,
+  "unless": null,
+  "otherwise speci\ufb01ed. we": null,
+  "otherwise speci\ufb01ed.": null,
+  "otherwise": null,
+  "speci\ufb01ed. we used": null,
+  "speci\ufb01ed. we": null,
+  "speci\ufb01ed.": null,
+  "an illumina truseq": null,
+  "illumina truseq nano": null,
+  "illumina truseq": null,
+  "truseq nano dna": null,
+  "truseq nano": null,
+  "truseq": {
+    "label": "TruSeq",
+    "definition": "TruSeq is a library preparation protocol developed by Illumina for RNA sequencing. It includes different types of kits for different purposes, such as the TruSeq Small RNA Library Prep Kit and the TruSeq RNA Exome. These kits are designed to convert total RNA or genomic DNA into template molecules of known strand origin for sequencing.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0022396"
   }
 }
