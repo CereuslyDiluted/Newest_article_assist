@@ -2848,5 +2848,10 @@
     "label": "inoculum for fermentation",
     "definition": "vital biomass containing microorganisms added to start the fermentation process",
     "iri": "http://purl.obolibrary.org/obo/ONS_0000146"
+  },
+  "several important potato": {
+    "label": "Several",
+    "definition": "An indefinite small quantity that is more than two but less than many.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C107221"
   }
 }
