@@ -353,5 +353,10 @@
     "label": "default parameters",
     "definition": "It is possible that this really should be a class instead of an individual, namely the class of all default parameter specifications (which would then have instances specific to programs).",
     "iri": "http://purl.obolibrary.org/obo/MIAPA_0000012"
+  },
+  "truseq": {
+    "label": "TruSeq",
+    "definition": "TruSeq is a library preparation protocol developed by Illumina for RNA sequencing. It includes different types of kits for different purposes, such as the TruSeq Small RNA Library Prep Kit and the TruSeq RNA Exome. These kits are designed to convert total RNA or genomic DNA into template molecules of known strand origin for sequencing.",
+    "iri": "http://www.ebi.ac.uk/efo/EFO_0022396"
   }
 }
