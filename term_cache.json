@@ -1038,5 +1038,10 @@
     "label": "other",
     "definition": "A project type that is not described by other more specific terms.",
     "iri": "http://purl.obolibrary.org/obo/FBcv_0003043"
+  },
+  "feed": {
+    "label": "Feed",
+    "definition": "To move something gradually into or through.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C69427"
   }
 }
