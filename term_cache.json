@@ -688,5 +688,10 @@
     "label": "agent",
     "definition": "An agent is an identifier that identifies the agent performing some action. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/result#AFR_0003144"
+  },
+  "genital": {
+    "label": "Genital",
+    "definition": "The group of organs and glands involved with having a child. In women, these are the uterus (womb), the fallopian tubes, the ovaries, and the vagina (birth canal). The reproductive system in men includes the testes, the prostate, and the penis.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C13348"
   }
 }
