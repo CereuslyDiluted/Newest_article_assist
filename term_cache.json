@@ -5533,5 +5533,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "not contain detectable": {
+    "label": "Detectable",
+    "definition": "The capability of being noticed, identified or discovered.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C111567"
   }
 }
