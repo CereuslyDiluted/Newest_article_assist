@@ -5383,5 +5383,10 @@
     "label": "Gram Positive Bacteria",
     "definition": "Any bacteria with a thick peptidoglycan layer and no outer lipid membrane that stains dark purple with the Gram staining technique.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C173515"
+  },
+  "species such as": {
+    "label": "Label as Such",
+    "definition": "An instruction for product to be labeled as explicitly directed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C64662"
   }
 }
