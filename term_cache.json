@@ -2403,5 +2403,10 @@
     "label": "dry",
     "definition": "A wetness quality inhering in a bearer by virtue of the bearer's not being covered by a liquid.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001824"
+  },
+  "paper": {
+    "label": "paper",
+    "definition": "An article reporting original research, published in a peer-reviewed journal.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000212"
   }
 }
