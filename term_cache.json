@@ -4853,5 +4853,10 @@
     "label": "Age in Days When Lost to Follow-up",
     "definition": "Age of subject (in days) when the subject was lost to follow-up.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C172679"
+  },
+  "we compared the": {
+    "label": "we",
+    "definition": "A second- or third-person pronoun for a person in the speaker's care.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_002476"
   }
 }
