@@ -2748,5 +2748,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "despite its importance": {
+    "label": "Importance Weight",
+    "definition": "The relative importance granted to something.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C48192"
   }
 }
