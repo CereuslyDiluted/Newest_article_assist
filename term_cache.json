@@ -16893,5 +16893,10 @@
     "label": "Stable",
     "definition": "Subject to little fluctuation; showing little if any change.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C30103"
+  },
+  "the laboratory. j": {
+    "label": "The Jackson Laboratory Cancer Center",
+    "definition": "The Jackson Laboratory Cancer Center conducts basic research using the mouse as a research tool. Its mission is to discover the genetic basis for preventing, treating, and curing human disease, and to enable broader research in the global biomedical community. This independent, nonprofit organization was designated as an NCI cancer center in 1983.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C39529"
   }
 }
