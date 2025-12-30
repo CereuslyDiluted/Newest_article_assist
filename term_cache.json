@@ -3048,5 +3048,10 @@
     "label": "The Japan-Multinational Trial Organization",
     "definition": "Nonprofit in Japan established in 1999",
     "iri": "https://ror.org/0528hwm66"
+  },
+  "were not signi\ufb01cant": {
+    "label": "Routine Cytogenetics Were not Completed",
+    "definition": "A response that routine cytogenetic testing was not completed.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C160755"
   }
 }
