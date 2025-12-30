@@ -1683,5 +1683,10 @@
     "label": "published",
     "definition": "Publication published in a journal.",
     "iri": "http://www.ebi.ac.uk/efo/EFO_0001796"
+  },
+  "past": {
+    "label": "Past",
+    "definition": "Before the present time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25609"
   }
 }
