@@ -3553,5 +3553,10 @@
     "label": "sampling",
     "definition": "Sampling is the process of taking parts or partitions of an object aggregate or data set for the interest for studying it. [Allotrope]",
     "iri": "http://purl.allotrope.org/ontologies/process#AFP_0003634"
+  },
+  "days were pooled": {
+    "label": "Pooled Sample",
+    "definition": "A sample containing a mixture of multiple individual specimens of interest that were collected in a study.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C165587"
   }
 }
