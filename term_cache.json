@@ -1638,5 +1638,10 @@
     "label": "autoclaved sand",
     "definition": "Autoclaved sand is sand that has been sterlised by exposure to high pressure saturated steam at at least 121 degrees Celsius.",
     "iri": "http://purl.obolibrary.org/obo/ENVO_01000350"
+  },
+  "black soldier \ufb02y": {
+    "label": "soldier",
+    "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
+    "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
   }
 }
