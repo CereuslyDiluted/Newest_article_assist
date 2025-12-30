@@ -2338,5 +2338,10 @@
     "label": "extraction",
     "definition": "A material separation in which a desired component of an input material is separated from the remainder",
     "iri": "http://purl.obolibrary.org/obo/OBI_0302884"
+  },
+  "water": {
+    "label": "water",
+    "definition": "An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms",
+    "iri": "http://purl.obolibrary.org/obo/CHEBI_15377"
   }
 }
