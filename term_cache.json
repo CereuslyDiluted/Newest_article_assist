@@ -5698,5 +5698,10 @@
     "label": "larval-larval ecdysis",
     "definition": "The ecdysis between any of the four larval instars.",
     "iri": "http://purl.obolibrary.org/obo/IDOMAL_0002202"
+  },
+  "hemolymph, resulting": {
+    "label": "hemolymph",
+    "definition": "The plasma, or liquid part of the circulatory system.",
+    "iri": "http://purl.obolibrary.org/obo/FBbt_00005061"
   }
 }
