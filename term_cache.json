@@ -3038,5 +3038,10 @@
     "label": "RESULTS and RESULTS Educational Fund",
     "definition": "Nonprofit in United States established in 1980",
     "iri": "https://ror.org/01kfs3w30"
+  },
+  "the trials conducted": {
+    "label": "Conducted Interference",
+    "definition": "Problems related to electromagnetic interference (EMI) by physical contact with conductors (e.g. wires, resistors, terminals) as opposed to radiated EMI which is caused by induction (without physical contact of the conductors).",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C92037"
   }
 }
