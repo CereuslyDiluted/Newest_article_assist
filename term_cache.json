@@ -1778,5 +1778,10 @@
     "label": "soldier",
     "definition": "A person who fights as part of an army. A soldier can be a conscripted or volunteer enlisted person, a non-commissioned officer, or an officer.",
     "iri": "http://purl.obolibrary.org/obo/GSSO_005823"
+  },
+  "the latter. twenty-\ufb01ve": {
+    "label": "Twenty",
+    "definition": "A natural number greater than nineteen and less than twenty-one and the quantity that it denotes.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C105799"
   }
 }
