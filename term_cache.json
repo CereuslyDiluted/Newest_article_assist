@@ -6268,5 +6268,10 @@
     "label": "gram negative",
     "definition": "A gram stain phenotype where a cell or cells do not retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
     "iri": "http://purl.obolibrary.org/obo/OMP_0000189"
+  },
+  "and gram-positive species": {
+    "label": "gram positive",
+    "definition": "A gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol.",
+    "iri": "http://purl.obolibrary.org/obo/OMP_0000188"
   }
 }
