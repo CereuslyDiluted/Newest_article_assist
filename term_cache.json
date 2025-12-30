@@ -1163,5 +1163,10 @@
     "label": "Substrate",
     "definition": "Any chemical that can be modified or consumed during a chemical reaction or biological process.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C120264"
+  },
+  "not": {
+    "label": "not",
+    "definition": "The preceding event or participating entity cannot participate to the control.",
+    "iri": "http://biomodels.net/SBO/SBO_0000238"
   }
 }
