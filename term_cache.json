@@ -911,5 +911,25 @@
     "label": "after",
     "definition": "T1 after t2 iff:= t2 before_or_simulataneous_with t1 and not (t1 simultaeous_with t2)",
     "iri": "http://purl.obolibrary.org/obo/GENEPIO_0001739"
+  },
+  "the addition of": null,
+  "the addition": null,
+  "addition of 3%": null,
+  "addition of": null,
+  "addition": null,
+  "of 3% glycerol.": null,
+  "3% glycerol. the": null,
+  "3% glycerol.": null,
+  "glycerol. the fresh": null,
+  "glycerol. the": null,
+  "glycerol.": null,
+  "the fresh pplo": null,
+  "the fresh": null,
+  "fresh pplo broth": null,
+  "fresh pplo": null,
+  "fresh": {
+    "label": "fresh",
+    "definition": "A raw characteristic of organism(s) or organism pieces(s) which show little or no sign of decay, and which have not been subjected to rehydration or thawing.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00004722"
   }
 }
