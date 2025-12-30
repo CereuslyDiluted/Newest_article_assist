@@ -1173,5 +1173,10 @@
     "label": "Proliferation",
     "definition": "Multiplying or increasing in number.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C28378"
+  },
+  "spread": {
+    "label": "Spread",
+    "definition": "The act of extending over a wider scope or expanse of space or time.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C61404"
   }
 }
