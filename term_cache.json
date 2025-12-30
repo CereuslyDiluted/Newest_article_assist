@@ -15863,5 +15863,10 @@
     "label": "Overall",
     "definition": "Including everything.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25605"
+  },
+  "were signi\ufb01cant,": {
+    "label": "Were Itchy Question",
+    "definition": "A question about whether an individual feels or felt itchy.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C136347"
   }
 }
