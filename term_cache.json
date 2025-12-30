@@ -598,5 +598,10 @@
     "label": "mean",
     "definition": "The arithmetic mean.",
     "iri": "http://purl.obolibrary.org/obo/MS_1002962"
+  },
+  "total": {
+    "label": "Total",
+    "definition": "Pertaining to an entirety or whole, also constituting the full quantity or extent; complete; derived by addition.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25304"
   }
 }
