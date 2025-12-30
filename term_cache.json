@@ -2745,5 +2745,30 @@
     "label": "Accurate",
     "definition": "",
     "iri": "http://snomed.info/id/263656005"
+  },
+  "long-read assembly via": null,
+  "long-read assembly": null,
+  "assembly via adaptive": null,
+  "assembly via": null,
+  "via adaptive k-mer": null,
+  "via adaptive": null,
+  "via": null,
+  "adaptive k-mer shen": null,
+  "adaptive k-mer": null,
+  "adaptive": null,
+  "e00001-20 mra.asm.org 2": null,
+  "mra.asm.org 2 downloaded": null,
+  "mra.asm.org 2": null,
+  "weighting and repeat": null,
+  "weighting and": null,
+  "weighting": null,
+  "and repeat separation.": null,
+  "and repeat": null,
+  "repeat separation. genome": null,
+  "repeat separation.": null,
+  "repeat": {
+    "label": "Repeat",
+    "definition": "Make or do or perform again.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C47886"
   }
 }
