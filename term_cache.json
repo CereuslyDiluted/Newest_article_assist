@@ -1043,5 +1043,10 @@
     "label": "Feed",
     "definition": "To move something gradually into or through.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C69427"
+  },
+  "con\ufb02ict": {
+    "label": "Conflict",
+    "definition": "PEFF keyword for the sequence conflict; a UniProtKB term.",
+    "iri": "http://purl.obolibrary.org/obo/PEFF_0001023"
   }
 }
