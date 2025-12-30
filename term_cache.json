@@ -133,5 +133,10 @@
     "label": "adhesion",
     "definition": "Adherence to a substrate in the environment or in a host.",
     "iri": "http://purl.obolibrary.org/obo/APO_0000288"
+  },
+  "invasion": {
+    "label": "Invasion",
+    "definition": "The movement of one cell type into an area normally occupied by a different cell type.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C75004"
   }
 }
