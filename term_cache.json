@@ -1153,5 +1153,10 @@
     "label": "in relation to",
     "definition": "in relation to is a comparative relation to indicate that the instance of the class holding the relation exists in relation to another entity.",
     "iri": "http://semanticscience.org/resource/SIO_000668"
+  },
+  "accumulation": {
+    "label": "accumulation",
+    "definition": "A structural quality of the collection or massing of one physical object within another physical object.",
+    "iri": "http://purl.obolibrary.org/obo/PATO_0002269"
   }
 }
