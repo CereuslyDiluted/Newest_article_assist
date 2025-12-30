@@ -7483,5 +7483,10 @@
     "label": "Thick growth plates",
     "definition": "Increased thickness (dimension along the axis of the bone) of the growth plate.",
     "iri": "http://purl.obolibrary.org/obo/HP_0025369"
+  },
+  "was assessed after": {
+    "label": "Was EGFR Amplification Assessed Question",
+    "definition": "A question asking if EGFR amplification was analyzed during the study.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C159539"
   }
 }
