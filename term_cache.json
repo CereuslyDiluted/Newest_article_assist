@@ -17013,5 +17013,10 @@
     "label": "NCBI GeneID",
     "definition": "A GeneID in the NCBI Gene database",
     "iri": "http://purl.obolibrary.org/obo/OGG_0000000006"
+  },
+  "and ott\u2014 how": {
+    "label": "Ott",
+    "definition": "The protein-coding gene Ott (ovary testis transcribed) located on the chromosome X mapped at X 68.46 cM.",
+    "iri": "http://identifiers.org/ncbigene/18422"
   }
 }
