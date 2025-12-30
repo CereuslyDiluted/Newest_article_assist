@@ -16863,5 +16863,10 @@
     "label": "FACIT-Searchable Item Library Adult Version - Illness Strengthen Faith/Spiritual",
     "definition": "Functional Assessment of Chronic Illness Therapy-Searchable Item Library Adult Version (FACIT-Searchable Item Library Adult Version) My illness has strengthened my faith or spiritual beliefs.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C184177"
+  },
+  "function of": {
+    "label": "function of",
+    "definition": "A relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence. [RO]",
+    "iri": "http://purl.obolibrary.org/obo/RO_0000079"
   }
 }
