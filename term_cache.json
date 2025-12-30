@@ -1528,5 +1528,10 @@
     "label": "Are",
     "definition": "A unit of area equal to 100 square meters. Are is a non-SI unit accepted for use with SI.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C68869"
+  },
+  "for biological conversion": {
+    "label": "Directorate for Biological Sciences",
+    "definition": "Government in United States",
+    "iri": "https://ror.org/001xhss06"
   }
 }
