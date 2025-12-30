@@ -1969,5 +1969,26 @@
     "label": "Sequencing Data",
     "definition": "A collection of digital nucleic acid sequences, protein sequences, or other polymer sequences stored on a computer.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C153329"
+  },
+  "(8). finally, gapcloser": null,
+  "finally, gapcloser software": null,
+  "finally, gapcloser": null,
+  "gapcloser software (https://sourceforge.net/": null,
+  "gapcloser software": null,
+  "gapcloser": null,
+  "software (https://sourceforge.net/ projects/soapdenovo2/\ufb01les/gapcloser)": null,
+  "software (https://sourceforge.net/": null,
+  "(https://sourceforge.net/ projects/soapdenovo2/\ufb01les/gapcloser) was": null,
+  "(https://sourceforge.net/ projects/soapdenovo2/\ufb01les/gapcloser)": null,
+  "(https://sourceforge.net/": null,
+  "\ufb01ll the remaining": null,
+  "the remaining local": null,
+  "the remaining": null,
+  "remaining local inner": null,
+  "remaining local": null,
+  "remaining": {
+    "label": "Remaining",
+    "definition": "Enduring or persisting; residual, left over or behind.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25649"
   }
 }
