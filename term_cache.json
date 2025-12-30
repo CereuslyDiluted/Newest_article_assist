@@ -983,5 +983,10 @@
     "label": "Study",
     "definition": "A detailed examination, analysis, or critical inspection of a subject designed to discover facts about it.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C63536"
+  },
+  "applies": {
+    "label": "applies",
+    "definition": "An entity applies a specification or mathematical function, if the specification specifies the entity and the entity conforms or follows the specification. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002849"
   }
 }
