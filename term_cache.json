@@ -1085,5 +1085,22 @@
     "label": "Density",
     "definition": "The amount of something per unit size.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45781"
+  },
+  "at 260 nm/optical": null,
+  "260 nm/optical density": null,
+  "260 nm/optical": null,
+  "nm/optical density at": null,
+  "nm/optical density": null,
+  "nm/optical": null,
+  "density at 280": null,
+  "used to construct": null,
+  "to construct a": null,
+  "to construct": null,
+  "construct a fragment": null,
+  "construct a": null,
+  "construct": {
+    "label": "Construct",
+    "definition": "An abstract or general idea inferred or derived from specific instances.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C84378"
   }
 }
