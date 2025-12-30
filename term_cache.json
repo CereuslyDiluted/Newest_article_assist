@@ -17008,5 +17008,10 @@
     "label": "Silva",
     "definition": "Facility in France established in 2018",
     "iri": "https://ror.org/01d5v2p67"
+  },
+  "rdp, greengenes, ncbi": {
+    "label": "NCBI GeneID",
+    "definition": "A GeneID in the NCBI Gene database",
+    "iri": "http://purl.obolibrary.org/obo/OGG_0000000006"
   }
 }
