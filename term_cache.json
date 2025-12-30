@@ -444,5 +444,12 @@
     "label": "Invasion",
     "definition": "The movement of one cell type into an area normally occupied by a different cell type.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C75004"
+  },
+  "into host cells,": null,
+  "into host": null,
+  "into": {
+    "label": "Into",
+    "definition": "Expressing entrance, or a passing from the outside of a thing to its interior parts.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C25544"
   }
 }
