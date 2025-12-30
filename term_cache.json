@@ -2838,5 +2838,10 @@
     "label": "Animals and Society Institute",
     "definition": "Nonprofit in United States established in 1983",
     "iri": "https://ror.org/03p26k524"
+  },
+  "is the ingestion": {
+    "label": "ingestion",
+    "definition": "The process of taking a material (e.g., stressor) into the mouth or body.",
+    "iri": "http://purl.obolibrary.org/obo/ExO_0000056"
   }
 }
