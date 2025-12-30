@@ -7698,5 +7698,10 @@
     "label": "colony",
     "definition": "An organism population persisting in a site it has colonized.",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000615"
+  },
+  "was maintained in": {
+    "label": "Maintained",
+    "definition": "Software has developers actively maintaining it (fixing bugs)",
+    "iri": "http://www.ebi.ac.uk/swo/maturity/SWO_9000073"
   }
 }
