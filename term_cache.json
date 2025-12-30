@@ -6773,5 +6773,10 @@
     "label": "occurs across",
     "definition": "A relationship between a process and a barrier, where the process occurs in a region spanning the barrier. For cellular processes the barrier is typically a membrane. Examples include transport across a membrane and membrane depolarization.",
     "iri": "http://purl.obolibrary.org/obo/RO_0002021"
+  },
+  "and days (table": {
+    "label": "table",
+    "definition": "A table is a placement device with a flat top and one or more legs, providing a level surface for placement. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0002210"
   }
 }
