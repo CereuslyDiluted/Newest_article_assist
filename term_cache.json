@@ -713,5 +713,10 @@
     "label": "Comparative genomics",
     "definition": "The study (typically comparison) of the sequence, structure or function of multiple genomes.",
     "iri": "http://edamontology.org/topic_0797"
+  },
+  "plasma": {
+    "label": "plasma",
+    "definition": "Plasma is a state of matter in which an ionized gaseous substance becomes highly electrically conductive to the point that long-range electric and magnetic fields dominate the behavior of the matter. [Wikipedia]",
+    "iri": "http://purl.allotrope.org/ontologies/material#AFM_0000404"
   }
 }
