@@ -2730,5 +2730,20 @@
     "label": "Nome",
     "definition": "A person having origins in the original Nome people.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C44693"
+  },
+  "2017. canu: scalable": null,
+  "canu: scalable and": null,
+  "canu: scalable": null,
+  "scalable and accurate": null,
+  "scalable and": null,
+  "scalable": null,
+  "and accurate long-read": null,
+  "and accurate": null,
+  "accurate long-read assembly": null,
+  "accurate long-read": null,
+  "accurate": {
+    "label": "Accurate",
+    "definition": "",
+    "iri": "http://snomed.info/id/263656005"
   }
 }
