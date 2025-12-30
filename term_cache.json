@@ -16658,5 +16658,10 @@
     "label": "Variant Pathogenic/Likely Pathogenic",
     "definition": "An ad hoc category that describes genetic variants with 90% or greater certainty of contributing to the development of a disease.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C168803"
+  },
+  "bacteria use aromatic": {
+    "label": "aromatic",
+    "definition": "Aromatic aromaticity is a quality that inheres in a molecular entity when it possesses at least one ring that is aromatic.",
+    "iri": "http://semanticscience.org/resource/CHEMINF_000076"
   }
 }
