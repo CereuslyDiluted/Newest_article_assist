@@ -7383,5 +7383,10 @@
     "label": "Min charge",
     "definition": "Minimum charge of precursor to be search",
     "iri": "http://purl.obolibrary.org/obo/PRIDE_0000487"
+  },
+  "russet": {
+    "label": "Russet potato",
+    "definition": "A shoot axis tuber of a Russet potato cultivar.",
+    "iri": "http://purl.obolibrary.org/obo/FOODON_00004971"
   }
 }
