@@ -4263,5 +4263,10 @@
     "label": "composition",
     "definition": "A single physical entity inhering in an bearer by virtue of the bearer's quantities or relative ratios of subparts. [PATO]",
     "iri": "http://purl.obolibrary.org/obo/PATO_0000025"
+  },
+  "analysis of": {
+    "label": "Analysis of Variance",
+    "definition": "A statistical technique which helps in making inference whether three or more samples might come from populations having the same mean; specifically, whether the differences among the samples might be caused by chance variation.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C53241"
   }
 }
