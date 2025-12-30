@@ -3013,5 +3013,10 @@
     "label": "Stayed the Same",
     "definition": "A subjective response indicating that something is unchanged.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C125460"
+  },
+  "latter two trials": {
+    "label": "C.I. Trials",
+    "definition": "Facility in United States",
+    "iri": "https://ror.org/05hc6gd57"
   }
 }
