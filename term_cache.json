@@ -3853,5 +3853,10 @@
     "label": "Unique",
     "definition": "The single one of its kind.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C45282"
+  },
+  "genera and 3": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
