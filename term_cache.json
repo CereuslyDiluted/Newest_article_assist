@@ -1743,5 +1743,10 @@
     "label": "ITS",
     "definition": "Insulinoma tumor suppressor gene locus",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000282551"
+  },
+  "primers, respectively, and": {
+    "label": "Probes and primers",
+    "definition": "Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridisation oligos in a nucleic acid sequence.",
+    "iri": "http://edamontology.org/topic_0632"
   }
 }
