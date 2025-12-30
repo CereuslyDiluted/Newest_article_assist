@@ -2453,5 +2453,10 @@
     "label": "jar",
     "definition": "Jars are cylindrical containers with wide openings that may be sealed. [Wikipedia]",
     "iri": "http://purl.allotrope.org/ontologies/equipment#AFE_0001410"
+  },
+  "empty": {
+    "label": "Empty",
+    "definition": "Holding or containing nothing.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C63628"
   }
 }
