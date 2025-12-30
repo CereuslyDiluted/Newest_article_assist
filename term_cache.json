@@ -2018,5 +2018,10 @@
     "label": "Likely",
     "definition": "Having a good chance of being the case or of coming about.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C85550"
+  },
+  "surrounding": {
+    "label": "surrounding",
+    "definition": "A spatial quality inhering in a bearer by virtue of the bearer's being extended on all sides of another entity simultaneously.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000048"
   }
 }
