@@ -16398,5 +16398,10 @@
     "label": "number of substrates",
     "definition": "Number of molecules which are acted upon by an enzyme.",
     "iri": "http://biomodels.net/SBO/SBO_0000149"
+  },
+  "on development of": {
+    "label": "Canadian Council on Social Development",
+    "definition": "Nonprofit in Canada established in 1920",
+    "iri": "https://ror.org/031903y12"
   }
 }
