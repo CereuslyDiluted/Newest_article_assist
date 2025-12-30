@@ -678,5 +678,10 @@
     "label": "Listed",
     "definition": "Included on a list of items.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C203645"
+  },
+  "agent of": {
+    "label": "agent of",
+    "definition": "'agent of' is a relation between a participant and a process, in which the participant is active in the relevant process.",
+    "iri": "http://purl.obolibrary.org/obo/TXPO_0001896"
   }
 }
