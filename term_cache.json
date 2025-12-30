@@ -1968,5 +1968,10 @@
     "label": "during which exists",
     "definition": "inverse of exists at [BFO]",
     "iri": "http://purl.obolibrary.org/obo/BFO_0000157"
+  },
+  "is a ubiquitous": {
+    "label": "ubiquitous",
+    "definition": "Expressed everywhere at some specified stage.",
+    "iri": "http://purl.obolibrary.org/obo/FBcv_0000069"
   }
 }
