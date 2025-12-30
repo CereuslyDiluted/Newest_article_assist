@@ -15973,5 +15973,10 @@
     "label": "Grant",
     "definition": "A financial assistance mechanism through which money and/or direct assistance is provided to carry out approved activities.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C16644"
+  },
+  "center for": {
+    "label": "Center for Innovation",
+    "definition": "Facility in United States",
+    "iri": "https://ror.org/04c1v2b17"
   }
 }
