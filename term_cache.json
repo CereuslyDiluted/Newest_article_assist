@@ -1608,5 +1608,10 @@
     "label": "Largest",
     "definition": "Greatest in size of those under consideration.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C25550"
+  },
+  "note": {
+    "label": "note",
+    "definition": "An aditional information as a textual comment.",
+    "iri": "http://www.w3.org/2004/02/skos/core#note"
   }
 }
