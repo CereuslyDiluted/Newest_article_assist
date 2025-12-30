@@ -2998,5 +2998,10 @@
     "label": "Over",
     "definition": "Being above or beyond something.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C65018"
+  },
+  "in organic substrates": {
+    "label": "number of substrates",
+    "definition": "Number of molecules which are acted upon by an enzyme.",
+    "iri": "http://biomodels.net/SBO/SBO_0000149"
   }
 }
