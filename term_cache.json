@@ -653,5 +653,10 @@
     "label": "work",
     "definition": "A physical quality which is equal to the energy transferred by a force to a moving object.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001026"
+  },
+  "both": {
+    "label": "Both",
+    "definition": "One and the other; relating to or being two in conjunction.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C49636"
   }
 }
