@@ -330,5 +330,12 @@
     "label": "results in",
     "definition": "",
     "iri": "http://purl.obolibrary.org/obo/IDO_0000660"
+  },
+  "mastitis and arthritis": null,
+  "mastitis and": null,
+  "mastitis": {
+    "label": "mastitis",
+    "definition": "A breast disease characterized by painful infection of the breast tissue.",
+    "iri": "http://purl.obolibrary.org/obo/DOID_10690"
   }
 }
