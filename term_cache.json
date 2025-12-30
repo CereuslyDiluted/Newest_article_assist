@@ -2083,5 +2083,10 @@
     "label": "Read Depth",
     "definition": "The number of times a particular locus (site, nucleotide, amplicon, region) was sequenced.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C155320"
+  },
+  "expect": {
+    "label": "expect",
+    "definition": "X|Tandem expectancy score",
+    "iri": "http://purl.obolibrary.org/obo/PRIDE_0000183"
   }
 }
