@@ -3733,5 +3733,10 @@
     "label": "mrsA",
     "definition": "Probable phospho-sugar mutase / MrsA protein homolog",
     "iri": "http://purl.obolibrary.org/obo/OGG_3000887589"
+  },
+  "(below the 107cfu/g": {
+    "label": "Below the Diaphragm Disease",
+    "definition": "A finding that refers to disease confined to sites located below the diaphragm.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C39761"
   }
 }
