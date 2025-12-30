@@ -1328,5 +1328,10 @@
     "label": "suffering",
     "definition": "Suffering is the unpleasant emotion and aversion associated with the perception of harm or threat of harm in an individual.",
     "iri": "http://semanticscience.org/resource/SIO_000869"
+  },
+  "staphylococcal food poisoning": {
+    "label": "Staphylococcal Food Poisoning",
+    "definition": "Food poisoning that is caused by Staphylococcal infection.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C35037"
   }
 }
