@@ -1413,5 +1413,10 @@
     "label": "focused",
     "definition": "An optical quality inhering in a bearer by virtue of the bearer's having focus.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001517"
+  },
+  "investigation": {
+    "label": "investigation",
+    "definition": "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0000066"
   }
 }
