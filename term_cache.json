@@ -6673,5 +6673,10 @@
     "label": "activation of monopolar cell growth at either end",
     "definition": "A regulation phenotype observed in the vegetative growth phase of the life cycle in which the activation of monopolar cell growth may occur at either the new or old end of the cell, instead of exclusively at the old end, following cell division. A population of cells with this phenotype has a 1:1 mix of cells initiating growth at the new end and cells initiating growth at the old end.",
     "iri": "http://purl.obolibrary.org/obo/FYPO_0001394"
+  },
+  "plant or mammalian": {
+    "label": "Plant or Plant Part Extract",
+    "definition": "Any extract from a plant or from part of a plant.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C106105"
   }
 }
