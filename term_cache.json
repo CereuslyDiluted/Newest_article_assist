@@ -1653,5 +1653,10 @@
     "label": "depth",
     "definition": "A 1-D extent quality inhering in a bearer by virtue of the bearer's downward or backward or inward dimension.",
     "iri": "http://purl.obolibrary.org/obo/PATO_0001595"
+  },
+  "impact": {
+    "label": "impact",
+    "definition": "Bruker Daltonics' impact: ESI Q-TOF, Nanospray, APCI, APPI, GC-APCI, CaptiveSpray.",
+    "iri": "http://purl.obolibrary.org/obo/MS_1002077"
   }
 }
