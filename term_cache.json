@@ -1013,5 +1013,10 @@
     "label": "conditions",
     "definition": "The state in which an organism exists.",
     "iri": "http://purl.obolibrary.org/obo/ZECO_0000100"
+  },
+  "availability": {
+    "label": "availability",
+    "definition": "The state or condition in which this item is accessible and ready for use or can be obtained.",
+    "iri": "https://w3id.org/evorao/availability"
   }
 }
