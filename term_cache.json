@@ -1933,5 +1933,10 @@
     "label": "Label as Such",
     "definition": "An instruction for product to be labeled as explicitly directed.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C64662"
+  },
+  "a suppression applies": {
+    "label": "applies",
+    "definition": "An entity applies a specification or mathematical function, if the specification specifies the entity and the entity conforms or follows the specification. [Allotrope]",
+    "iri": "http://purl.allotrope.org/ontologies/property#AFX_0002849"
   }
 }
