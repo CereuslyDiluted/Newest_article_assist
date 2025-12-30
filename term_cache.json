@@ -6363,5 +6363,10 @@
     "label": "is minimal medium for",
     "definition": "a relation between a culture medium and an organism, in wich the culture medium contains the minimal necessities for growth of the wild-type of that organism and contains only inorganic salts, a carbon source for that organism, and water.",
     "iri": "http://purl.obolibrary.org/obo/omit.owl/MCO_0000866"
+  },
+  "37). the biological": {
+    "label": "The Biological Collections Ontology",
+    "definition": "The BCO supports the interoperability of biodiversity and biodiversity related data, including data on museum collections, environmental/metagenomic samples, and ecological surveys. A key aspect of the BCO is distinguishing among material samples (i.e. specimens), observing processes, and data about either of those entities.",
+    "iri": "http://purl.obolibrary.org/obo/bco.owl"
   }
 }
