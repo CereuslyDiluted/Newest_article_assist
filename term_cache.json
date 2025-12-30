@@ -7073,5 +7073,10 @@
     "label": "Include",
     "definition": "Add as part of something else; put in as part of a set, group, or category.",
     "iri": "http://purl.obolibrary.org/obo/NCIT_C74521"
+  },
+  "and genera of": {
+    "label": "Genera (Croatia)",
+    "definition": "Company in Croatia established in 1901",
+    "iri": "https://ror.org/0518jvn15"
   }
 }
