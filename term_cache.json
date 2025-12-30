@@ -8343,5 +8343,10 @@
     "label": "TSA from Leishmania major",
     "definition": "Researchers evaluated the potency of different DNA vaccine candidates in BALB/c mice using high dose footpad parasite challenge with L. major.  Mice inoculated pCMV3ISS-TSA developed significantly smaller lesions in their footpads after challenge with the parasite.  The vaccine was able to induce a partially protective effect [PubMed: 18951941].",
     "iri": "http://purl.obolibrary.org/obo/VO_0011273"
+  },
+  "(an average of": {
+    "label": "Average",
+    "definition": "A statistical calculation describing the central tendency of a set of numbers; used to interpret quantitative data.",
+    "iri": "http://purl.obolibrary.org/obo/NCIT_C37917"
   }
 }
