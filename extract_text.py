@@ -3,16 +3,18 @@ import fitz  # PyMuPDF
 def extract_pdf_layout(pdf_path):
     """
     Extract words with coordinates using PyMuPDF's 'words' extraction.
-    This restores the original flat word list your pipeline expects.
+    Adds a phrase reconstruction step so downstream layers receive
+    multi-word scientific terms BEFORE filtering or ontology lookup.
     """
 
     doc = fitz.open(pdf_path)
     pages_output = []
 
     for page_index, page in enumerate(doc):
-        raw_words = page.get_text("words")  # (text, x0, y0, x1, y1, block, line, word_no)
+        raw_words = page.get_text("words")  # (x0, y0, x1, y1, text, block, line, word_no)
         words = []
 
+        # --- STEP 1: Build clean word objects ---
         for w in raw_words:
             x0, y0, x1, y1, text, block, line, word_no = w
 
@@ -27,7 +29,7 @@ def extract_pdf_layout(pdf_path):
                 "word_no": int(word_no)
             })
 
-        # --- NEW: Rejoin hyphenated words across line breaks ---
+        # --- STEP 2: Merge hyphenated words across line breaks ---
         merged_words = []
         skip_next = False
 
@@ -39,12 +41,10 @@ def extract_pdf_layout(pdf_path):
             current = words[i]
             text = current["text"]
 
-            # If a word ends with a hyphen, try to merge with the next word
             if text.endswith("-") and i + 1 < len(words):
                 next_word = words[i + 1]
                 merged_text = text.rstrip("-") + next_word["text"]
 
-                # Create a merged word entry
                 merged_word = current.copy()
                 merged_word["text"] = merged_text
 
@@ -53,14 +53,55 @@ def extract_pdf_layout(pdf_path):
             else:
                 merged_words.append(current)
 
-        # Replace original words with merged version
         words = merged_words
 
+        # --- STEP 3: Phrase reconstruction (NEW) ---
+        phrases = []
+        current_phrase = []
+
+        def flush_phrase():
+            """Push current phrase into list if valid."""
+            if len(current_phrase) > 0:
+                phrase_text = " ".join([w["text"] for w in current_phrase])
+                phrases.append({
+                    "text": phrase_text,
+                    "words": current_phrase.copy()
+                })
+
+        for i, w in enumerate(words):
+            token = w["text"]
+
+            # Basic noun-phrase heuristics:
+            # - alphabetic or hyphenated
+            # - not punctuation
+            # - not starting with a digit
+            # - adjacent words on same line/block
+            if token.isalpha() or "-" in token:
+                if not current_phrase:
+                    current_phrase = [w]
+                else:
+                    prev = current_phrase[-1]
+                    same_line = (prev["line"] == w["line"])
+                    adjacent = (w["word_no"] == prev["word_no"] + 1)
+
+                    if same_line and adjacent:
+                        current_phrase.append(w)
+                    else:
+                        flush_phrase()
+                        current_phrase = [w]
+            else:
+                flush_phrase()
+                current_phrase = []
+
+        flush_phrase()
+
+        # --- STEP 4: Save page output ---
         pages_output.append({
             "page_number": page_index + 1,
             "width": page.rect.width,
             "height": page.rect.height,
-            "words": words
+            "words": words,
+            "phrases": phrases  # NEW
         })
 
     doc.close()
