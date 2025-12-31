@@ -6,11 +6,7 @@ import time
 
 from extract_text import extract_pdf_layout
 from render_pages import render_pdf_pages
-from ontology import (
-    generate_ngrams,
-    is_candidate_phrase,
-    lookup_term_ols4
-)
+from ontology import extract_ontology_terms
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "https://cereuslydilutedscience.github.io"}})
