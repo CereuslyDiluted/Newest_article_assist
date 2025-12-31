@@ -2,11 +2,6 @@ import requests
 import re
 
 # -----------------------------
-# CACHE
-# -----------------------------
-TERM_CACHE = {}
-
-# -----------------------------
 # AUTHOR / CITATION DETECTION
 # -----------------------------
 
@@ -57,10 +52,6 @@ def lookup_term_ols4(term):
 
     key = term.strip().lower()
 
-    # Only return cached entries that actually contain definitions
-    if key in TERM_CACHE:
-        return TERM_CACHE[key]
-
     url = "https://www.ebi.ac.uk/ols4/api/search"
     params = {
         "q": term,
@@ -90,13 +81,7 @@ def lookup_term_ols4(term):
                 "iri": doc.get("iri")
             }
 
-            TERM_CACHE[key] = result
-
-            with open(CACHE_FILE, "w") as f:
-                json.dump(TERM_CACHE, f, indent=2)
-
-            commit_cache_to_github()
-            return result
+         return result
 
         # If definition is empty, do NOT cache
         return None
