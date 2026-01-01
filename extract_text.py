@@ -1,125 +1,121 @@
-import fitz  # PyMuPDF
+import pdfplumber
 
 def extract_pdf_layout(pdf_path):
     """
-    Extract words with coordinates using PyMuPDF's 'words' extraction.
-    Adds a phrase reconstruction step so downstream layers receive
-    multi-word scientific terms BEFORE filtering or ontology lookup.
+    Extract words with coordinates using PDFPlumber's layout-aware extraction.
+    Reconstructs multi-word scientific terms BEFORE ontology lookup.
     """
 
-    doc = fitz.open(pdf_path)
     pages_output = []
 
-    for page_index, page in enumerate(doc):
-        raw_words = page.get_text("words")  # (x0, y0, x1, y1, text, block, line, word_no)
-        words = []
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_index, page in enumerate(pdf.pages):
 
-        # --- STEP 1: Build clean word objects ---
-        for w in raw_words:
-            x0, y0, x1, y1, text, block, line, word_no = w
-
-            words.append({
-                "text": text,
-                "x": float(x0),
-                "y": float(y0),
-                "width": float(x1 - x0),
-                "height": float(y1 - y0),
-                "block": int(block),
-                "line": int(line),
-                "word_no": int(word_no)
-            })
-
-        # --- STEP 2: Merge hyphenated words across line breaks ---
-        merged_words = []
-        skip_next = False
-
-        for i in range(len(words)):
-            if skip_next:
-                skip_next = False
-                continue
-
-            current = words[i]
-            text = current["text"]
-
-            if text.endswith("-") and i + 1 < len(words):
-                next_word = words[i + 1]
-                merged_text = text.rstrip("-") + next_word["text"]
-
-                merged_word = current.copy()
-                merged_word["text"] = merged_text
-
-                merged_words.append(merged_word)
-                skip_next = True
-            else:
-                merged_words.append(current)
-
-        words = merged_words
-
-        # --- STEP 3: Phrase reconstruction (UPDATED) ---
-        phrases = []
-        current_phrase = []
-
-        def flush_phrase():
-            """Push current phrase into list if valid."""
-            if len(current_phrase) > 0:
-                phrase_text = " ".join([w["text"] for w in current_phrase])
-                phrases.append({
-                    "text": phrase_text,
-                    "words": current_phrase.copy()
-                })
-
-        for i, w in enumerate(words):
-            # Normalize token: strip punctuation + invisible chars
-            raw = w["text"]
-            token = raw.strip().strip(".,;:()[]{}")
-            token = token.replace("\u200b", "").replace("\u00ad", "").replace("\u2011", "")
-
-            # Allow:
-            # - alphabetic tokens
-            # - hyphenated tokens
-            # - mixed alphanumeric tokens (genes, strains)
-            is_valid_token = (
-                token.isalpha() or
-                "-" in token or
-                token.isalnum()  # NEW: allow uvrC, XBY01, uvrC1, etc.
+            # --- STEP 1: Extract raw words from PDFPlumber ---
+            raw_words = page.extract_words(
+                keep_blank_chars=False,
+                use_text_flow=True,
+                extra_attrs=["fontname", "size"]
             )
 
-            if is_valid_token:
-                if not current_phrase:
-                    current_phrase = [w]
+            words = []
+
+            # Convert PDFPlumber word dicts into your unified structure
+            for w in raw_words:
+                words.append({
+                    "text": w["text"],
+                    "x": float(w["x0"]),
+                    "y": float(w["top"]),
+                    "width": float(w["x1"] - w["x0"]),
+                    "height": float(w["bottom"] - w["top"]),
+                    "block": 0,          # PDFPlumber doesn't provide block index
+                    "line": int(w.get("line_number", 0)),
+                    "word_no": int(w.get("word_number", 0))
+                })
+
+            # --- STEP 2: Merge hyphenated words across line breaks ---
+            merged_words = []
+            skip_next = False
+
+            for i in range(len(words)):
+                if skip_next:
+                    skip_next = False
+                    continue
+
+                current = words[i]
+                text = current["text"]
+
+                if text.endswith("-") and i + 1 < len(words):
+                    next_word = words[i + 1]
+                    merged_text = text.rstrip("-") + next_word["text"]
+
+                    merged_word = current.copy()
+                    merged_word["text"] = merged_text
+
+                    merged_words.append(merged_word)
+                    skip_next = True
                 else:
-                    prev = current_phrase[-1]
-                    same_line = (prev["line"] == w["line"])
+                    merged_words.append(current)
 
-                    # Allow small gaps in word_no (1–2)
-                    gap = w["word_no"] - prev["word_no"]
-                    adjacent = (1 <= gap <= 2)
+            words = merged_words
 
-                    if same_line and adjacent:
-                        current_phrase.append(w)
-                    else:
-                        flush_phrase()
+            # --- STEP 3: Phrase reconstruction ---
+            phrases = []
+            current_phrase = []
+
+            def flush_phrase():
+                """Push current phrase into list if valid."""
+                if len(current_phrase) > 0:
+                    phrase_text = " ".join([w["text"] for w in current_phrase])
+                    phrases.append({
+                        "text": phrase_text,
+                        "words": current_phrase.copy()
+                    })
+
+            for i, w in enumerate(words):
+                raw = w["text"]
+                token = raw.strip().strip(".,;:()[]{}")
+                token = token.replace("\u200b", "").replace("\u00ad", "").replace("\u2011", "")
+
+                is_valid_token = (
+                    token.isalpha() or
+                    "-" in token or
+                    token.isalnum()
+                )
+
+                if is_valid_token:
+                    if not current_phrase:
                         current_phrase = [w]
-            else:
-                flush_phrase()
-                current_phrase = []
+                    else:
+                        prev = current_phrase[-1]
+                        same_line = (prev["line"] == w["line"])
+                        gap = w["word_no"] - prev["word_no"]
+                        adjacent = (1 <= gap <= 2)
 
-        flush_phrase()
+                        if same_line and adjacent:
+                            current_phrase.append(w)
+                        else:
+                            flush_phrase()
+                            current_phrase = [w]
+                else:
+                    flush_phrase()
+                    current_phrase = []
 
-        # --- DEBUG: inspect phrases containing key terms ---
-        print("\n=== DEBUG PHRASES (page", page_index + 1, ") ===")
-        for p in phrases:
-            if any(k in p["text"].lower() for k in ["otitis", "media", "uvrc", "xby"]):
-                print("PHRASE:", p["text"])
-        
-        # --- STEP 4: Save page output ---
-        pages_output.append({
-            "page_number": page_index + 1,
-            "width": page.rect.width,
-            "height": page.rect.height,
-            "words": words,
-            "phrases": phrases
-        })
+            flush_phrase()
 
-    doc.close()
+            # --- DEBUG: inspect phrases containing key terms ---
+            print("\n=== DEBUG PHRASES (page", page_index + 1, ") ===")
+            for p in phrases:
+                if any(k in p["text"].lower() for k in ["otitis", "media", "uvrc", "xby"]):
+                    print("PHRASE:", p["text"])
+
+            # --- STEP 4: Save page output ---
+            pages_output.append({
+                "page_number": page_index + 1,
+                "width": page.width,
+                "height": page.height,
+                "words": words,
+                "phrases": phrases
+            })
+
     return pages_output
