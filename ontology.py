@@ -77,7 +77,8 @@ def lookup_term_ols4(term):
                 continue
 
             if label.lower() == term.lower():
-                definition = (doc.get("description") or [""])[0].strip()
+                definition_list = doc.get("description") or []
+                definition = definition_list[0].strip() if definition_list else ""
                 if definition:
                     return {
                         "label": label,
@@ -99,7 +100,8 @@ def lookup_term_ols4(term):
             if term.lower() not in label.lower():
                 continue
 
-            definition = (doc.get("description") or [""])[0].strip()
+            definition_list = doc.get("description") or []
+            definition = definition_list[0].strip() if definition_list else ""
             if definition:
                 return {
                     "label": label,
@@ -136,6 +138,15 @@ SCI_SUFFIXES = (
     "bacteria","mycetes","mycotina","phyta","phyceae","mycota","archaea"
 )
 
+# Lowercase biological terms we explicitly allow
+ALLOWED_LOWER = {
+    "biofilm", "larvae", "pathogen", "pathogenic", "lipoprotein", "lipoproteins",
+    "adhesion", "invasion", "dissemination", "strain", "strains",
+    "protein", "proteins", "microorganism", "microorganisms", "enzyme",
+    "bacteria", "fungi", "broth", "agar", "colony", "colonies",
+    "pneumonia", "mastitis", "arthritis", "otitis", "media"
+}
+
 def is_acronym(word):
     """Detect standalone acronyms (we suppress these unless part of a phrase)."""
     return word.isupper() and len(word) >= 3
@@ -156,21 +167,23 @@ def is_candidate_term(word):
     if looks_like_author_name(word_clean):
         return False
 
-    # Suppress standalone acronyms (BSF, ITS, etc.)
+    # Suppress standalone acronyms (BSF, ITS, PCR, etc.) as single words
     if is_acronym(word_clean):
         return False
 
-    # NEW: if it's all lowercase and not a known biology pattern, reject it
-    if word_clean.islower():
-        allowed_lower = {
-            "biofilm", "larvae", "pathogen", "lipoprotein", "adhesion",
-            "invasion", "strain", "protein", "microorganism", "enzyme",
-            "bacteria", "fungi"
-        }
-        if word_clean not in allowed_lower:
-            return False
+    lower = word_clean.lower()
 
-    # Gene-like patterns
+    # Allow lowercase biological terms if whitelisted or match sci patterns
+    if word_clean.islower():
+        if lower in ALLOWED_LOWER:
+            return True
+        if lower.startswith(SCI_PREFIXES):
+            return True
+        if lower.endswith(SCI_SUFFIXES):
+            return True
+        return False
+
+    # Gene-like patterns (mixed case or uppercase, often with digits)
     if re.match(r"^[A-Za-z]{2,6}\d*[A-Za-z]*$", word_clean):
         return True
 
@@ -179,29 +192,29 @@ def is_candidate_term(word):
         return True
 
     # Family names
-    if word_clean.lower().endswith("aceae"):
+    if lower.endswith("aceae"):
         return True
 
     # Order names
-    if word_clean.lower().endswith("ales"):
+    if lower.endswith("ales"):
         return True
 
     # Class names (capitalized scientific names)
     if re.match(r"^[A-Z][a-z]+$", word_clean):
         return True
 
-    # Broad taxonomic names
+    # Broad taxonomic / biological names
     if re.match(r"^[A-Z][a-zA-Z]+$", word_clean):
         return True
 
-    # Proteins
-    if word_clean.lower().endswith("protein") or word_clean.lower().endswith("proteins"):
+    # Proteins (already mostly covered above, but keep explicit)
+    if lower.endswith("protein") or lower.endswith("proteins"):
         return True
 
-    # Scientific prefixes/suffixes
-    if word_clean.lower().startswith(SCI_PREFIXES):
+    # Scientific prefixes/suffixes (for mixed-case words)
+    if lower.startswith(SCI_PREFIXES):
         return True
-    if word_clean.lower().endswith(SCI_SUFFIXES):
+    if lower.endswith(SCI_SUFFIXES):
         return True
 
     return False
@@ -247,7 +260,8 @@ def is_candidate_phrase(phrase):
     if "subspecies" in lower or "serotype" in lower or "strain" in lower:
         return True
 
-    # Multi-word scientific concepts
+    # General multi-word biological concepts:
+    # allow if at least one component looks like a candidate term
     if len(words) > 1:
         if any(is_candidate_term(w) for w in words):
             return True
@@ -270,8 +284,11 @@ def extract_ontology_terms(pages_output):
     for page in pages_output:
 
         # 1. Multi-word phrases first
-        for phrase_obj in page["phrases"]:
-            phrase = phrase_obj["text"]
+        for phrase_obj in page.get("phrases", []):
+            phrase = phrase_obj.get("text", "")
+
+            if not phrase:
+                continue
 
             if not is_candidate_phrase(phrase):
                 continue
@@ -282,8 +299,11 @@ def extract_ontology_terms(pages_output):
                 continue
 
         # 2. Single words
-        for w in page["words"]:
-            word = w["text"]
+        for w in page.get("words", []):
+            word = w.get("text", "")
+
+            if not word:
+                continue
 
             if not is_candidate_term(word):
                 continue
