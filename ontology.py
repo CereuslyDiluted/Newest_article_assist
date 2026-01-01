@@ -2,18 +2,6 @@ import requests
 import re
 
 # ---------------------------------------------------------
-# CONFIG: Allowed ontologies (default set)
-# ---------------------------------------------------------
-
-ALLOWED_ONTOLOGIES = {
-    "ncbitaxon",
-    "envo",
-    "efo",
-    "obi",
-    "go"
-}
-
-# ---------------------------------------------------------
 # AUTHOR / CITATION DETECTION
 # ---------------------------------------------------------
 
@@ -71,37 +59,28 @@ def lookup_term_ols4(term):
         # -----------------------------
         for doc in docs:
             label = doc.get("label", "")
-            ontology = (doc.get("ontology_prefix") or "").lower()
+            definition_list = doc.get("description") or []
+            definition = definition_list[0].strip() if definition_list else ""
 
-            if ontology not in ALLOWED_ONTOLOGIES:
-                continue
-
-            if label.lower() == term.lower():
-                definition_list = doc.get("description") or []
-                definition = definition_list[0].strip() if definition_list else ""
-                if definition:
-                    return {
-                        "label": label,
-                        "definition": definition,
-                        "iri": doc.get("iri")
-                    }
+            if label.lower() == term.lower() and definition:
+                return {
+                    "label": label,
+                    "definition": definition,
+                    "iri": doc.get("iri")
+                }
 
         # -----------------------------
         # Stage 2: Filtered fuzzy match
         # -----------------------------
         for doc in docs:
             label = doc.get("label", "")
-            ontology = (doc.get("ontology_prefix") or "").lower()
-
-            if ontology not in ALLOWED_ONTOLOGIES:
-                continue
+            definition_list = doc.get("description") or []
+            definition = definition_list[0].strip() if definition_list else ""
 
             # Require label to contain the term (case-insensitive)
             if term.lower() not in label.lower():
                 continue
 
-            definition_list = doc.get("description") or []
-            definition = definition_list[0].strip() if definition_list else ""
             if definition:
                 return {
                     "label": label,
@@ -207,11 +186,11 @@ def is_candidate_term(word):
     if re.match(r"^[A-Z][a-zA-Z]+$", word_clean):
         return True
 
-    # Proteins (already mostly covered above, but keep explicit)
+    # Proteins
     if lower.endswith("protein") or lower.endswith("proteins"):
         return True
 
-    # Scientific prefixes/suffixes (for mixed-case words)
+    # Scientific prefixes/suffixes
     if lower.startswith(SCI_PREFIXES):
         return True
     if lower.endswith(SCI_SUFFIXES):
@@ -261,7 +240,6 @@ def is_candidate_phrase(phrase):
         return True
 
     # General multi-word biological concepts:
-    # allow if at least one component looks like a candidate term
     if len(words) > 1:
         if any(is_candidate_term(w) for w in words):
             return True
