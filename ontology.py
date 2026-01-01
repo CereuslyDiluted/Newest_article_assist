@@ -1,9 +1,21 @@
 import requests
 import re
 
-# -----------------------------
+# ---------------------------------------------------------
+# CONFIG: Allowed ontologies (default set)
+# ---------------------------------------------------------
+
+ALLOWED_ONTOLOGIES = {
+    "ncbitaxon",
+    "envo",
+    "efo",
+    "obi",
+    "go"
+}
+
+# ---------------------------------------------------------
 # AUTHOR / CITATION DETECTION
-# -----------------------------
+# ---------------------------------------------------------
 
 def looks_like_author_name(word):
     """Detect capitalized author last names commonly found in citations."""
@@ -31,18 +43,17 @@ def phrase_is_citation(phrase):
 
     return False
 
-
-# -----------------------------
-# OLS4 LOOKUP
-# -----------------------------
+# ---------------------------------------------------------
+# OLS4 LOOKUP (two-stage: exact → filtered fuzzy)
+# ---------------------------------------------------------
 
 def lookup_term_ols4(term):
-    """Query the OLS4 API for a scientific term."""
+    """Query the OLS4 API for a scientific term with strict filtering."""
     url = "https://www.ebi.ac.uk/ols4/api/search"
     params = {
         "q": term,
         "queryFields": "label",
-        "fields": "label,description,iri",
+        "fields": "label,description,iri,ontology_prefix",
         "exact": "false"
     }
 
@@ -55,30 +66,61 @@ def lookup_term_ols4(term):
         if not docs:
             return None
 
-        doc = docs[0]
-        definition = (doc.get("description") or [""])[0].strip()
+        # -----------------------------
+        # Stage 1: Exact label match
+        # -----------------------------
+        for doc in docs:
+            label = doc.get("label", "")
+            ontology = (doc.get("ontology_prefix") or "").lower()
 
-        if definition:
-            return {
-                "label": doc.get("label"),
-                "definition": definition,
-                "iri": doc.get("iri")
-            }
+            if ontology not in ALLOWED_ONTOLOGIES:
+                continue
+
+            if label.lower() == term.lower():
+                definition = (doc.get("description") or [""])[0].strip()
+                if definition:
+                    return {
+                        "label": label,
+                        "definition": definition,
+                        "iri": doc.get("iri")
+                    }
+
+        # -----------------------------
+        # Stage 2: Filtered fuzzy match
+        # -----------------------------
+        for doc in docs:
+            label = doc.get("label", "")
+            ontology = (doc.get("ontology_prefix") or "").lower()
+
+            if ontology not in ALLOWED_ONTOLOGIES:
+                continue
+
+            # Require label to contain the term (case-insensitive)
+            if term.lower() not in label.lower():
+                continue
+
+            definition = (doc.get("description") or [""])[0].strip()
+            if definition:
+                return {
+                    "label": label,
+                    "definition": definition,
+                    "iri": doc.get("iri")
+                }
 
         return None
 
     except Exception:
         return None
 
-
-# -----------------------------
+# ---------------------------------------------------------
 # TERM FILTERING
-# -----------------------------
+# ---------------------------------------------------------
 
 COMMON_WORDS = {
     "the","and","for","with","from","that","this","were","have","been",
     "in","on","of","to","as","by","is","are","be","or","an","at","it",
-    "we","was","using","used","use","our","their","these","those"
+    "we","was","using","used","use","our","their","these","those",
+    "its","they","them","he","she","his","her","you","your","i"
 }
 
 SCI_PREFIXES = (
@@ -91,6 +133,9 @@ SCI_SUFFIXES = (
     "bacteria","mycetes","mycotina","phyta","phyceae","mycota","archaea"
 )
 
+def is_acronym(word):
+    """Detect standalone acronyms (we suppress these unless part of a phrase)."""
+    return word.isupper() and len(word) >= 3
 
 def is_candidate_term(word):
     """Filter single-word terms."""
@@ -108,7 +153,11 @@ def is_candidate_term(word):
     if looks_like_author_name(word_clean):
         return False
 
-    # Gene names
+    # Suppress standalone acronyms (BSF, ITS, etc.)
+    if is_acronym(word_clean):
+        return False
+
+    # Gene-like patterns
     if re.match(r"^[A-Za-z]{2,6}\d*[A-Za-z]*$", word_clean):
         return True
 
@@ -124,7 +173,7 @@ def is_candidate_term(word):
     if word_clean.lower().endswith("ales"):
         return True
 
-    # Class names
+    # Class names (capitalized scientific names)
     if re.match(r"^[A-Z][a-z]+$", word_clean):
         return True
 
@@ -144,6 +193,27 @@ def is_candidate_term(word):
 
     return False
 
+# ---------------------------------------------------------
+# PHRASE FILTERING (species detection, multi-word terms)
+# ---------------------------------------------------------
+
+def is_species_like(words):
+    """Case-insensitive species detection."""
+    if len(words) < 2:
+        return False
+
+    w1, w2 = words[0], words[1]
+
+    if not w1.isalpha() or not w2.isalpha():
+        return False
+
+    if len(w1) < 3 or len(w2) < 3:
+        return False
+
+    if w1.lower() in COMMON_WORDS or w2.lower() in COMMON_WORDS:
+        return False
+
+    return True
 
 def is_candidate_phrase(phrase):
     """Filter multi-word phrases."""
@@ -155,12 +225,9 @@ def is_candidate_phrase(phrase):
     if all(looks_like_author_name(w) for w in words):
         return False
 
-    # Species names (Genus species)
-    if len(words) == 2:
-        w1, w2 = words
-        if re.match(r"^[A-Z][a-z]+$|^[A-Z]\.$", w1):
-            if re.match(r"^[a-zA-Z]+$", w2):
-                return True
+    # Species names (case-insensitive)
+    if is_species_like(words):
+        return True
 
     # Subspecies, serotypes, strains
     lower = phrase.lower()
@@ -175,21 +242,21 @@ def is_candidate_phrase(phrase):
 
     return is_candidate_term(phrase)
 
-
-# -----------------------------
-# MAIN ENTRYPOINT (NEW)
-# -----------------------------
+# ---------------------------------------------------------
+# MAIN ENTRYPOINT
+# ---------------------------------------------------------
 
 def extract_ontology_terms(pages_output):
     """
-    NEW: This replaces n-gram generation.
     Uses the 'phrases' list from extraction_text.py.
+    Returns only the best match per term.
     """
 
     found_terms = {}
 
     for page in pages_output:
-        # 1. Try multi-word phrases first
+
+        # 1. Multi-word phrases first
         for phrase_obj in page["phrases"]:
             phrase = phrase_obj["text"]
 
@@ -201,7 +268,7 @@ def extract_ontology_terms(pages_output):
                 found_terms[phrase] = hit
                 continue
 
-        # 2. Fallback: single words
+        # 2. Single words
         for w in page["words"]:
             word = w["text"]
 
