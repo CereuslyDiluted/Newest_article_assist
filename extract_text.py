@@ -28,9 +28,9 @@ def extract_pdf_layout(pdf_path):
                     "y": float(w["top"]),
                     "width": float(w["x1"] - w["x0"]),
                     "height": float(w["bottom"] - w["top"]),
-                    "block": 0,          # PDFPlumber doesn't provide block index
-                    "line": int(w.get("line_number", 0)),
-                    "word_no": int(w.get("word_number", 0))
+                    "block": 0,  # PDFPlumber doesn't provide block index
+                    "line": 0,   # We will use y-position instead
+                    "word_no": 0 # We will use x-position instead
                 })
 
             # --- STEP 2: Merge hyphenated words across line breaks ---
@@ -59,7 +59,7 @@ def extract_pdf_layout(pdf_path):
 
             words = merged_words
 
-            # --- STEP 3: Phrase reconstruction ---
+            # --- STEP 3: Phrase reconstruction (FIXED FOR PDFPLUMBER) ---
             phrases = []
             current_phrase = []
 
@@ -88,9 +88,14 @@ def extract_pdf_layout(pdf_path):
                         current_phrase = [w]
                     else:
                         prev = current_phrase[-1]
-                        same_line = (prev["line"] == w["line"])
-                        gap = w["word_no"] - prev["word_no"]
-                        adjacent = (1 <= gap <= 2)
+
+                        # --- FIXED LOGIC ---
+                        # Words are on the same line if their vertical positions are close
+                        same_line = abs(prev["y"] - w["y"]) < 5
+
+                        # Words are adjacent if the horizontal gap is small
+                        horizontal_gap = w["x"] - (prev["x"] + prev["width"])
+                        adjacent = 0 <= horizontal_gap < 20  # tweakable threshold
 
                         if same_line and adjacent:
                             current_phrase.append(w)
