@@ -14,9 +14,9 @@ def extract_pdf_layout(pdf_path):
             # --- STEP 1: Extract raw words from PDFPlumber ---
             raw_words = page.extract_words(
                 keep_blank_chars=False,
-                layout=True,
+                layout=False,
                 extra_attrs=["fontname", "size"]
-)
+            )
 
             words = []
 
