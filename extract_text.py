@@ -11,11 +11,11 @@ def extract_pdf_layout(pdf_path):
             try:
                 raw_words = page.extract_words(
                     use_text_flow=False,
-                    keep_blank_chars=True,
-                    x_tolerance=5,
-                    y_tolerance=3,
+                    keep_blank_chars=False,
+                    x_tolerance=1,
+                    y_tolerance=2,
                     extra_attrs=["fontname", "size"]
-
+                    
                 ) or []
             except Exception as e:
                 print(f"ERROR extracting words on page {page_index+1}: {e}")
