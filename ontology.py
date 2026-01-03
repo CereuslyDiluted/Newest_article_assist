@@ -7,7 +7,7 @@ import sys
 # CONFIG / LIMITS
 # ---------------------------------------------------------
 
-MAX_TERMS_PER_DOCUMENT = 300
+MAX_TERMS_PER_DOCUMENT = 1000
 OLS4_SEARCH_URL = "https://www.ebi.ac.uk/ols4/api/search"
 
 # ---------------------------------------------------------
@@ -44,6 +44,17 @@ ALLOWED_LOWER = {
     "pneumonia", "mastitis", "arthritis", "otitis", "media"
 }
 
+# Tokens that should never appear in a biological n‑gram
+BANNED_TOKENS = {
+    "to","was","were","size","data","finally","software",
+    "accession","genbank","issue","volume","license",
+    "biosample","bioproject","biosystems","samn","cp0"
+}
+
+# Biological genome contexts to keep (multi‑word genome phrases)
+BIO_GENOME_CONTEXT = {
+    "replication","stability","annotation","assembly"
+}
 # ---------------------------------------------------------
 # AUTHOR / CITATION DETECTION
 # ---------------------------------------------------------
@@ -125,6 +136,10 @@ def is_candidate_single_word(raw_word: str) -> bool:
     if lower in COMMON_WORDS:
         return False
 
+    # Remove banned metadata/procedural tokens
+    if lower in BANNED_TOKENS:
+        return False
+
     # Remove pure numbers
     if word_clean.isdigit():
         return False
@@ -136,6 +151,10 @@ def is_candidate_single_word(raw_word: str) -> bool:
     # Remove standalone acronyms
     if is_acronym(word_clean):
         return False
+
+    # Explicitly allow single-word genome terms
+    if lower in {"genome", "genomic", "genomics"}:
+        return True
 
     # Allow lowercase biological terms
     if word_clean.islower():
@@ -190,7 +209,7 @@ def is_candidate_single_word(raw_word: str) -> bool:
 # Procedural / narrative / metadata patterns to remove entirely
 PROCEDURAL_PATTERNS = [
     "were incubated", "cultures were", "incubated at",
-    "listed as", "co-first", "were", "was", "to isolate",
+    "listed as", "co-first", "to isolate",
     "important pathogen", "serious pneumonia", "an important",
     "the genome size", "genome size of", "gc content",
     "complete genome", "genome sequence", "sequence of",
@@ -246,6 +265,10 @@ def is_candidate_phrase_full(phrase_text: str) -> bool:
     if all(looks_like_author_name(w) for w in words):
         return False
 
+    # Reject if any banned token appears
+    if any(w.lower() in BANNED_TOKENS for w in words):
+        return False
+
     # Species-like patterns
     if is_species_like(words):
         return True
@@ -255,7 +278,14 @@ def is_candidate_phrase_full(phrase_text: str) -> bool:
     if "strain" in lower or "serotype" in lower or "subspecies" in lower:
         return True
 
-    # Biological multi-word phrases: keep only if at least one token is biological
+    # Biological genome phrases (genome replication, genome assembly, etc.)
+    if words[0].lower() == "genome":
+        if len(words) >= 2 and words[1].lower() in BIO_GENOME_CONTEXT:
+            return True
+        else:
+            return False
+
+    # Biological multi-word phrases: keep only if all tokens are biological or neutral
     for w in words:
         wc = re.sub(r"[^A-Za-z0-9\-]", "", w)
         if len(wc) < 3:
@@ -305,30 +335,55 @@ def phrase_ngrams_for_ontology(phrase_text: str):
             continue
 
         words = words_from_phrase_text(ng)
-        keep = False
-        for w in words:
-            wc = re.sub(r"[^A-Za-z0-9\-]", "", w)
-            if len(wc) < 3:
-                continue
-            if wc.lower() in COMMON_WORDS:
-                continue
-            if is_candidate_single_word(wc):
-                keep = True
-                break
 
-        if keep:
+        # Reject if any banned token appears
+        if any(w.lower() in BANNED_TOKENS for w in words):
+            continue
+
+        # Biological genome phrases
+        if words[0].lower() == "genome":
+            if len(words) >= 2 and words[1].lower() in BIO_GENOME_CONTEXT:
+                results.append(ng)
+            continue
+
+        # Keep only if all tokens are biologically valid or neutral
+        if all(
+            (len(re.sub(r"[^A-Za-z0-9\-]", "", w)) >= 3 and
+             (w.lower() in COMMON_WORDS or is_candidate_single_word(re.sub(r"[^A-Za-z0-9\-]", "", w))))
+            for w in words
+        ):
             results.append(ng)
 
     return results
+# ---------------------------------------------------------
+# OLS4 LOOKUP (Improved Ranking)
+# ---------------------------------------------------------
 
-# ---------------------------------------------------------
-# OLS4 LOOKUP
-# ---------------------------------------------------------
+BIO_ONTOLOGY_PREFIXES = {
+    "go", "so", "pr", "chebi", "ncbitaxon", "envo", "obi", "eco"
+}
+
+def normalize_term(term: str) -> str:
+    """Normalize plural/singular forms for better matching."""
+    t = term.lower().strip()
+
+    # proteins -> protein
+    if t.endswith("proteins"):
+        return t[:-1]
+
+    # genomes -> genome
+    if t.endswith("genomes"):
+        return t[:-1]
+
+    return t
+
 
 def lookup_term_ols4(term: str):
-    """Query the OLS4 API for a scientific term."""
+    """Query the OLS4 API for a scientific term with improved ranking."""
+    norm = normalize_term(term)
+
     params = {
-        "q": term,
+        "q": norm,
         "queryFields": "label",
         "fields": "label,description,iri,ontology_prefix",
         "exact": "false"
@@ -343,13 +398,16 @@ def lookup_term_ols4(term: str):
         if not docs:
             return None
 
-        term_lower = term.lower()
+        term_lower = norm.lower()
 
-        # Stage 1: exact label match
+        # -----------------------------
+        # Stage 1: Exact label match
+        # -----------------------------
         for doc in docs:
             label = doc.get("label", "")
             definition_list = doc.get("description") or []
             definition = definition_list[0].strip() if definition_list else ""
+
             if label and label.lower() == term_lower and definition:
                 return {
                     "label": label,
@@ -357,20 +415,62 @@ def lookup_term_ols4(term: str):
                     "iri": doc.get("iri")
                 }
 
-        # Stage 2: label contains term
+        # -----------------------------
+        # Stage 2: Synonym / startswith match
+        # -----------------------------
+        stage2 = []
         for doc in docs:
             label = doc.get("label", "")
-            definition_list = doc.get("description") or []
-            definition = definition_list[0].strip() if definition_list else ""
             if not label:
                 continue
-            if term_lower not in label.lower():
-                continue
+
+            if label.lower().startswith(term_lower):
+                stage2.append(doc)
+
+        if stage2:
+            # Prefer biological ontologies
+            stage2.sort(
+                key=lambda d: (
+                    0 if (d.get("ontology_prefix", "").lower() in BIO_ONTOLOGY_PREFIXES) else 1,
+                    len(d.get("label", ""))
+                )
+            )
+            best = stage2[0]
+            definition_list = best.get("description") or []
+            definition = definition_list[0].strip() if definition_list else ""
             if definition:
                 return {
-                    "label": label,
+                    "label": best.get("label"),
                     "definition": definition,
-                    "iri": doc.get("iri")
+                    "iri": best.get("iri")
+                }
+
+        # -----------------------------
+        # Stage 3: Label contains term
+        # -----------------------------
+        stage3 = []
+        for doc in docs:
+            label = doc.get("label", "")
+            if not label:
+                continue
+            if term_lower in label.lower():
+                stage3.append(doc)
+
+        if stage3:
+            stage3.sort(
+                key=lambda d: (
+                    0 if (d.get("ontology_prefix", "").lower() in BIO_ONTOLOGY_PREFIXES) else 1,
+                    len(d.get("label", ""))
+                )
+            )
+            best = stage3[0]
+            definition_list = best.get("description") or []
+            definition = definition_list[0].strip() if definition_list else ""
+            if definition:
+                return {
+                    "label": best.get("label"),
+                    "definition": definition,
+                    "iri": best.get("iri")
                 }
 
         return None
@@ -396,7 +496,9 @@ def extract_ontology_terms(pages_output):
         for w in page.get("words", []):
             raw = w.get("text", "")
             if raw and is_candidate_single_word(raw):
-                candidate_terms.add(raw)
+                norm = normalize_term(raw)
+                if len(norm) >= 3:
+                    candidate_terms.add(norm)
 
         # Phrases and n-grams
         for phrase_obj in page.get("phrases", []):
@@ -405,7 +507,9 @@ def extract_ontology_terms(pages_output):
                 continue
 
             for t in phrase_ngrams_for_ontology(phrase_text):
-                candidate_terms.add(t)
+                norm = normalize_term(t)
+                if len(norm) >= 3:
+                    candidate_terms.add(norm)
 
     # 2. Cap total terms
     if len(candidate_terms) > MAX_TERMS_PER_DOCUMENT:
