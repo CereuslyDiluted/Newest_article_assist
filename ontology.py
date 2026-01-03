@@ -398,8 +398,24 @@ def lookup_term_ols4(term: str):
         if not docs:
             return None
 
-        term_lower = norm.lower()
+        # Select top-ranked hit
+        for d in docs:
+            prefix = d.get("ontology_prefix", "").lower()
+            if prefix in BIO_ONTOLOGY_PREFIXES:
+                hit = {
+                    "label": d.get("label", ""),
+                    "definition": d.get("description", ""),
+                    "iri": d.get("iri", "")
+                }
+                print("LOOKUP:", term, "=>", hit, flush=True)
+                return hit
 
+        return None
+
+    except Exception as e:
+        print("OLS4 lookup failed for", term, ":", e, flush=True)
+        return None
+        
         # -----------------------------
         # Stage 1: Exact label match
         # -----------------------------
