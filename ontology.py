@@ -532,7 +532,9 @@ def extract_ontology_terms(pages_output):
         candidate_terms = set(islice(sorted(candidate_terms), MAX_TERMS_PER_DOCUMENT))
 
     print("CANDIDATE TERMS:", sorted(candidate_terms), file=sys.stdout, flush=True)
-
+    print("PHRASE:", phrase_text)
+    print("NGRAMS:", list(phrase_ngrams_for_ontology(phrase_text)))
+    
     # 3. Query OLS4
     found_terms = {}
     for term in sorted(candidate_terms):
