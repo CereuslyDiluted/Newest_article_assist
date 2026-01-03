@@ -40,7 +40,7 @@ def extract_pdf_layout(pdf_path):
                     words.append({
                         "text": text,
                         "x": float(x0),
-                        "y": float((top + bottom) / 2),
+                        "y": float(top),
                         "width": float(x1 - x0),
                         "height": float(bottom - top),
                         "block": 0,
