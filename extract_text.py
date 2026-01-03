@@ -6,16 +6,25 @@ def extract_pdf_layout(pdf_path):
 
     with pdfplumber.open(pdf_path) as pdf:
         for page_index, page in enumerate(pdf.pages):
+
+            # --- WORD EXTRACTION (fixed for PDFPlumber 0.11.x) ---
             try:
                 raw_words = page.extract_words(
-                    keep_blank_chars=False,
-                    layout=False,
+                    use_text_flow=True,       # restores old behavior
+                    keep_blank_chars=True,    # prevents ligature collapse
+                    x_tolerance=3,            # scientific PDFs need tighter tolerances
+                    y_tolerance=3,
                     extra_attrs=["fontname", "size"]
                 ) or []
             except Exception as e:
                 print(f"ERROR extracting words on page {page_index+1}: {e}")
                 raw_words = []
 
+            # Debug: confirm extraction is working
+            print(f"\n=== PAGE {page_index+1} ===")
+            print("Raw word count:", len(raw_words))
+
+            # --- NORMALIZE WORD STRUCTURE ---
             words = []
             for w in raw_words:
                 try:
@@ -25,8 +34,7 @@ def extract_pdf_layout(pdf_path):
                     top = w.get("top")
                     bottom = w.get("bottom")
 
-                    if text is None or x0 is None or x1 is None or top is None or bottom is None:
-                        # skip malformed word entries
+                    if not text or x0 is None or x1 is None or top is None or bottom is None:
                         continue
 
                     words.append({
@@ -43,22 +51,21 @@ def extract_pdf_layout(pdf_path):
                     print(f"Skipping malformed word on page {page_index+1}: {e}")
                     continue
 
-            # Sort words roughly in reading order
+            # --- SORT WORDS IN READING ORDER ---
             words.sort(key=lambda w: (round(w["y"] / 5), w["x"]))
 
-            # Merge hyphenated words across line breaks using index loop
+            # --- MERGE HYPHENATED WORDS ---
             merged_words = []
             i = 0
             while i < len(words):
                 current = words[i]
-                text = current["text"] or ""
+                text = current["text"]
+
                 if text.endswith("-") and (i + 1) < len(words):
                     next_word = words[i + 1]
-                    merged_text = text.rstrip("-") + next_word["text"]
-                    merged_word = current.copy()
-                    merged_word["text"] = merged_text
-                    # recompute width if desired; keep current coords for highlight alignment
-                    merged_words.append(merged_word)
+                    merged = current.copy()
+                    merged["text"] = text.rstrip("-") + next_word["text"]
+                    merged_words.append(merged)
                     i += 2
                 else:
                     merged_words.append(current)
@@ -66,7 +73,7 @@ def extract_pdf_layout(pdf_path):
 
             words = merged_words
 
-            # Phrase reconstruction
+            # --- PHRASE RECONSTRUCTION ---
             phrases = []
             current_phrase = []
 
@@ -81,17 +88,17 @@ def extract_pdf_layout(pdf_path):
                     current_phrase = []
 
             for w in words:
-                raw = w.get("text", "")
+                raw = w["text"]
                 token = raw.strip().strip(".,;:()[]{}")
                 token = token.replace("\u200b", "").replace("\u00ad", "").replace("\u2011", "")
 
-                is_valid_token = (
+                is_valid = (
                     token.isalpha() or
                     "-" in token or
                     token.isalnum()
                 )
 
-                if is_valid_token:
+                if is_valid:
                     if not current_phrase:
                         current_phrase = [w]
                     else:
@@ -99,6 +106,7 @@ def extract_pdf_layout(pdf_path):
                         same_line = abs(prev["y"] - w["y"]) < 5
                         horizontal_gap = w["x"] - (prev["x"] + prev["width"])
                         adjacent = -3 <= horizontal_gap < 40
+
                         if same_line and adjacent:
                             current_phrase.append(w)
                         else:
@@ -109,10 +117,9 @@ def extract_pdf_layout(pdf_path):
 
             flush_phrase()
 
-            # Debug prints
-            print(f"\n=== PAGE {page_index + 1} ===")
-            print(f"Total words: {len(words)}")
-            print(f"Total phrases: {len(phrases)}")
+            # --- DEBUG PHRASES ---
+            print("Total words:", len(words))
+            print("Total phrases:", len(phrases))
             print("Key phrases containing targets:")
             for p in phrases:
                 if any(k in p["text"].lower() for k in [
@@ -120,10 +127,11 @@ def extract_pdf_layout(pdf_path):
                 ]):
                     print("  PHRASE:", p["text"])
 
+            # --- OUTPUT STRUCTURE ---
             pages_output.append({
                 "page_number": page_index + 1,
-                "width": float(page.width) if page.width is not None else 0.0,
-                "height": float(page.height) if page.height is not None else 0.0,
+                "width": float(page.width) if page.width else 0.0,
+                "height": float(page.height) if page.height else 0.0,
                 "words": words,
                 "phrases": phrases
             })
